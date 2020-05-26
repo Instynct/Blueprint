@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Database connection test script for WordPress
  *
@@ -17,43 +18,43 @@
 
 
 
-header( 'Content-Type: text/plain' );
+header('Content-Type: text/plain');
 
-$wpconfig = dirname( __FILE__ ) . '/wp-config.php';
+$wpconfig = dirname(__FILE__) . '/wp-config.php';
 
-if ( ! file_exists( $wpconfig ) )
-	die( "wp-config.php file cannot be found, please place this script in the same directory as wp-config.php.\n" );
+if (!file_exists($wpconfig))
+	die("wp-config.php file cannot be found, please place this script in the same directory as wp-config.php.\n");
 
-if ( file_exists( dirname( dirname( __FILE__ ) ) . '/wp-config.php' ) && ! file_exists( dirname( dirname( __FILE__ ) ) . '/wp-settings.php' ) )
-	printf( "There appears to be a wp-config.php file at %s which is\nnot part of a WordPress installation, but can be read by WordPress. Perhaps\nthe wp-config.php file at %s isn't needed?\n\n", dirname( dirname( __FILE__ ) ) . '/wp-config.php', $wpconfig );
+if (file_exists(dirname(dirname(__FILE__)) . '/wp-config.php') && !file_exists(dirname(dirname(__FILE__)) . '/wp-settings.php'))
+	printf("There appears to be a wp-config.php file at %s which is\nnot part of a WordPress installation, but can be read by WordPress. Perhaps\nthe wp-config.php file at %s isn't needed?\n\n", dirname(dirname(__FILE__)) . '/wp-config.php', $wpconfig);
 
 // Tests reading from the Filesystem
-$contents = file_get_contents( $wpconfig );
+$contents = file_get_contents($wpconfig);
 
 //Check that the contents of the file is not blank
 
-@$link = mysql_connect( '192.168.1.23', 'fw2601353326', 'MByuWfsH7U5mWPQiuIOszhuxKo2Ogx' );
-if ( ! $link ) {
-	die( sprintf( "Could not connect to the MySQL server: %s\n", mysql_error() ) );
+@$link = mysql_connect('192.168.1.23', 'fw2601353326', 'MByuWfsH7U5mWPQiuIOszhuxKo2Ogx');
+if (!$link) {
+	die(sprintf("Could not connect to the MySQL server: %s\n", mysql_error()));
 }
 echo "Connected successfully to the MySQL server\n";
 
-@$db_selected = mysql_select_db( db9011552427, $link );
-if ( ! $db_selected ) {
-	die ( sprintf( "Could not select the database '%s': %s\n", 'db9011552427',  mysql_error() ) );
+@$db_selected = mysql_select_db(db9011552427, $link);
+if (!$db_selected) {
+	die(sprintf("Could not select the database '%s': %s\n", 'db9011552427',  mysql_error()));
 }
 echo "Database selected successfully\n";
 
 echo "\nChecking tables for errors:\n";
-$tables = mysql_query( "SHOW TABLES LIKE 'wp_07k6vkgqmw_%'" );
-while ( $table = mysql_fetch_array( $tables, MYSQL_NUM ) ) {
-	$status = mysql_fetch_row( mysql_query( "CHECK TABLE `{$table[0]}`" ) );
-	$message = sprintf( 'The table %s is', $status[0] );
-	if ( $status[3] != 'OK' ) {
-		printf( "\n%s NOT OK. Error: %s\n", $message, $status[3] );
+$tables = mysql_query("SHOW TABLES LIKE 'wp_07k6vkgqmw_%'");
+while ($table = mysql_fetch_array($tables, MYSQL_NUM)) {
+	$status = mysql_fetch_row(mysql_query("CHECK TABLE `{$table[0]}`"));
+	$message = sprintf('The table %s is', $status[0]);
+	if ($status[3] != 'OK') {
+		printf("\n%s NOT OK. Error: %s\n", $message, $status[3]);
 	} else {
-		printf( "%s OK\n", $message );
+		printf("%s OK\n", $message);
 	}
 }
 
-mysql_close( $link );
+mysql_close($link);
