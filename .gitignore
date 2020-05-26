@@ -1,0 +1,25 @@
+# Application
+app/public/wp-content/plugins/*
+!app/public/wp-content/plugins/.gitkeep
+app/public/wp-content/mu-plugins/*/
+app/public/wp-content/upgrade
+app/public/wp-content/uploads/*
+!app/public/wp-content/uploads/.gitkeep
+
+# WordPress
+web/wp
+web/.htaccess
+
+# Logs
+*.log
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Composer
+/vendor
+
+# WP-CLI
+wp-cli.local.yml
