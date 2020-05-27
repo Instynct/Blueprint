@@ -6,6 +6,9 @@ app/public/wp-content/upgrade
 app/public/wp-content/uploads/*
 !app/public/wp-content/uploads/.gitkeep
 
+# Node Modules
+node_modules
+
 # WordPress
 web/wp
 web/.htaccess
