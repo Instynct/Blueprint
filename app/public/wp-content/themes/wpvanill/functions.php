@@ -39,3 +39,4 @@ function header_scripts()
 // ACTION HOOK
 add_action('wp_enqueue_scripts', 'header_styles');
 add_action('wp_enqueue_scripts', 'header_scripts');
+add_filter('use_block_editor_for_post_type', '__return_false');

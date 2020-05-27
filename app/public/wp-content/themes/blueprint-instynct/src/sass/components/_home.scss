@@ -1,0 +1,1326 @@
+#hero {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 90px;
+
+    .container {
+        text-align: center;
+
+        img {
+            width: 100%;
+            margin-bottom: 5px;
+            mix-blend-mode: darken;
+        }
+
+        h3 {
+            font-weight: 700;
+        }
+    }
+
+    .hero-logo {
+        width: 100%;
+        max-width: 45px;
+        position: absolute;
+        right: 30px;
+        bottom: 20px;
+    }
+
+    .hero-illustration {
+        width: 100%;
+        max-width: 85px;
+        position: absolute;
+        bottom: 20px;
+        mix-blend-mode: multiply;
+    }
+
+    .hero-waffles {
+        width: 100%;
+        position: absolute;
+
+        &.left_waffle {
+            max-width: 150px;
+            right: -50px;
+            top: 30px;
+        }
+
+        &.right_waffle {
+            max-width: 175px;
+            left: -75px;
+            bottom: 20px;
+        }
+    }
+
+    @media (min-width: 600px) {
+        margin-bottom: 120px;
+
+        .container {
+            img {
+                width: 75%;
+                margin-bottom: 15px;
+            }
+        }
+
+        .hero-logo {
+            max-width: 80px;
+            right: 50px;
+        }
+
+        .hero-illustration {
+            max-width: 150px;
+            left: 180px;
+        }
+
+        .hero-waffles {
+            &.left_waffle {
+                max-width: 280px;
+                right: -100px;
+                top: 50px;
+            }
+
+            &.right_waffle {
+                max-width: 320px;
+                left: -150px;
+                bottom: 80px;
+            }
+        }
+    }
+
+    @media (min-width: 1024px) {
+        margin-bottom: 200px;
+
+        .container {
+            img {
+                width: 66.66666%;
+                margin-bottom: 30px;
+            }
+        }
+
+        .hero-logo {
+            max-width: 100px;
+        }
+
+        .hero-illustration {
+            width: 20%;
+            max-width: 275px;
+            left: 16%;
+        }
+
+        .hero-waffles {
+            &.left_waffle {
+                width: 30%;
+                max-width: 500px;
+                right: -120px;
+                top: 80px;
+            }
+
+            &.right_waffle {
+                width: 35%;
+                max-width: 525px;
+                left: -250px;
+                bottom: 50px;
+            }
+        }
+    }
+}
+
+#about {
+    position: relative;
+    margin-bottom: 50px;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .about-left-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: flex-end;
+            margin-bottom: 140px;
+            margin-top: 20px;
+
+            .about-left-section-title {
+                width: 55%;
+                margin-bottom: 40px;
+                mix-blend-mode: multiply;
+            }
+
+            .about-left-section-illustration {
+                width: calc(40% - 30px);
+            }
+        }
+
+        .about-separator {
+            width: 100%;
+        }
+
+        .about-separator-vertical {
+            display: none;
+        }
+
+        .about-right-section {
+            margin-top: 40px;
+            margin-bottom: 30px;
+            text-align: center;
+
+            h4 {
+                margin-bottom: 20px;
+                letter-spacing: 2px;
+            }
+
+            .about-right-section-arnaud {
+                width: 100%;
+                max-width: 100px;
+                margin-bottom: 30px;
+                mix-blend-mode: multiply;
+            }
+        }
+
+        .about-right-title {
+            width: 100%;
+            max-width: 120px;
+            margin: 0 auto;
+            mix-blend-mode: multiply;
+        }
+    }
+
+    @media (min-width: 600px) {
+        .container {
+            align-items: flex-start;
+
+            .about-left-section {
+                justify-content: center;
+                margin-bottom: 100px;
+
+                .about-left-section-title {
+                    margin-bottom: 60px;
+                }
+            }
+
+            .about-separator {
+                height: 15px;
+            }
+
+            .about-right-section {
+                margin: 75px 25px 100px 25px;
+                width: 40%;
+            }
+
+            .about-right-title {
+                width: 40%;
+                max-width: 200px;
+                margin: 115px 25px 0px 25px;
+            }
+        }
+    }
+
+    @media (min-width: 1024px) {
+        margin-bottom: 200px;
+
+        .container {
+            align-items: center;
+
+            .about-left-section {
+                width: 50%;
+                margin-bottom: 0px;
+                margin-top: 0px;
+                justify-content: flex-start;
+
+                .about-left-section-title {
+                    width: 50%;
+                }
+
+                .about-left-section-illustration {
+                    width: calc(33.33333% - 30px);
+                    margin-left: 15px;
+                    margin-right: 15px;
+                }
+
+                p {
+                    margin-left: 16.66666%;
+                }
+            }
+
+            .about-separator {
+                display: none;
+            }
+
+            .about-separator-vertical {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                width: 8.33333%;
+                height: 600px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    max-width: 16px;
+                }
+            }
+
+            .about-right-section {
+                margin: 0px;
+                width: 25%;
+
+                p {
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+
+            .about-right-title {
+                width: 10%;
+                max-width: none;
+                margin: 0;
+                position: absolute;
+                right: 50px;
+            }
+        }
+    }
+}
+
+#product-1 {
+    background-color: $beige;
+    position: relative;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+        .product-1-header {
+            width: 90%;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+
+            .product-1-main-title {
+                width: calc(50% - 10px);
+            }
+
+            .product-1-secondary-title {
+                width: calc(50% - 10px);
+            }
+        }
+
+        .product-1-illustrated-informations {
+            width: 100%;
+            margin-bottom: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            position: relative;
+
+            .product-1-image {
+                width: 60%;
+                position: absolute;
+                left: -30%;
+                top: 0px;
+            }
+
+            .information-1 {
+                width: 60%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+
+                p {
+                    width: 50%;
+                    line-height: 14px;
+                }
+
+                img {
+                    mix-blend-mode: multiply;
+                    margin: 20px 0px 20px 0px;
+                    width: calc(50% - 20px);
+                    mix-blend-mode: multiply;
+                }
+            }
+
+            .information-2 {
+                width: 60%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+
+                p {
+                    text-align: right;
+                    width: 50%;
+                    align-self: flex-end;
+                    line-height: 18px;
+                }
+
+                img {
+                    margin: 20px 0px 10px 0px;
+                    width: calc(50% - 20px);
+                    mix-blend-mode: multiply;
+                    mix-blend-mode: multiply;
+
+                    &.arrow {
+                        width: 100%;
+                        max-width: 30px;
+                        transform: scaleX(-1) rotate(190deg);
+                        position: absolute;
+                        top: 20px;
+                        left: 45%;
+                    }
+                }
+            }
+        }
+    }
+
+    &.nutritional-fact-open {
+        .product-1-header {
+            width: 100%;
+            margin-bottom: 30px;
+            align-items: flex-end;
+
+            .product-1-main-title {
+                margin-bottom: 15px;
+            }
+        }
+
+        .product-1-illustrated-informations {
+            display: none;
+        }
+    }
+
+    @media (min-width: 600px) {
+        .container {
+            justify-content: center;
+
+            .product-1-header {
+                margin-top: 90px;
+                margin-bottom: 30px;
+            }
+
+            .product-1-illustrated-informations {
+                margin-bottom: 150px;
+
+                .product-1-image {
+                    width: 60%;
+                    left: -25%;
+                }
+
+                .information-1 {
+                    width: 51%;
+                }
+
+                .information-2 {
+                    width: 51%;
+
+                    p {
+                        align-self: center;
+                    }
+
+                    img {
+                        margin: 20px 0px 20px 0px;
+
+                        &.arrow {
+                            max-width: 50px;
+                            top: 25px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.nutritional-fact-open {
+            .product-1-header {
+                width: 100%;
+                margin-left: 0;
+                justify-content: flex-start;
+
+                .product-1-main-title {
+                    width: calc(37.55555% - 20px);
+                    margin-right: 40px;
+                    margin-bottom: 15px;
+                }
+
+                .product-1-secondary-title {
+                    width: calc(40% - 20px);
+                    margin-left: 0;
+                    margin-top: 60px;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .container {
+            align-items: flex-start;
+            position: relative;
+
+            .product-1-header {
+                width: 100%;
+                margin-top: 100px;
+                margin-bottom: 50px;
+
+                .product-1-main-title {
+                    width: 33.33333%;
+                }
+
+                .product-1-secondary-title {
+                    width: 33.33333%;
+                    margin-right: 8.33333%;
+                }
+            }
+
+            .product-1-illustrated-informations {
+                margin-top: 50px;
+                margin-bottom: 0px;
+                width: 50%;
+
+                .product-1-image {
+                    width: 90%;
+                    left: -50%;
+                }
+
+                .information-2 {
+                    img {
+                        &.arrow {
+                            top: 20px;
+                            left: 40%;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.nutritional-fact-open {
+            .product-1-header {
+                .product-1-main-title {
+                    width: 25%;
+                    margin-right: 16.66666%;
+                    margin-bottom: 0px;
+                }
+
+                .product-1-secondary-title {
+                    width: 40%;
+                    margin-top: 75px;
+                    margin-bottom: -120px;
+                    margin-left: 0px;
+                }
+            }
+
+            .product-1-illustrated-informations {
+                width: 100%;
+                display: block;
+
+                .product-1-image {
+                    width: 50%;
+                    right: -25%;
+                    left: auto;
+                    top: 50px;
+                }
+            }
+        }
+    }
+}
+
+#product-2 {
+    background-color: $beige;
+    position: relative;
+    padding-bottom: 40px;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        transition: 0.5s ease;
+
+        .product-2-header-container {
+            width: 100%;
+
+            .product-2-header {
+                width: 90%;
+                margin-top: 40px;
+                margin-bottom: 50px;
+                display: flex;
+                flex-wrap: wrap;
+
+                .product-2-main-title {
+                    width: 50%;
+                }
+
+                .product-2-secondary-title {
+                    width: 60%;
+                    margin-left: 30%;
+                }
+            }
+
+            .product-2-image {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 75px;
+                position: relative;
+
+                .product-2-photo-text {
+                    width: 45%;
+                    mix-blend-mode: multiply;
+                }
+
+                .product-2-main-image {
+                    width: 75%;
+                    position: absolute;
+                    right: -30%;
+                }
+            }
+        }
+
+        .product-2-illustrated-informations {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            margin-bottom: 40px;
+
+            .product-2-illustration {
+                width: 20%;
+                margin-right: 5%;
+                mix-blend-mode: multiply;
+            }
+
+            .product-2-illustrated-information {
+                width: 50%;
+            }
+        }
+
+        .about-separator {
+            transform: rotate(0deg);
+        }
+    }
+
+    &.nutritional-fact-open {
+        .product-2-header-container {
+            .product-2-header {
+                width: 100%;
+                margin-top: 40px;
+                margin-bottom: 30px;
+                align-items: flex-end;
+                justify-content: space-between;
+
+                .product-2-main-title {
+                    width: calc(50% - 10px);
+                    margin-bottom: 15px;
+                }
+
+                .product-2-secondary-title {
+                    width: calc(50% - 10px);
+                    margin-left: 0;
+                }
+            }
+
+            .product-2-image {
+                display: none;
+
+                .product-2-main-image {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 600px) {
+        padding-bottom: 120px;
+
+        .container {
+            .product-2-header-container {
+                .product-2-header {
+                    width: 60%;
+                    margin-left: 20%;
+
+                    .product-2-main-title {
+                        width: 60%;
+                    }
+
+                    .product-2-secondary-title {
+                        width: 75%;
+                        margin-left: 25%;
+                    }
+                }
+
+                .product-2-image {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 75px;
+                    position: relative;
+
+                    .product-2-photo-text {
+                        width: 25%;
+                        margin-left: 10%;
+                    }
+
+                    .product-2-main-image {
+                        width: 65%;
+                        position: absolute;
+                        right: -30%;
+                    }
+                }
+            }
+
+            .product-2-illustrated-informations {
+                margin-bottom: 80px;
+
+                .product-2-illustration {
+                    width: 12.55555%;
+                    margin-right: 8.33333%;
+                }
+
+                .product-2-illustrated-information {
+                    width: 37.55555%;
+                }
+            }
+        }
+
+        &.nutritional-fact-open {
+            .product-2-header-container {
+                .product-2-header {
+                    width: 100%;
+                    margin-left: 0;
+                    justify-content: flex-start;
+
+                    .product-2-main-title {
+                        width: calc(37.55555% - 20px);
+                        margin-right: 40px;
+                        margin-bottom: 15px;
+                    }
+
+                    .product-2-secondary-title {
+                        width: calc(40% - 20px);
+                        margin-left: 0;
+                        margin-top: 60px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1024px) {
+        padding-bottom: 0px;
+
+        .container {
+            position: relative;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+
+            .product-2-header-container {
+                width: 41.666666%;
+
+                .product-2-header {
+                    margin-bottom: 100px;
+
+                    .product-2-main-title {
+                        width: 70%;
+                    }
+
+                    .product-2-secondary-title {
+                        width: 60%;
+                        margin-left: 40%;
+                    }
+                }
+
+                .product-2-image {
+                    margin-bottom: 0px;
+
+                    .product-2-photo-text {
+                        width: 40%;
+                        margin-left: 0;
+                    }
+
+                    .product-2-main-image {
+                        width: 100%;
+                        right: -60%;
+                    }
+                }
+            }
+
+            .product-2-content-container {
+                width: 41.66666%;
+
+                .product-2-illustrated-informations {
+                    margin-bottom: 50px;
+                    width: 80%;
+                    position: relative;
+
+                    .product-2-illustration {
+                        width: 20%;
+                        margin-right: 20%;
+                        position: absolute;
+                        left: 0;
+                    }
+
+                    .product-2-illustrated-information {
+                        width: 50%;
+                        margin-left: 40%;
+                    }
+                }
+
+                .product-content {
+                    width: 80%;
+                    margin-left: 10%;
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &.nutritional-fact-open {
+            .product-2-header-container {
+                width: 100%;
+
+                .product-2-header {
+                    .product-2-main-title {
+                        width: 25%;
+                        margin-right: 16.66666%;
+                        margin-bottom: 0px;
+                    }
+
+                    .product-2-secondary-title {
+                        width: 40%;
+                        margin-top: 75px;
+                        margin-bottom: -120px;
+                        margin-left: 0px;
+                    }
+                }
+
+                .product-2-image {
+                    display: block;
+
+                    .product-2-photo-text {
+                        display: none;
+                    }
+
+                    .product-2-main-image {
+                        display: block;
+                        width: 50%;
+                        right: -25%;
+                        top: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#dealers {
+    width: 100%;
+    position: relative;
+
+    .container {
+        .dealers-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 40px;
+            margin-bottom: 90px;
+
+            .dealers-main-title {
+                width: 60%;
+                margin-bottom: 25px;
+            }
+
+            .dealers-illustration-1, .dealers-illustration-2 {
+                width: calc(25% - 20px);
+                margin-left: 10px;
+                margin-right: 10px;
+                mix-blend-mode: multiply;
+            }
+
+            .dealers-illustration-2 {
+                margin-top: 20px;
+            }
+
+            .dealers-secondary-title-container {
+                width: 50%;
+
+                .dealers-secondary-title {
+                    width: 100%;
+                    mix-blend-mode: multiply;
+                }
+
+                .dealers-button {
+                    display: none;
+                }
+            }
+
+            .dealers-button {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                width: 50%;
+                cursor: pointer;
+                margin-top: 40px;
+
+                p {
+                    width: calc(100% - 35px);
+                    text-align: left;
+                    line-height: 18px;
+                    font-size: 14px;
+                    margin: 0;
+                }
+
+                img {
+                    margin-left: 10px;
+                    max-width: 25px;
+                    width: 100%;
+                    transform: rotate(230deg) scaleX(-1);
+                }
+            }
+        }
+
+        .dealers-list {
+            display: none;
+            margin-bottom: 60px;
+            flex-wrap: wrap;
+
+            ul {
+                display: inline-block;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+
+                h3 {
+                    margin-bottom: 10px;
+                }
+
+                img {
+                    margin-bottom: 20px;
+                    width: 100%;
+                    height: 10px;
+
+                    &.separator-full-width {
+                        width: 100%;
+                    }
+
+                    &.separator-double-width {
+                        width: 200%;
+                    }
+
+                    &.separator-triple-width {
+                        opacity: 1 !important;
+                        width: 300%;
+                    }
+                }
+
+                li {
+                    list-style: none;
+                    margin-bottom: 40px;
+
+                    h3 {
+                        font-weight: 700;
+                        margin-bottom: 20px;
+                    }
+
+                    a {
+                        color: $black;
+                        font-size: 14px;
+                        font-weight: 400;
+                        letter-spacing: 0.98px;
+                        line-height: 14px;
+                        text-decoration: none;
+                        display: block;
+                    }
+                }
+            }
+
+            .dealers-list-illustration {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-bottom: 50px;
+                width: 100%;
+
+                img {
+                    width: 50%;
+                    mix-blend-mode: multiply;
+                }
+
+                &:nth-of-type(1n) {
+                    .dealers-list-illustration-1 {
+                        display: block;
+                    }
+
+                    .dealers-list-illustration-2 {
+                        display: none;
+                    }
+
+                    .dealers-list-illustration-3 {
+                        display: none;
+                    }
+                }
+
+                &:nth-of-type(2n) {
+                    .dealers-list-illustration-1 {
+                        display: none;
+                    }
+
+                    .dealers-list-illustration-2 {
+                        display: block;
+                    }
+
+                    .dealers-list-illustration-3 {
+                        display: none;
+                    }
+                }
+
+                &:nth-of-type(3n) {
+                    .dealers-list-illustration-1 {
+                        display: none;
+                    }
+
+                    .dealers-list-illustration-2 {
+                        display: none;
+                    }
+
+                    .dealers-list-illustration-3 {
+                        display: block;
+                    }
+                }
+            }
+
+            .dealers-button {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                width: 50%;
+                cursor: pointer;
+                margin-top: 40px;
+                margin-left: auto;
+                margin-right: auto;
+
+                p {
+                    width: calc(100% - 35px);
+                    text-align: left;
+                    line-height: 18px;
+                    font-size: 14px;
+                    margin: 0;
+                }
+
+                img {
+                    margin-left: 10px;
+                    max-width: 25px;
+                    width: 100%;
+                    transform: rotate(230deg) scaleX(-1);
+                }
+            }
+        }
+    }
+
+    @media (min-width: 600px) {
+        .container {
+            .dealers-header {
+                margin-top: 90px;
+                flex-direction: row;
+
+                .dealers-main-title {
+                    width: 33.33333%;
+                    margin-bottom: 0;
+                }
+
+                .dealers-illustration-1, .dealers-illustration-2 {
+                    width: calc(15% - 20px);
+                }
+
+                .dealers-illustration-2 {
+                    margin-top: 0px;
+                    margin-left: -5%;
+                    align-self: flex-end;
+                }
+
+                .dealers-secondary-title-container {
+                    width: 25%;
+                    margin-left: 3%;
+                    align-self: center;
+                }
+
+                .dealers-button {
+                    width: 37.55555%;
+                    max-width: 200px;
+
+                    p {
+                        font-size: 18px;
+                        line-height: 22px;
+                    }
+                }
+            }
+
+            .dealers-list {
+                ul {
+                    width: 50%;
+                    margin-bottom: 90px;
+
+                    h3 {
+                        padding-right: 50px;
+                    }
+
+                    li {
+                        padding-right: 50px;
+                    }
+
+                    &.dealer-zone-2-columns {
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        li {
+                            width: calc(50% - 50px);
+                        }
+                    }
+
+                    &.dealer-zone-3-columns {
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        li {
+                            width: calc(50% - 50px);
+                        }
+                    }
+
+                    .partners-separator {
+                        height: 10px;
+                    }
+
+                    &.dealer-zone-2-columns {
+                        .separator-triple-width {
+                            width: 150%;
+                            margin-right: -50%;
+                        }
+                    }
+                }
+
+                .dealers-list-illustration {
+                    width: 50%;
+                }
+
+                .dealers-button {
+                    width: 25%;
+                    margin-left: 37.5%;
+                    margin-right: 37.5%;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .container {
+            position: relative;
+
+            .dealers-header {
+                margin-top: 120px;
+                margin-bottom: 120px;
+
+                .dealers-main-title {
+                    width: 33.33333%;
+                }
+
+                .dealers-illustration-1, .dealers-illustration-2 {
+                    width: calc(16.66666% - 20px);
+                }
+
+                .dealers-illustration-2 {
+                    margin-top: 0px;
+                    margin-left: 0;
+                    align-self: flex-end;
+                }
+
+                .dealers-secondary-title-container {
+                    width: 16.66666%;
+
+                    .dealers-button {
+                        display: flex;
+                        width: 75%;
+                        margin: 20px auto 0 auto;
+                    }
+                }
+
+                .dealers-button {
+                    display: none;
+                }
+            }
+
+            .dealers-list {
+                padding-left: 8.33333%;
+
+                ul {
+                    width: 20%;
+                    margin-bottom: 100px;
+
+                    &.dealer-zone-2-columns {
+                        width: 40%;
+                    }
+
+                    &.dealer-zone-3-columns {
+                        width: 60%;
+
+                        li {
+                            width: 33.33333%;
+                        }
+                    }
+                }
+
+                .dealers-list-illustration {
+                    width: 16.666666%;
+                    margin-left: 8.33333%;
+                    margin-right: 8.33333%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#partners {
+    width: 100%;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .partners-separator {
+            width: 100%;
+            transform: rotate(180deg);
+        }
+
+        ul {
+            margin: 0;
+            margin-top: 50px;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            li {
+                list-style: none;
+                display: inline-block;
+                width: 50%;
+                text-align: center;
+                margin-bottom: 40px;
+                position: relative;
+
+                img {
+                    width: 60%;
+                    mix-blend-mode: multiply;
+
+                    &.arrow {
+                        width: 25%;
+                        max-width: 30px;
+                        position: absolute;
+                        right: -10px;
+                        bottom: 30%;
+                        transform: scaleX(-1) rotate(220deg);
+                    }
+                }
+
+                &:last-of-type {
+                    img {
+                        width: 40%;
+                    }
+                }
+
+                &.partners-illustration-center {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 600px) {
+        .container {
+            .partners-separator {
+                height: 15px;
+            }
+
+            ul {
+                width: 90%;
+                margin-top: 90px;
+
+                li {
+                    width: 33.33333%;
+                    margin-bottom: 80px;
+
+                    img {
+                        &.arrow {
+                            width: 50%;
+                            max-width: 40px;
+                            bottom: 40%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1024px) {
+        margin-bottom: 120px;
+
+        .container {
+            position: relative;
+
+            .partners-separator {
+                height: 15px;
+                margin-left: 8.33333%;
+            }
+
+            ul {
+                margin-left: 8.33333%;
+                width: 75%;
+                margin-right: 16.66666%;
+
+                li {
+                    width: 20%;
+                    margin-bottom: 0px;
+
+                    &:last-of-type {
+                        position: absolute;
+                        right: 0;
+                        width: 16.66666%;
+                        padding-right: 120px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1640px) {
+        .container {
+            ul {
+                li {
+                    &:last-of-type {
+                        padding-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
