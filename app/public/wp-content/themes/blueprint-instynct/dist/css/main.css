@@ -220,6 +220,76 @@ section {
   }
 }
 
+/* line 1, src/sass/components/_login.scss */
+body {
+  background: #fff !important;
+}
+
+/* line 5, src/sass/components/_login.scss */
+#login h1 a,
+.login h1 a {
+  background-image: url(/wp-content/uploads/2020/04/les_snoros_logo.png) !important;
+  background-size: 150px !important;
+  width: 150px !important;
+}
+
+/* line 12, src/sass/components/_login.scss */
+.login form {
+  background: #ffffff !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+/* line 18, src/sass/components/_login.scss */
+.wp-core-ui .button-primary {
+  background-color: #020202 !important;
+  border-radius: 100px !important;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+/* line 26, src/sass/components/_login.scss */
+.login #backtoblog a,
+.login #nav a {
+  color: #ff0000 !important;
+}
+
+/* line 31, src/sass/components/_login.scss */
+.login label {
+  color: #000 !important;
+  font-size: 0.8rem !important;
+  letter-spacing: 0.03rem;
+  padding: 5px 0 !important;
+}
+
+/* line 38, src/sass/components/_login.scss */
+.login #backtoblog a,
+.login #nav a {
+  color: #707070 !important;
+}
+
+/* line 43, src/sass/components/_login.scss */
+.wp-core-ui .button-group.button-large .button,
+.wp-core-ui .button.button-large {
+  background: #020202 !important;
+  color: #fff !important;
+}
+
+/* line 49, src/sass/components/_login.scss */
+.login form .input,
+.login input[type='text'] {
+  padding: 10px !important;
+}
+
+/* line 54, src/sass/components/_login.scss */
+.login form .input,
+.login form input[type='checkbox'],
+.login input[type='text'] {
+  background: #fff !important;
+}
+
 /* line 1, src/sass/components/_header.scss */
 header {
   position: absolute;
@@ -564,7 +634,7 @@ header.menu-open .burger-button span:last-of-type {
   border: none;
   padding: 10px 0px;
   background-color: transparent;
-  font-family: "Inconsolata", sans-serif;
+  font-family: 'Inconsolata', sans-serif;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.77px;
@@ -587,7 +657,7 @@ header.menu-open .burger-button span:last-of-type {
   padding: 8px 15px;
   background-color: #000000;
   color: #ffffff;
-  font-family: "Inconsolata", sans-serif;
+  font-family: 'Inconsolata', sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
