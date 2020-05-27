@@ -4,9 +4,7 @@
  */
 get_header(); ?>
 
-<?php
-while (have_posts()) : the_post();
-  the_content();
-endwhile; ?>
+<?php get_template_part('blocks/block-template'); ?>
+
 
 <?php get_footer(); ?>
