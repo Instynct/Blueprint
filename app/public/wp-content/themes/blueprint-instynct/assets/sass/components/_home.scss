@@ -13,6 +13,7 @@ main {
 }
 .module-title {
 	transition: ease-in-out 0.5s all;
+	cursor: pointer;
 	&.background {
 		font-size: 4em;
 		background-color: black;
