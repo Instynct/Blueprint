@@ -34,7 +34,7 @@ var paths = {
 		output: '../../dist/svg/',
 	},
 	copy: {
-		input: '../../assetssrc/copy/**/*',
+		input: '../../assets/copy/**/*',
 		output: '../../dist/',
 	},
 	reload: './../../dist/',
@@ -254,7 +254,7 @@ var startServer = function (done) {
 // Reload the browser when files change
 var reloadBrowser = function (done) {
 	if (!settings.reload) return done();
-	browserSync.reload({ stream: true });
+	browserSync.reload();
 	done();
 };
 

@@ -1,5 +1,5 @@
 main {
-	background-color: yellow;
+	background-color: aqua;
 	.module-container {
 		display: flex;
 		justify-content: center;
@@ -7,7 +7,7 @@ main {
 		width: 100vw;
 		height: 100vh;
 		&.blue {
-			background-color: blue;
+			background-color: forestgreen;
 		}
 	}
 }

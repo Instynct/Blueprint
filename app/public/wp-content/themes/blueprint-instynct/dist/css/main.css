@@ -1098,7 +1098,7 @@ footer #credits p a {
 
 /* line 1, ../sass/components/_home.scss */
 main {
-  background-color: yellow;
+  background-color: aqua;
 }
 
 /* line 3, ../sass/components/_home.scss */
@@ -1112,7 +1112,7 @@ main .module-container {
 
 /* line 9, ../sass/components/_home.scss */
 main .module-container.blue {
-  background-color: blue;
+  background-color: forestgreen;
 }
 
 /* line 14, ../sass/components/_home.scss */
