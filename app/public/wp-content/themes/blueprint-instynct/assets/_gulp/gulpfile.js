@@ -88,6 +88,7 @@ var svgmin = require('gulp-svgmin');
 
 // BrowserSync
 var browserSync = require('browser-sync');
+var cache = require('gulp-cache');
 
 /**
  * Gulp Tasks
@@ -227,20 +228,25 @@ var copyFiles = function (done) {
 var startServer = function (done) {
 	// Make sure this feature is activated before running
 	if (!settings.reload) return done();
-
+	var bsConfig = false;
 	fs.access('./bs_config.json', (err) => {
+		console.log('browsersync access');
 		if (err) {
+			console.log('err');
 			browserSync.init({
 				proxy: 'http://localhost:8888/', // We need to use a proxy instead of the built-in server because WordPress has to do some server-side rendering for the theme to work
 			});
 		} else {
 			bsConfig = require('./bs_config.json');
+			console.log(bsConfig);
 			browserSync.init({
-				proxy: bsConfig.proxy, // We need to use a proxy instead of the built-in server because WordPress has to do some server-side rendering for the theme to work
+				proxy: bsConfig.proxy,
+				host: bsConfig.host,
+				open: bsConfig.open,
+				port: 8080,
 			});
 		}
 	});
-
 	// Signal completion
 	done();
 };
@@ -248,13 +254,18 @@ var startServer = function (done) {
 // Reload the browser when files change
 var reloadBrowser = function (done) {
 	if (!settings.reload) return done();
-	browserSync.reload();
+	browserSync.reload({ stream: true });
+	done();
+};
+
+var clearCache = function (done) {
+	cache.clearAll();
 	done();
 };
 
 // Watch for changes
 var watchSource = function (done) {
-	watch(paths.input, series(exports.default));
+	watch(paths.input, series(exports.default, clearCache, reloadBrowser));
 	done();
 };
 
