@@ -1118,9 +1118,10 @@ main .module-container.blue {
 /* line 14, ../sass/components/_home.scss */
 .module-title {
   transition: ease-in-out 0.5s all;
+  cursor: pointer;
 }
 
-/* line 16, ../sass/components/_home.scss */
+/* line 17, ../sass/components/_home.scss */
 .module-title.background {
   font-size: 4em;
   background-color: black;
@@ -1128,7 +1129,7 @@ main .module-container.blue {
   padding: 2em;
 }
 
-/* line 23, ../sass/components/_home.scss */
+/* line 24, ../sass/components/_home.scss */
 #hero {
   height: 100vh;
   width: 100%;
@@ -1140,24 +1141,24 @@ main .module-container.blue {
   margin-bottom: 90px;
 }
 
-/* line 33, ../sass/components/_home.scss */
+/* line 34, ../sass/components/_home.scss */
 #hero .container {
   text-align: center;
 }
 
-/* line 36, ../sass/components/_home.scss */
+/* line 37, ../sass/components/_home.scss */
 #hero .container img {
   width: 100%;
   margin-bottom: 5px;
   mix-blend-mode: darken;
 }
 
-/* line 42, ../sass/components/_home.scss */
+/* line 43, ../sass/components/_home.scss */
 #hero .container h3 {
   font-weight: 700;
 }
 
-/* line 47, ../sass/components/_home.scss */
+/* line 48, ../sass/components/_home.scss */
 #hero .hero-logo {
   width: 100%;
   max-width: 45px;
@@ -1166,7 +1167,7 @@ main .module-container.blue {
   bottom: 20px;
 }
 
-/* line 55, ../sass/components/_home.scss */
+/* line 56, ../sass/components/_home.scss */
 #hero .hero-illustration {
   width: 100%;
   max-width: 85px;
@@ -1175,20 +1176,20 @@ main .module-container.blue {
   mix-blend-mode: multiply;
 }
 
-/* line 63, ../sass/components/_home.scss */
+/* line 64, ../sass/components/_home.scss */
 #hero .hero-waffles {
   width: 100%;
   position: absolute;
 }
 
-/* line 67, ../sass/components/_home.scss */
+/* line 68, ../sass/components/_home.scss */
 #hero .hero-waffles.left_waffle {
   max-width: 150px;
   right: -50px;
   top: 30px;
 }
 
-/* line 73, ../sass/components/_home.scss */
+/* line 74, ../sass/components/_home.scss */
 #hero .hero-waffles.right_waffle {
   max-width: 175px;
   left: -75px;
@@ -1196,32 +1197,32 @@ main .module-container.blue {
 }
 
 @media (min-width: 600px) {
-  /* line 23, ../sass/components/_home.scss */
+  /* line 24, ../sass/components/_home.scss */
   #hero {
     margin-bottom: 120px;
   }
-  /* line 84, ../sass/components/_home.scss */
+  /* line 85, ../sass/components/_home.scss */
   #hero .container img {
     width: 75%;
     margin-bottom: 15px;
   }
-  /* line 90, ../sass/components/_home.scss */
+  /* line 91, ../sass/components/_home.scss */
   #hero .hero-logo {
     max-width: 80px;
     right: 50px;
   }
-  /* line 95, ../sass/components/_home.scss */
+  /* line 96, ../sass/components/_home.scss */
   #hero .hero-illustration {
     max-width: 150px;
     left: 180px;
   }
-  /* line 101, ../sass/components/_home.scss */
+  /* line 102, ../sass/components/_home.scss */
   #hero .hero-waffles.left_waffle {
     max-width: 280px;
     right: -100px;
     top: 50px;
   }
-  /* line 107, ../sass/components/_home.scss */
+  /* line 108, ../sass/components/_home.scss */
   #hero .hero-waffles.right_waffle {
     max-width: 320px;
     left: -150px;
@@ -1230,33 +1231,33 @@ main .module-container.blue {
 }
 
 @media (min-width: 1024px) {
-  /* line 23, ../sass/components/_home.scss */
+  /* line 24, ../sass/components/_home.scss */
   #hero {
     margin-bottom: 200px;
   }
-  /* line 119, ../sass/components/_home.scss */
+  /* line 120, ../sass/components/_home.scss */
   #hero .container img {
     width: 66.66666%;
     margin-bottom: 30px;
   }
-  /* line 125, ../sass/components/_home.scss */
+  /* line 126, ../sass/components/_home.scss */
   #hero .hero-logo {
     max-width: 100px;
   }
-  /* line 129, ../sass/components/_home.scss */
+  /* line 130, ../sass/components/_home.scss */
   #hero .hero-illustration {
     width: 20%;
     max-width: 275px;
     left: 16%;
   }
-  /* line 136, ../sass/components/_home.scss */
+  /* line 137, ../sass/components/_home.scss */
   #hero .hero-waffles.left_waffle {
     width: 30%;
     max-width: 500px;
     right: -120px;
     top: 80px;
   }
-  /* line 143, ../sass/components/_home.scss */
+  /* line 144, ../sass/components/_home.scss */
   #hero .hero-waffles.right_waffle {
     width: 35%;
     max-width: 525px;
@@ -1265,20 +1266,20 @@ main .module-container.blue {
   }
 }
 
-/* line 153, ../sass/components/_home.scss */
+/* line 154, ../sass/components/_home.scss */
 #about {
   position: relative;
   margin-bottom: 50px;
 }
 
-/* line 157, ../sass/components/_home.scss */
+/* line 158, ../sass/components/_home.scss */
 #about .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/* line 162, ../sass/components/_home.scss */
+/* line 163, ../sass/components/_home.scss */
 #about .container .about-left-section {
   display: flex;
   flex-wrap: wrap;
@@ -1288,42 +1289,42 @@ main .module-container.blue {
   margin-top: 20px;
 }
 
-/* line 170, ../sass/components/_home.scss */
+/* line 171, ../sass/components/_home.scss */
 #about .container .about-left-section .about-left-section-title {
   width: 55%;
   margin-bottom: 40px;
   mix-blend-mode: multiply;
 }
 
-/* line 176, ../sass/components/_home.scss */
+/* line 177, ../sass/components/_home.scss */
 #about .container .about-left-section .about-left-section-illustration {
   width: calc(40% - 30px);
 }
 
-/* line 181, ../sass/components/_home.scss */
+/* line 182, ../sass/components/_home.scss */
 #about .container .about-separator {
   width: 100%;
 }
 
-/* line 185, ../sass/components/_home.scss */
+/* line 186, ../sass/components/_home.scss */
 #about .container .about-separator-vertical {
   display: none;
 }
 
-/* line 189, ../sass/components/_home.scss */
+/* line 190, ../sass/components/_home.scss */
 #about .container .about-right-section {
   margin-top: 40px;
   margin-bottom: 30px;
   text-align: center;
 }
 
-/* line 194, ../sass/components/_home.scss */
+/* line 195, ../sass/components/_home.scss */
 #about .container .about-right-section h4 {
   margin-bottom: 20px;
   letter-spacing: 2px;
 }
 
-/* line 199, ../sass/components/_home.scss */
+/* line 200, ../sass/components/_home.scss */
 #about .container .about-right-section .about-right-section-arnaud {
   width: 100%;
   max-width: 100px;
@@ -1331,7 +1332,7 @@ main .module-container.blue {
   mix-blend-mode: multiply;
 }
 
-/* line 207, ../sass/components/_home.scss */
+/* line 208, ../sass/components/_home.scss */
 #about .container .about-right-title {
   width: 100%;
   max-width: 120px;
@@ -1340,29 +1341,29 @@ main .module-container.blue {
 }
 
 @media (min-width: 600px) {
-  /* line 216, ../sass/components/_home.scss */
+  /* line 217, ../sass/components/_home.scss */
   #about .container {
     align-items: flex-start;
   }
-  /* line 219, ../sass/components/_home.scss */
+  /* line 220, ../sass/components/_home.scss */
   #about .container .about-left-section {
     justify-content: center;
     margin-bottom: 100px;
   }
-  /* line 223, ../sass/components/_home.scss */
+  /* line 224, ../sass/components/_home.scss */
   #about .container .about-left-section .about-left-section-title {
     margin-bottom: 60px;
   }
-  /* line 228, ../sass/components/_home.scss */
+  /* line 229, ../sass/components/_home.scss */
   #about .container .about-separator {
     height: 15px;
   }
-  /* line 232, ../sass/components/_home.scss */
+  /* line 233, ../sass/components/_home.scss */
   #about .container .about-right-section {
     margin: 75px 25px 100px 25px;
     width: 40%;
   }
-  /* line 237, ../sass/components/_home.scss */
+  /* line 238, ../sass/components/_home.scss */
   #about .container .about-right-title {
     width: 40%;
     max-width: 200px;
@@ -1371,40 +1372,40 @@ main .module-container.blue {
 }
 
 @media (min-width: 1024px) {
-  /* line 153, ../sass/components/_home.scss */
+  /* line 154, ../sass/components/_home.scss */
   #about {
     margin-bottom: 200px;
   }
-  /* line 248, ../sass/components/_home.scss */
+  /* line 249, ../sass/components/_home.scss */
   #about .container {
     align-items: center;
   }
-  /* line 251, ../sass/components/_home.scss */
+  /* line 252, ../sass/components/_home.scss */
   #about .container .about-left-section {
     width: 50%;
     margin-bottom: 0px;
     margin-top: 0px;
     justify-content: flex-start;
   }
-  /* line 257, ../sass/components/_home.scss */
+  /* line 258, ../sass/components/_home.scss */
   #about .container .about-left-section .about-left-section-title {
     width: 50%;
   }
-  /* line 261, ../sass/components/_home.scss */
+  /* line 262, ../sass/components/_home.scss */
   #about .container .about-left-section .about-left-section-illustration {
     width: calc(33.33333% - 30px);
     margin-left: 15px;
     margin-right: 15px;
   }
-  /* line 267, ../sass/components/_home.scss */
+  /* line 268, ../sass/components/_home.scss */
   #about .container .about-left-section p {
     margin-left: 16.66666%;
   }
-  /* line 272, ../sass/components/_home.scss */
+  /* line 273, ../sass/components/_home.scss */
   #about .container .about-separator {
     display: none;
   }
-  /* line 276, ../sass/components/_home.scss */
+  /* line 277, ../sass/components/_home.scss */
   #about .container .about-separator-vertical {
     display: flex;
     flex-wrap: wrap;
@@ -1413,23 +1414,23 @@ main .module-container.blue {
     width: 8.33333%;
     height: 600px;
   }
-  /* line 284, ../sass/components/_home.scss */
+  /* line 285, ../sass/components/_home.scss */
   #about .container .about-separator-vertical img {
     width: 100%;
     height: 100%;
     max-width: 16px;
   }
-  /* line 291, ../sass/components/_home.scss */
+  /* line 292, ../sass/components/_home.scss */
   #about .container .about-right-section {
     margin: 0px;
     width: 25%;
   }
-  /* line 295, ../sass/components/_home.scss */
+  /* line 296, ../sass/components/_home.scss */
   #about .container .about-right-section p {
     font-size: 14px;
     line-height: 18px;
   }
-  /* line 301, ../sass/components/_home.scss */
+  /* line 302, ../sass/components/_home.scss */
   #about .container .about-right-title {
     width: 10%;
     max-width: none;
@@ -1439,20 +1440,20 @@ main .module-container.blue {
   }
 }
 
-/* line 312, ../sass/components/_home.scss */
+/* line 313, ../sass/components/_home.scss */
 #product-1 {
   background-color: #e9e6d8;
   position: relative;
 }
 
-/* line 316, ../sass/components/_home.scss */
+/* line 317, ../sass/components/_home.scss */
 #product-1 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
 
-/* line 321, ../sass/components/_home.scss */
+/* line 322, ../sass/components/_home.scss */
 #product-1 .container .product-1-header {
   width: 90%;
   margin-top: 40px;
@@ -1463,17 +1464,17 @@ main .module-container.blue {
   justify-content: space-between;
 }
 
-/* line 330, ../sass/components/_home.scss */
+/* line 331, ../sass/components/_home.scss */
 #product-1 .container .product-1-header .product-1-main-title {
   width: calc(50% - 10px);
 }
 
-/* line 334, ../sass/components/_home.scss */
+/* line 335, ../sass/components/_home.scss */
 #product-1 .container .product-1-header .product-1-secondary-title {
   width: calc(50% - 10px);
 }
 
-/* line 339, ../sass/components/_home.scss */
+/* line 340, ../sass/components/_home.scss */
 #product-1 .container .product-1-illustrated-informations {
   width: 100%;
   margin-bottom: 50px;
@@ -1483,7 +1484,7 @@ main .module-container.blue {
   position: relative;
 }
 
-/* line 347, ../sass/components/_home.scss */
+/* line 348, ../sass/components/_home.scss */
 #product-1 .container .product-1-illustrated-informations .product-1-image {
   width: 60%;
   position: absolute;
@@ -1491,7 +1492,7 @@ main .module-container.blue {
   top: 0px;
 }
 
-/* line 354, ../sass/components/_home.scss */
+/* line 355, ../sass/components/_home.scss */
 #product-1 .container .product-1-illustrated-informations .information-1 {
   width: 60%;
   display: flex;
@@ -1500,13 +1501,13 @@ main .module-container.blue {
   align-items: center;
 }
 
-/* line 361, ../sass/components/_home.scss */
+/* line 362, ../sass/components/_home.scss */
 #product-1 .container .product-1-illustrated-informations .information-1 p {
   width: 50%;
   line-height: 14px;
 }
 
-/* line 366, ../sass/components/_home.scss */
+/* line 367, ../sass/components/_home.scss */
 #product-1 .container .product-1-illustrated-informations .information-1 img {
   mix-blend-mode: multiply;
   margin: 20px 0px 20px 0px;
@@ -1514,7 +1515,7 @@ main .module-container.blue {
   mix-blend-mode: multiply;
 }
 
-/* line 374, ../sass/components/_home.scss */
+/* line 375, ../sass/components/_home.scss */
 #product-1 .container .product-1-illustrated-informations .information-2 {
   width: 60%;
   display: flex;
@@ -1524,7 +1525,7 @@ main .module-container.blue {
   position: relative;
 }
 
-/* line 382, ../sass/components/_home.scss */
+/* line 383, ../sass/components/_home.scss */
 #product-1 .container .product-1-illustrated-informations .information-2 p {
   text-align: right;
   width: 50%;
@@ -1532,7 +1533,7 @@ main .module-container.blue {
   line-height: 18px;
 }
 
-/* line 389, ../sass/components/_home.scss */
+/* line 390, ../sass/components/_home.scss */
 #product-1 .container .product-1-illustrated-informations .information-2 img {
   margin: 20px 0px 10px 0px;
   width: calc(50% - 20px);
@@ -1540,7 +1541,7 @@ main .module-container.blue {
   mix-blend-mode: multiply;
 }
 
-/* line 395, ../sass/components/_home.scss */
+/* line 396, ../sass/components/_home.scss */
 #product-1 .container .product-1-illustrated-informations .information-2 img.arrow {
   width: 100%;
   max-width: 30px;
@@ -1550,76 +1551,76 @@ main .module-container.blue {
   left: 45%;
 }
 
-/* line 409, ../sass/components/_home.scss */
+/* line 410, ../sass/components/_home.scss */
 #product-1.nutritional-fact-open .product-1-header {
   width: 100%;
   margin-bottom: 30px;
   align-items: flex-end;
 }
 
-/* line 414, ../sass/components/_home.scss */
+/* line 415, ../sass/components/_home.scss */
 #product-1.nutritional-fact-open .product-1-header .product-1-main-title {
   margin-bottom: 15px;
 }
 
-/* line 419, ../sass/components/_home.scss */
+/* line 420, ../sass/components/_home.scss */
 #product-1.nutritional-fact-open .product-1-illustrated-informations {
   display: none;
 }
 
 @media (min-width: 600px) {
-  /* line 425, ../sass/components/_home.scss */
+  /* line 426, ../sass/components/_home.scss */
   #product-1 .container {
     justify-content: center;
   }
-  /* line 428, ../sass/components/_home.scss */
+  /* line 429, ../sass/components/_home.scss */
   #product-1 .container .product-1-header {
     margin-top: 90px;
     margin-bottom: 30px;
   }
-  /* line 433, ../sass/components/_home.scss */
+  /* line 434, ../sass/components/_home.scss */
   #product-1 .container .product-1-illustrated-informations {
     margin-bottom: 150px;
   }
-  /* line 436, ../sass/components/_home.scss */
+  /* line 437, ../sass/components/_home.scss */
   #product-1 .container .product-1-illustrated-informations .product-1-image {
     width: 60%;
     left: -25%;
   }
-  /* line 441, ../sass/components/_home.scss */
+  /* line 442, ../sass/components/_home.scss */
   #product-1 .container .product-1-illustrated-informations .information-1 {
     width: 51%;
   }
-  /* line 445, ../sass/components/_home.scss */
+  /* line 446, ../sass/components/_home.scss */
   #product-1 .container .product-1-illustrated-informations .information-2 {
     width: 51%;
   }
-  /* line 448, ../sass/components/_home.scss */
+  /* line 449, ../sass/components/_home.scss */
   #product-1 .container .product-1-illustrated-informations .information-2 p {
     align-self: center;
   }
-  /* line 452, ../sass/components/_home.scss */
+  /* line 453, ../sass/components/_home.scss */
   #product-1 .container .product-1-illustrated-informations .information-2 img {
     margin: 20px 0px 20px 0px;
   }
-  /* line 455, ../sass/components/_home.scss */
+  /* line 456, ../sass/components/_home.scss */
   #product-1 .container .product-1-illustrated-informations .information-2 img.arrow {
     max-width: 50px;
     top: 25px;
   }
-  /* line 465, ../sass/components/_home.scss */
+  /* line 466, ../sass/components/_home.scss */
   #product-1.nutritional-fact-open .product-1-header {
     width: 100%;
     margin-left: 0;
     justify-content: flex-start;
   }
-  /* line 470, ../sass/components/_home.scss */
+  /* line 471, ../sass/components/_home.scss */
   #product-1.nutritional-fact-open .product-1-header .product-1-main-title {
     width: calc(37.55555% - 20px);
     margin-right: 40px;
     margin-bottom: 15px;
   }
-  /* line 476, ../sass/components/_home.scss */
+  /* line 477, ../sass/components/_home.scss */
   #product-1.nutritional-fact-open .product-1-header .product-1-secondary-title {
     width: calc(40% - 20px);
     margin-left: 0;
@@ -1628,61 +1629,61 @@ main .module-container.blue {
 }
 
 @media (min-width: 1024px) {
-  /* line 486, ../sass/components/_home.scss */
+  /* line 487, ../sass/components/_home.scss */
   #product-1 .container {
     align-items: flex-start;
     position: relative;
   }
-  /* line 490, ../sass/components/_home.scss */
+  /* line 491, ../sass/components/_home.scss */
   #product-1 .container .product-1-header {
     width: 100%;
     margin-top: 100px;
     margin-bottom: 50px;
   }
-  /* line 495, ../sass/components/_home.scss */
+  /* line 496, ../sass/components/_home.scss */
   #product-1 .container .product-1-header .product-1-main-title {
     width: 33.33333%;
   }
-  /* line 499, ../sass/components/_home.scss */
+  /* line 500, ../sass/components/_home.scss */
   #product-1 .container .product-1-header .product-1-secondary-title {
     width: 33.33333%;
     margin-right: 8.33333%;
   }
-  /* line 505, ../sass/components/_home.scss */
+  /* line 506, ../sass/components/_home.scss */
   #product-1 .container .product-1-illustrated-informations {
     margin-top: 50px;
     margin-bottom: 0px;
     width: 50%;
   }
-  /* line 510, ../sass/components/_home.scss */
+  /* line 511, ../sass/components/_home.scss */
   #product-1 .container .product-1-illustrated-informations .product-1-image {
     width: 90%;
     left: -50%;
   }
-  /* line 517, ../sass/components/_home.scss */
+  /* line 518, ../sass/components/_home.scss */
   #product-1 .container .product-1-illustrated-informations .information-2 img.arrow {
     top: 20px;
     left: 40%;
   }
-  /* line 528, ../sass/components/_home.scss */
+  /* line 529, ../sass/components/_home.scss */
   #product-1.nutritional-fact-open .product-1-header .product-1-main-title {
     width: 25%;
     margin-right: 16.66666%;
     margin-bottom: 0px;
   }
-  /* line 534, ../sass/components/_home.scss */
+  /* line 535, ../sass/components/_home.scss */
   #product-1.nutritional-fact-open .product-1-header .product-1-secondary-title {
     width: 40%;
     margin-top: 75px;
     margin-bottom: -120px;
     margin-left: 0px;
   }
-  /* line 542, ../sass/components/_home.scss */
+  /* line 543, ../sass/components/_home.scss */
   #product-1.nutritional-fact-open .product-1-illustrated-informations {
     width: 100%;
     display: block;
   }
-  /* line 546, ../sass/components/_home.scss */
+  /* line 547, ../sass/components/_home.scss */
   #product-1.nutritional-fact-open .product-1-illustrated-informations .product-1-image {
     width: 50%;
     right: -25%;
@@ -1691,14 +1692,14 @@ main .module-container.blue {
   }
 }
 
-/* line 557, ../sass/components/_home.scss */
+/* line 558, ../sass/components/_home.scss */
 #product-2 {
   background-color: #e9e6d8;
   position: relative;
   padding-bottom: 40px;
 }
 
-/* line 562, ../sass/components/_home.scss */
+/* line 563, ../sass/components/_home.scss */
 #product-2 .container {
   display: flex;
   flex-wrap: wrap;
@@ -1706,12 +1707,12 @@ main .module-container.blue {
   transition: 0.5s ease;
 }
 
-/* line 568, ../sass/components/_home.scss */
+/* line 569, ../sass/components/_home.scss */
 #product-2 .container .product-2-header-container {
   width: 100%;
 }
 
-/* line 571, ../sass/components/_home.scss */
+/* line 572, ../sass/components/_home.scss */
 #product-2 .container .product-2-header-container .product-2-header {
   width: 90%;
   margin-top: 40px;
@@ -1720,18 +1721,18 @@ main .module-container.blue {
   flex-wrap: wrap;
 }
 
-/* line 578, ../sass/components/_home.scss */
+/* line 579, ../sass/components/_home.scss */
 #product-2 .container .product-2-header-container .product-2-header .product-2-main-title {
   width: 50%;
 }
 
-/* line 582, ../sass/components/_home.scss */
+/* line 583, ../sass/components/_home.scss */
 #product-2 .container .product-2-header-container .product-2-header .product-2-secondary-title {
   width: 60%;
   margin-left: 30%;
 }
 
-/* line 588, ../sass/components/_home.scss */
+/* line 589, ../sass/components/_home.scss */
 #product-2 .container .product-2-header-container .product-2-image {
   width: 100%;
   display: flex;
@@ -1742,20 +1743,20 @@ main .module-container.blue {
   position: relative;
 }
 
-/* line 597, ../sass/components/_home.scss */
+/* line 598, ../sass/components/_home.scss */
 #product-2 .container .product-2-header-container .product-2-image .product-2-photo-text {
   width: 45%;
   mix-blend-mode: multiply;
 }
 
-/* line 602, ../sass/components/_home.scss */
+/* line 603, ../sass/components/_home.scss */
 #product-2 .container .product-2-header-container .product-2-image .product-2-main-image {
   width: 75%;
   position: absolute;
   right: -30%;
 }
 
-/* line 610, ../sass/components/_home.scss */
+/* line 611, ../sass/components/_home.scss */
 #product-2 .container .product-2-illustrated-informations {
   width: 100%;
   display: flex;
@@ -1764,24 +1765,24 @@ main .module-container.blue {
   margin-bottom: 40px;
 }
 
-/* line 617, ../sass/components/_home.scss */
+/* line 618, ../sass/components/_home.scss */
 #product-2 .container .product-2-illustrated-informations .product-2-illustration {
   width: 20%;
   margin-right: 5%;
   mix-blend-mode: multiply;
 }
 
-/* line 623, ../sass/components/_home.scss */
+/* line 624, ../sass/components/_home.scss */
 #product-2 .container .product-2-illustrated-informations .product-2-illustrated-information {
   width: 50%;
 }
 
-/* line 628, ../sass/components/_home.scss */
+/* line 629, ../sass/components/_home.scss */
 #product-2 .container .about-separator {
   transform: rotate(0deg);
 }
 
-/* line 635, ../sass/components/_home.scss */
+/* line 636, ../sass/components/_home.scss */
 #product-2.nutritional-fact-open .product-2-header-container .product-2-header {
   width: 100%;
   margin-top: 40px;
@@ -1790,48 +1791,48 @@ main .module-container.blue {
   justify-content: space-between;
 }
 
-/* line 642, ../sass/components/_home.scss */
+/* line 643, ../sass/components/_home.scss */
 #product-2.nutritional-fact-open .product-2-header-container .product-2-header .product-2-main-title {
   width: calc(50% - 10px);
   margin-bottom: 15px;
 }
 
-/* line 647, ../sass/components/_home.scss */
+/* line 648, ../sass/components/_home.scss */
 #product-2.nutritional-fact-open .product-2-header-container .product-2-header .product-2-secondary-title {
   width: calc(50% - 10px);
   margin-left: 0;
 }
 
-/* line 653, ../sass/components/_home.scss */
+/* line 654, ../sass/components/_home.scss */
 #product-2.nutritional-fact-open .product-2-header-container .product-2-image {
   display: none;
 }
 
-/* line 656, ../sass/components/_home.scss */
+/* line 657, ../sass/components/_home.scss */
 #product-2.nutritional-fact-open .product-2-header-container .product-2-image .product-2-main-image {
   display: none;
 }
 
 @media (min-width: 600px) {
-  /* line 557, ../sass/components/_home.scss */
+  /* line 558, ../sass/components/_home.scss */
   #product-2 {
     padding-bottom: 120px;
   }
-  /* line 668, ../sass/components/_home.scss */
+  /* line 669, ../sass/components/_home.scss */
   #product-2 .container .product-2-header-container .product-2-header {
     width: 60%;
     margin-left: 20%;
   }
-  /* line 672, ../sass/components/_home.scss */
+  /* line 673, ../sass/components/_home.scss */
   #product-2 .container .product-2-header-container .product-2-header .product-2-main-title {
     width: 60%;
   }
-  /* line 676, ../sass/components/_home.scss */
+  /* line 677, ../sass/components/_home.scss */
   #product-2 .container .product-2-header-container .product-2-header .product-2-secondary-title {
     width: 75%;
     margin-left: 25%;
   }
-  /* line 682, ../sass/components/_home.scss */
+  /* line 683, ../sass/components/_home.scss */
   #product-2 .container .product-2-header-container .product-2-image {
     width: 100%;
     display: flex;
@@ -1841,43 +1842,43 @@ main .module-container.blue {
     margin-bottom: 75px;
     position: relative;
   }
-  /* line 691, ../sass/components/_home.scss */
+  /* line 692, ../sass/components/_home.scss */
   #product-2 .container .product-2-header-container .product-2-image .product-2-photo-text {
     width: 25%;
     margin-left: 10%;
   }
-  /* line 696, ../sass/components/_home.scss */
+  /* line 697, ../sass/components/_home.scss */
   #product-2 .container .product-2-header-container .product-2-image .product-2-main-image {
     width: 65%;
     position: absolute;
     right: -30%;
   }
-  /* line 704, ../sass/components/_home.scss */
+  /* line 705, ../sass/components/_home.scss */
   #product-2 .container .product-2-illustrated-informations {
     margin-bottom: 80px;
   }
-  /* line 707, ../sass/components/_home.scss */
+  /* line 708, ../sass/components/_home.scss */
   #product-2 .container .product-2-illustrated-informations .product-2-illustration {
     width: 12.55555%;
     margin-right: 8.33333%;
   }
-  /* line 712, ../sass/components/_home.scss */
+  /* line 713, ../sass/components/_home.scss */
   #product-2 .container .product-2-illustrated-informations .product-2-illustrated-information {
     width: 37.55555%;
   }
-  /* line 720, ../sass/components/_home.scss */
+  /* line 721, ../sass/components/_home.scss */
   #product-2.nutritional-fact-open .product-2-header-container .product-2-header {
     width: 100%;
     margin-left: 0;
     justify-content: flex-start;
   }
-  /* line 725, ../sass/components/_home.scss */
+  /* line 726, ../sass/components/_home.scss */
   #product-2.nutritional-fact-open .product-2-header-container .product-2-header .product-2-main-title {
     width: calc(37.55555% - 20px);
     margin-right: 40px;
     margin-bottom: 15px;
   }
-  /* line 731, ../sass/components/_home.scss */
+  /* line 732, ../sass/components/_home.scss */
   #product-2.nutritional-fact-open .product-2-header-container .product-2-header .product-2-secondary-title {
     width: calc(40% - 20px);
     margin-left: 0;
@@ -1886,101 +1887,101 @@ main .module-container.blue {
 }
 
 @media (min-width: 1024px) {
-  /* line 557, ../sass/components/_home.scss */
+  /* line 558, ../sass/components/_home.scss */
   #product-2 {
     padding-bottom: 0px;
   }
-  /* line 744, ../sass/components/_home.scss */
+  /* line 745, ../sass/components/_home.scss */
   #product-2 .container {
     position: relative;
     flex-direction: row-reverse;
     justify-content: space-between;
   }
-  /* line 749, ../sass/components/_home.scss */
+  /* line 750, ../sass/components/_home.scss */
   #product-2 .container .product-2-header-container {
     width: 41.666666%;
   }
-  /* line 752, ../sass/components/_home.scss */
+  /* line 753, ../sass/components/_home.scss */
   #product-2 .container .product-2-header-container .product-2-header {
     margin-bottom: 100px;
   }
-  /* line 755, ../sass/components/_home.scss */
+  /* line 756, ../sass/components/_home.scss */
   #product-2 .container .product-2-header-container .product-2-header .product-2-main-title {
     width: 70%;
   }
-  /* line 759, ../sass/components/_home.scss */
+  /* line 760, ../sass/components/_home.scss */
   #product-2 .container .product-2-header-container .product-2-header .product-2-secondary-title {
     width: 60%;
     margin-left: 40%;
   }
-  /* line 765, ../sass/components/_home.scss */
+  /* line 766, ../sass/components/_home.scss */
   #product-2 .container .product-2-header-container .product-2-image {
     margin-bottom: 0px;
   }
-  /* line 768, ../sass/components/_home.scss */
+  /* line 769, ../sass/components/_home.scss */
   #product-2 .container .product-2-header-container .product-2-image .product-2-photo-text {
     width: 40%;
     margin-left: 0;
   }
-  /* line 773, ../sass/components/_home.scss */
+  /* line 774, ../sass/components/_home.scss */
   #product-2 .container .product-2-header-container .product-2-image .product-2-main-image {
     width: 100%;
     right: -60%;
   }
-  /* line 780, ../sass/components/_home.scss */
+  /* line 781, ../sass/components/_home.scss */
   #product-2 .container .product-2-content-container {
     width: 41.66666%;
   }
-  /* line 783, ../sass/components/_home.scss */
+  /* line 784, ../sass/components/_home.scss */
   #product-2 .container .product-2-content-container .product-2-illustrated-informations {
     margin-bottom: 50px;
     width: 80%;
     position: relative;
   }
-  /* line 788, ../sass/components/_home.scss */
+  /* line 789, ../sass/components/_home.scss */
   #product-2 .container .product-2-content-container .product-2-illustrated-informations .product-2-illustration {
     width: 20%;
     margin-right: 20%;
     position: absolute;
     left: 0;
   }
-  /* line 795, ../sass/components/_home.scss */
+  /* line 796, ../sass/components/_home.scss */
   #product-2 .container .product-2-content-container .product-2-illustrated-informations .product-2-illustrated-information {
     width: 50%;
     margin-left: 40%;
   }
-  /* line 801, ../sass/components/_home.scss */
+  /* line 802, ../sass/components/_home.scss */
   #product-2 .container .product-2-content-container .product-content {
     width: 80%;
     margin-left: 10%;
     margin-right: 0;
   }
-  /* line 810, ../sass/components/_home.scss */
+  /* line 811, ../sass/components/_home.scss */
   #product-2.nutritional-fact-open .product-2-header-container {
     width: 100%;
   }
-  /* line 814, ../sass/components/_home.scss */
+  /* line 815, ../sass/components/_home.scss */
   #product-2.nutritional-fact-open .product-2-header-container .product-2-header .product-2-main-title {
     width: 25%;
     margin-right: 16.66666%;
     margin-bottom: 0px;
   }
-  /* line 820, ../sass/components/_home.scss */
+  /* line 821, ../sass/components/_home.scss */
   #product-2.nutritional-fact-open .product-2-header-container .product-2-header .product-2-secondary-title {
     width: 40%;
     margin-top: 75px;
     margin-bottom: -120px;
     margin-left: 0px;
   }
-  /* line 828, ../sass/components/_home.scss */
+  /* line 829, ../sass/components/_home.scss */
   #product-2.nutritional-fact-open .product-2-header-container .product-2-image {
     display: block;
   }
-  /* line 831, ../sass/components/_home.scss */
+  /* line 832, ../sass/components/_home.scss */
   #product-2.nutritional-fact-open .product-2-header-container .product-2-image .product-2-photo-text {
     display: none;
   }
-  /* line 835, ../sass/components/_home.scss */
+  /* line 836, ../sass/components/_home.scss */
   #product-2.nutritional-fact-open .product-2-header-container .product-2-image .product-2-main-image {
     display: block;
     width: 50%;
@@ -1989,13 +1990,13 @@ main .module-container.blue {
   }
 }
 
-/* line 847, ../sass/components/_home.scss */
+/* line 848, ../sass/components/_home.scss */
 #dealers {
   width: 100%;
   position: relative;
 }
 
-/* line 852, ../sass/components/_home.scss */
+/* line 853, ../sass/components/_home.scss */
 #dealers .container .dealers-header {
   display: flex;
   flex-wrap: wrap;
@@ -2005,13 +2006,13 @@ main .module-container.blue {
   margin-bottom: 90px;
 }
 
-/* line 860, ../sass/components/_home.scss */
+/* line 861, ../sass/components/_home.scss */
 #dealers .container .dealers-header .dealers-main-title {
   width: 60%;
   margin-bottom: 25px;
 }
 
-/* line 865, ../sass/components/_home.scss */
+/* line 866, ../sass/components/_home.scss */
 #dealers .container .dealers-header .dealers-illustration-1,
 #dealers .container .dealers-header .dealers-illustration-2 {
   width: calc(25% - 20px);
@@ -2020,28 +2021,28 @@ main .module-container.blue {
   mix-blend-mode: multiply;
 }
 
-/* line 873, ../sass/components/_home.scss */
+/* line 874, ../sass/components/_home.scss */
 #dealers .container .dealers-header .dealers-illustration-2 {
   margin-top: 20px;
 }
 
-/* line 877, ../sass/components/_home.scss */
+/* line 878, ../sass/components/_home.scss */
 #dealers .container .dealers-header .dealers-secondary-title-container {
   width: 50%;
 }
 
-/* line 880, ../sass/components/_home.scss */
+/* line 881, ../sass/components/_home.scss */
 #dealers .container .dealers-header .dealers-secondary-title-container .dealers-secondary-title {
   width: 100%;
   mix-blend-mode: multiply;
 }
 
-/* line 885, ../sass/components/_home.scss */
+/* line 886, ../sass/components/_home.scss */
 #dealers .container .dealers-header .dealers-secondary-title-container .dealers-button {
   display: none;
 }
 
-/* line 890, ../sass/components/_home.scss */
+/* line 891, ../sass/components/_home.scss */
 #dealers .container .dealers-header .dealers-button {
   display: flex;
   flex-wrap: wrap;
@@ -2052,7 +2053,7 @@ main .module-container.blue {
   margin-top: 40px;
 }
 
-/* line 899, ../sass/components/_home.scss */
+/* line 900, ../sass/components/_home.scss */
 #dealers .container .dealers-header .dealers-button p {
   width: calc(100% - 35px);
   text-align: left;
@@ -2061,7 +2062,7 @@ main .module-container.blue {
   margin: 0;
 }
 
-/* line 907, ../sass/components/_home.scss */
+/* line 908, ../sass/components/_home.scss */
 #dealers .container .dealers-header .dealers-button img {
   margin-left: 10px;
   max-width: 25px;
@@ -2069,14 +2070,14 @@ main .module-container.blue {
   transform: rotate(230deg) scaleX(-1);
 }
 
-/* line 916, ../sass/components/_home.scss */
+/* line 917, ../sass/components/_home.scss */
 #dealers .container .dealers-list {
   display: none;
   margin-bottom: 60px;
   flex-wrap: wrap;
 }
 
-/* line 921, ../sass/components/_home.scss */
+/* line 922, ../sass/components/_home.scss */
 #dealers .container .dealers-list ul {
   display: inline-block;
   margin: 0;
@@ -2084,47 +2085,47 @@ main .module-container.blue {
   width: 100%;
 }
 
-/* line 927, ../sass/components/_home.scss */
+/* line 928, ../sass/components/_home.scss */
 #dealers .container .dealers-list ul h3 {
   margin-bottom: 10px;
 }
 
-/* line 931, ../sass/components/_home.scss */
+/* line 932, ../sass/components/_home.scss */
 #dealers .container .dealers-list ul img {
   margin-bottom: 20px;
   width: 100%;
   height: 10px;
 }
 
-/* line 936, ../sass/components/_home.scss */
+/* line 937, ../sass/components/_home.scss */
 #dealers .container .dealers-list ul img.separator-full-width {
   width: 100%;
 }
 
-/* line 940, ../sass/components/_home.scss */
+/* line 941, ../sass/components/_home.scss */
 #dealers .container .dealers-list ul img.separator-double-width {
   width: 200%;
 }
 
-/* line 944, ../sass/components/_home.scss */
+/* line 945, ../sass/components/_home.scss */
 #dealers .container .dealers-list ul img.separator-triple-width {
   opacity: 1 !important;
   width: 300%;
 }
 
-/* line 950, ../sass/components/_home.scss */
+/* line 951, ../sass/components/_home.scss */
 #dealers .container .dealers-list ul li {
   list-style: none;
   margin-bottom: 40px;
 }
 
-/* line 954, ../sass/components/_home.scss */
+/* line 955, ../sass/components/_home.scss */
 #dealers .container .dealers-list ul li h3 {
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-/* line 959, ../sass/components/_home.scss */
+/* line 960, ../sass/components/_home.scss */
 #dealers .container .dealers-list ul li a {
   color: #000000;
   font-size: 14px;
@@ -2135,7 +2136,7 @@ main .module-container.blue {
   display: block;
 }
 
-/* line 971, ../sass/components/_home.scss */
+/* line 972, ../sass/components/_home.scss */
 #dealers .container .dealers-list .dealers-list-illustration {
   display: flex;
   flex-wrap: wrap;
@@ -2146,58 +2147,58 @@ main .module-container.blue {
   width: 100%;
 }
 
-/* line 980, ../sass/components/_home.scss */
+/* line 981, ../sass/components/_home.scss */
 #dealers .container .dealers-list .dealers-list-illustration img {
   width: 50%;
   mix-blend-mode: multiply;
 }
 
-/* line 986, ../sass/components/_home.scss */
+/* line 987, ../sass/components/_home.scss */
 #dealers .container .dealers-list .dealers-list-illustration:nth-of-type(1n) .dealers-list-illustration-1 {
   display: block;
 }
 
-/* line 990, ../sass/components/_home.scss */
+/* line 991, ../sass/components/_home.scss */
 #dealers .container .dealers-list .dealers-list-illustration:nth-of-type(1n) .dealers-list-illustration-2 {
   display: none;
 }
 
-/* line 994, ../sass/components/_home.scss */
+/* line 995, ../sass/components/_home.scss */
 #dealers .container .dealers-list .dealers-list-illustration:nth-of-type(1n) .dealers-list-illustration-3 {
   display: none;
 }
 
-/* line 1000, ../sass/components/_home.scss */
+/* line 1001, ../sass/components/_home.scss */
 #dealers .container .dealers-list .dealers-list-illustration:nth-of-type(2n) .dealers-list-illustration-1 {
   display: none;
 }
 
-/* line 1004, ../sass/components/_home.scss */
+/* line 1005, ../sass/components/_home.scss */
 #dealers .container .dealers-list .dealers-list-illustration:nth-of-type(2n) .dealers-list-illustration-2 {
   display: block;
 }
 
-/* line 1008, ../sass/components/_home.scss */
+/* line 1009, ../sass/components/_home.scss */
 #dealers .container .dealers-list .dealers-list-illustration:nth-of-type(2n) .dealers-list-illustration-3 {
   display: none;
 }
 
-/* line 1014, ../sass/components/_home.scss */
+/* line 1015, ../sass/components/_home.scss */
 #dealers .container .dealers-list .dealers-list-illustration:nth-of-type(3n) .dealers-list-illustration-1 {
   display: none;
 }
 
-/* line 1018, ../sass/components/_home.scss */
+/* line 1019, ../sass/components/_home.scss */
 #dealers .container .dealers-list .dealers-list-illustration:nth-of-type(3n) .dealers-list-illustration-2 {
   display: none;
 }
 
-/* line 1022, ../sass/components/_home.scss */
+/* line 1023, ../sass/components/_home.scss */
 #dealers .container .dealers-list .dealers-list-illustration:nth-of-type(3n) .dealers-list-illustration-3 {
   display: block;
 }
 
-/* line 1028, ../sass/components/_home.scss */
+/* line 1029, ../sass/components/_home.scss */
 #dealers .container .dealers-list .dealers-button {
   display: flex;
   flex-wrap: wrap;
@@ -2210,7 +2211,7 @@ main .module-container.blue {
   margin-right: auto;
 }
 
-/* line 1039, ../sass/components/_home.scss */
+/* line 1040, ../sass/components/_home.scss */
 #dealers .container .dealers-list .dealers-button p {
   width: calc(100% - 35px);
   text-align: left;
@@ -2219,7 +2220,7 @@ main .module-container.blue {
   margin: 0;
 }
 
-/* line 1047, ../sass/components/_home.scss */
+/* line 1048, ../sass/components/_home.scss */
 #dealers .container .dealers-list .dealers-button img {
   margin-left: 10px;
   max-width: 25px;
@@ -2228,90 +2229,90 @@ main .module-container.blue {
 }
 
 @media (min-width: 600px) {
-  /* line 1059, ../sass/components/_home.scss */
+  /* line 1060, ../sass/components/_home.scss */
   #dealers .container .dealers-header {
     margin-top: 90px;
     flex-direction: row;
   }
-  /* line 1063, ../sass/components/_home.scss */
+  /* line 1064, ../sass/components/_home.scss */
   #dealers .container .dealers-header .dealers-main-title {
     width: 33.33333%;
     margin-bottom: 0;
   }
-  /* line 1068, ../sass/components/_home.scss */
+  /* line 1069, ../sass/components/_home.scss */
   #dealers .container .dealers-header .dealers-illustration-1,
   #dealers .container .dealers-header .dealers-illustration-2 {
     width: calc(15% - 20px);
   }
-  /* line 1073, ../sass/components/_home.scss */
+  /* line 1074, ../sass/components/_home.scss */
   #dealers .container .dealers-header .dealers-illustration-2 {
     margin-top: 0px;
     margin-left: -5%;
     align-self: flex-end;
   }
-  /* line 1079, ../sass/components/_home.scss */
+  /* line 1080, ../sass/components/_home.scss */
   #dealers .container .dealers-header .dealers-secondary-title-container {
     width: 25%;
     margin-left: 3%;
     align-self: center;
   }
-  /* line 1085, ../sass/components/_home.scss */
+  /* line 1086, ../sass/components/_home.scss */
   #dealers .container .dealers-header .dealers-button {
     width: 37.55555%;
     max-width: 200px;
   }
-  /* line 1089, ../sass/components/_home.scss */
+  /* line 1090, ../sass/components/_home.scss */
   #dealers .container .dealers-header .dealers-button p {
     font-size: 18px;
     line-height: 22px;
   }
-  /* line 1097, ../sass/components/_home.scss */
+  /* line 1098, ../sass/components/_home.scss */
   #dealers .container .dealers-list ul {
     width: 50%;
     margin-bottom: 90px;
   }
-  /* line 1101, ../sass/components/_home.scss */
+  /* line 1102, ../sass/components/_home.scss */
   #dealers .container .dealers-list ul h3 {
     padding-right: 50px;
   }
-  /* line 1105, ../sass/components/_home.scss */
+  /* line 1106, ../sass/components/_home.scss */
   #dealers .container .dealers-list ul li {
     padding-right: 50px;
   }
-  /* line 1109, ../sass/components/_home.scss */
+  /* line 1110, ../sass/components/_home.scss */
   #dealers .container .dealers-list ul.dealer-zone-2-columns {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
-  /* line 1114, ../sass/components/_home.scss */
+  /* line 1115, ../sass/components/_home.scss */
   #dealers .container .dealers-list ul.dealer-zone-2-columns li {
     width: calc(50% - 50px);
   }
-  /* line 1119, ../sass/components/_home.scss */
+  /* line 1120, ../sass/components/_home.scss */
   #dealers .container .dealers-list ul.dealer-zone-3-columns {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
-  /* line 1124, ../sass/components/_home.scss */
+  /* line 1125, ../sass/components/_home.scss */
   #dealers .container .dealers-list ul.dealer-zone-3-columns li {
     width: calc(50% - 50px);
   }
-  /* line 1129, ../sass/components/_home.scss */
+  /* line 1130, ../sass/components/_home.scss */
   #dealers .container .dealers-list ul .partners-separator {
     height: 10px;
   }
-  /* line 1134, ../sass/components/_home.scss */
+  /* line 1135, ../sass/components/_home.scss */
   #dealers .container .dealers-list ul.dealer-zone-2-columns .separator-triple-width {
     width: 150%;
     margin-right: -50%;
   }
-  /* line 1141, ../sass/components/_home.scss */
+  /* line 1142, ../sass/components/_home.scss */
   #dealers .container .dealers-list .dealers-list-illustration {
     width: 50%;
   }
-  /* line 1145, ../sass/components/_home.scss */
+  /* line 1146, ../sass/components/_home.scss */
   #dealers .container .dealers-list .dealers-button {
     width: 25%;
     margin-left: 37.5%;
@@ -2320,96 +2321,96 @@ main .module-container.blue {
 }
 
 @media (min-width: 1024px) {
-  /* line 1155, ../sass/components/_home.scss */
+  /* line 1156, ../sass/components/_home.scss */
   #dealers .container {
     position: relative;
   }
-  /* line 1158, ../sass/components/_home.scss */
+  /* line 1159, ../sass/components/_home.scss */
   #dealers .container .dealers-header {
     margin-top: 120px;
     margin-bottom: 120px;
   }
-  /* line 1162, ../sass/components/_home.scss */
+  /* line 1163, ../sass/components/_home.scss */
   #dealers .container .dealers-header .dealers-main-title {
     width: 33.33333%;
   }
-  /* line 1166, ../sass/components/_home.scss */
+  /* line 1167, ../sass/components/_home.scss */
   #dealers .container .dealers-header .dealers-illustration-1,
   #dealers .container .dealers-header .dealers-illustration-2 {
     width: calc(16.66666% - 20px);
   }
-  /* line 1171, ../sass/components/_home.scss */
+  /* line 1172, ../sass/components/_home.scss */
   #dealers .container .dealers-header .dealers-illustration-2 {
     margin-top: 0px;
     margin-left: 0;
     align-self: flex-end;
   }
-  /* line 1177, ../sass/components/_home.scss */
+  /* line 1178, ../sass/components/_home.scss */
   #dealers .container .dealers-header .dealers-secondary-title-container {
     width: 16.66666%;
   }
-  /* line 1180, ../sass/components/_home.scss */
+  /* line 1181, ../sass/components/_home.scss */
   #dealers .container .dealers-header .dealers-secondary-title-container .dealers-button {
     display: flex;
     width: 75%;
     margin: 20px auto 0 auto;
   }
-  /* line 1187, ../sass/components/_home.scss */
+  /* line 1188, ../sass/components/_home.scss */
   #dealers .container .dealers-header .dealers-button {
     display: none;
   }
-  /* line 1192, ../sass/components/_home.scss */
+  /* line 1193, ../sass/components/_home.scss */
   #dealers .container .dealers-list {
     padding-left: 8.33333%;
   }
-  /* line 1195, ../sass/components/_home.scss */
+  /* line 1196, ../sass/components/_home.scss */
   #dealers .container .dealers-list ul {
     width: 20%;
     margin-bottom: 100px;
   }
-  /* line 1199, ../sass/components/_home.scss */
+  /* line 1200, ../sass/components/_home.scss */
   #dealers .container .dealers-list ul.dealer-zone-2-columns {
     width: 40%;
   }
-  /* line 1203, ../sass/components/_home.scss */
+  /* line 1204, ../sass/components/_home.scss */
   #dealers .container .dealers-list ul.dealer-zone-3-columns {
     width: 60%;
   }
-  /* line 1206, ../sass/components/_home.scss */
+  /* line 1207, ../sass/components/_home.scss */
   #dealers .container .dealers-list ul.dealer-zone-3-columns li {
     width: 33.33333%;
   }
-  /* line 1212, ../sass/components/_home.scss */
+  /* line 1213, ../sass/components/_home.scss */
   #dealers .container .dealers-list .dealers-list-illustration {
     width: 16.666666%;
     margin-left: 8.33333%;
     margin-right: 8.33333%;
   }
-  /* line 1217, ../sass/components/_home.scss */
+  /* line 1218, ../sass/components/_home.scss */
   #dealers .container .dealers-list .dealers-list-illustration img {
     width: 100%;
   }
 }
 
-/* line 1226, ../sass/components/_home.scss */
+/* line 1227, ../sass/components/_home.scss */
 #partners {
   width: 100%;
 }
 
-/* line 1229, ../sass/components/_home.scss */
+/* line 1230, ../sass/components/_home.scss */
 #partners .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/* line 1234, ../sass/components/_home.scss */
+/* line 1235, ../sass/components/_home.scss */
 #partners .container .partners-separator {
   width: 100%;
   transform: rotate(180deg);
 }
 
-/* line 1239, ../sass/components/_home.scss */
+/* line 1240, ../sass/components/_home.scss */
 #partners .container ul {
   margin: 0;
   margin-top: 50px;
@@ -2419,7 +2420,7 @@ main .module-container.blue {
   align-items: center;
 }
 
-/* line 1247, ../sass/components/_home.scss */
+/* line 1248, ../sass/components/_home.scss */
 #partners .container ul li {
   list-style: none;
   display: inline-block;
@@ -2429,13 +2430,13 @@ main .module-container.blue {
   position: relative;
 }
 
-/* line 1255, ../sass/components/_home.scss */
+/* line 1256, ../sass/components/_home.scss */
 #partners .container ul li img {
   width: 60%;
   mix-blend-mode: multiply;
 }
 
-/* line 1259, ../sass/components/_home.scss */
+/* line 1260, ../sass/components/_home.scss */
 #partners .container ul li img.arrow {
   width: 25%;
   max-width: 30px;
@@ -2445,33 +2446,33 @@ main .module-container.blue {
   transform: scaleX(-1) rotate(220deg);
 }
 
-/* line 1270, ../sass/components/_home.scss */
+/* line 1271, ../sass/components/_home.scss */
 #partners .container ul li:last-of-type img {
   width: 40%;
 }
 
-/* line 1275, ../sass/components/_home.scss */
+/* line 1276, ../sass/components/_home.scss */
 #partners .container ul li.partners-illustration-center {
   margin-left: auto;
   margin-right: auto;
 }
 
 @media (min-width: 600px) {
-  /* line 1285, ../sass/components/_home.scss */
+  /* line 1286, ../sass/components/_home.scss */
   #partners .container .partners-separator {
     height: 15px;
   }
-  /* line 1289, ../sass/components/_home.scss */
+  /* line 1290, ../sass/components/_home.scss */
   #partners .container ul {
     width: 90%;
     margin-top: 90px;
   }
-  /* line 1293, ../sass/components/_home.scss */
+  /* line 1294, ../sass/components/_home.scss */
   #partners .container ul li {
     width: 33.33333%;
     margin-bottom: 80px;
   }
-  /* line 1298, ../sass/components/_home.scss */
+  /* line 1299, ../sass/components/_home.scss */
   #partners .container ul li img.arrow {
     width: 50%;
     max-width: 40px;
@@ -2480,31 +2481,31 @@ main .module-container.blue {
 }
 
 @media (min-width: 1024px) {
-  /* line 1226, ../sass/components/_home.scss */
+  /* line 1227, ../sass/components/_home.scss */
   #partners {
     margin-bottom: 120px;
   }
-  /* line 1312, ../sass/components/_home.scss */
+  /* line 1313, ../sass/components/_home.scss */
   #partners .container {
     position: relative;
   }
-  /* line 1315, ../sass/components/_home.scss */
+  /* line 1316, ../sass/components/_home.scss */
   #partners .container .partners-separator {
     height: 15px;
     margin-left: 8.33333%;
   }
-  /* line 1320, ../sass/components/_home.scss */
+  /* line 1321, ../sass/components/_home.scss */
   #partners .container ul {
     margin-left: 8.33333%;
     width: 75%;
     margin-right: 16.66666%;
   }
-  /* line 1325, ../sass/components/_home.scss */
+  /* line 1326, ../sass/components/_home.scss */
   #partners .container ul li {
     width: 20%;
     margin-bottom: 0px;
   }
-  /* line 1329, ../sass/components/_home.scss */
+  /* line 1330, ../sass/components/_home.scss */
   #partners .container ul li:last-of-type {
     position: absolute;
     right: 0;
@@ -2514,7 +2515,7 @@ main .module-container.blue {
 }
 
 @media (min-width: 1640px) {
-  /* line 1344, ../sass/components/_home.scss */
+  /* line 1345, ../sass/components/_home.scss */
   #partners .container ul li:last-of-type {
     padding-right: 0px;
   }
