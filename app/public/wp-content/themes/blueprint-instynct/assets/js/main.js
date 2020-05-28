@@ -1,10 +1,4 @@
-// OPEN MENU
+const fullPath = 'wp-content/themes/blueprint-instynct/assets/js/modules/';
 
-moduleTitle = document.querySelector('.module-title');
-moduleContainer = document.querySelector('.module-container');
-console.log(moduleTitle);
-
-moduleTitle.addEventListener('mouseover', function (e) {
-	console.log('What?');
-	moduleContainer.classList.toggle('blue');
-});
+require([fullPath + 'another_events.js']);
+require([fullPath + 'basic_events.js']);

@@ -13,6 +13,7 @@
 	<script src="https://kit.fontawesome.com/b78479514c.js" crossorigin="anonymous"></script>
 
 	<script src="<?php bloginfo('template_url') ?>/dist/js/components.min.js" async></script>
+	<script data-main="<?php bloginfo('template_url') ?>/assets/js/require.js" src="<?php bloginfo('template_url') ?>/assets/js/require.js" async></script>
 
 	<?php wp_head(); ?>
 </head>

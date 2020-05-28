@@ -1,5 +1,5 @@
 main {
-	background-color: aqua;
+	background-color: steelblue;
 	.module-container {
 		display: flex;
 		justify-content: center;
@@ -9,6 +9,15 @@ main {
 		&.blue {
 			background-color: forestgreen;
 		}
+	}
+}
+.module-title {
+	transition: ease-in-out 0.5s all;
+	&.background {
+		font-size: 4em;
+		background-color: black;
+		color: white;
+		padding: 2em;
 	}
 }
 #hero {
