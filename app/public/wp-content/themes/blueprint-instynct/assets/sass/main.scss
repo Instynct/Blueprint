@@ -1,6 +1,15 @@
 // GLOBAL
 //----------------------------------*/
-@import 'components/colors';
+@import '1.variables/variables';
+
+@import '2.mixins/mediaqueries';
+@import '2.mixins/transitions';
+@import '2.mixins/layout';
+
+@import '3.base/basic';
+@import '3.base/buttons';
+@import '3.base/helpers';
+
 @import 'components/fonts';
 @import 'components/general';
 @import 'components/login';

@@ -1,101 +1,104 @@
 @font-face {
-    font-family: "Inconsolata";
-    src: url("./../../dist/fonts/Inconsolata-Regular.otf");
-    src: url("./../../dist/fonts/Inconsolata-Regular.eot?#iefix") format("embedded-opentype"), url("./../../dist/fonts/Inconsolata-Regular.woff") format("woff"), url("./../../dist/fonts/Inconsolata-Regular.woff2") format("woff2"), url("./../../dist/fonts/Inconsolata-Regular.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
+	font-family: 'Inconsolata';
+	src: url('./../../dist/fonts/Inconsolata-Regular.otf');
+	src: url('./../../dist/fonts/Inconsolata-Regular.eot?#iefix') format('embedded-opentype'), url('./../../dist/fonts/Inconsolata-Regular.woff') format('woff'), url('./../../dist/fonts/Inconsolata-Regular.woff2') format('woff2'), url('./../../dist/fonts/Inconsolata-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: "Inconsolata";
-    src: url("./../../dist/fonts/Inconsolata-Bold.otf");
-    src: url("./../../dist/fonts/Inconsolata-Bold.eot?#iefix") format("embedded-opentype"), url("./../../dist/fonts/Inconsolata-Bold.woff") format("woff"), url("./../../dist/fonts/Inconsolata-Bold.woff2") format("woff2"), url("./../../dist/fonts/Inconsolata-Bold.ttf") format("truetype");
-    font-weight: 700;
-    font-style: normal;
+	font-family: 'Inconsolata';
+	src: url('./../../dist/fonts/Inconsolata-Bold.otf');
+	src: url('./../../dist/fonts/Inconsolata-Bold.eot?#iefix') format('embedded-opentype'), url('./../../dist/fonts/Inconsolata-Bold.woff') format('woff'), url('./../../dist/fonts/Inconsolata-Bold.woff2') format('woff2'), url('./../../dist/fonts/Inconsolata-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
 }
 
+@include font-face(manrope, './../../dist/fonts/manrope/manrope-Bold');
+@include font-face(chelsea, './../../dist/fonts/chelsea/ChelseaMarket-Regular');
+
 h2 {
-    font-family: "Inconsolata", sans-serif;
-    color: $black;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    text-transform: uppercase;
-    margin: 0;
+	font-family: 'Inconsolata', sans-serif;
+	color: $black;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	text-transform: uppercase;
+	margin: 0;
 
-    @media (min-width: 600px) {
-        font-size: 18px;
-        line-height: 28px;
-    }
+	@media (min-width: 600px) {
+		font-size: 18px;
+		line-height: 28px;
+	}
 
-    @media (min-width: 1024px) {
-        font-size: 20px;
-        line-height: 24px;
-    }
+	@media (min-width: 1024px) {
+		font-size: 20px;
+		line-height: 24px;
+	}
 }
 
 h3 {
-    font-family: "Inconsolata", sans-serif;
-    color: $black;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    text-transform: uppercase;
-    margin: 0;
+	font-family: 'Inconsolata', sans-serif;
+	color: $black;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	text-transform: uppercase;
+	margin: 0;
 
-    @media (min-width: 600px) {
-        font-size: 16px;
-        line-height: 22px;
-    }
+	@media (min-width: 600px) {
+		font-size: 16px;
+		line-height: 22px;
+	}
 
-    @media (min-width: 1024px) {
-        font-size: 18px;
-        line-height: 24px;
-    }
+	@media (min-width: 1024px) {
+		font-size: 18px;
+		line-height: 24px;
+	}
 }
 
 h4 {
-    font-family: "Inconsolata", sans-serif;
-    color: $black;
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0.9px;
-    text-transform: uppercase;
-    margin: 0;
+	font-family: 'Inconsolata', sans-serif;
+	color: $black;
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 0.9px;
+	text-transform: uppercase;
+	margin: 0;
 
-    @media (min-width: 600px) {
-        font-size: 14px;
-        line-height: 26px;
-    }
+	@media (min-width: 600px) {
+		font-size: 14px;
+		line-height: 26px;
+	}
 
-    @media (min-width: 600px) {
-        font-size: 16px;
-        line-height: 24px;
-    }
+	@media (min-width: 600px) {
+		font-size: 16px;
+		line-height: 24px;
+	}
 }
 
 p {
-    font-family: "Inconsolata", sans-serif;
-    color: $black;
-    font-size: 12px;
-    font-weight: 400px;
-    line-height: 24px;
-    letter-spacing: 0.84px;
-    text-transform: uppercase;
-    margin: 0;
+	font-family: 'Inconsolata', sans-serif;
+	color: $black;
+	font-size: 12px;
+	font-weight: 400px;
+	line-height: 24px;
+	letter-spacing: 0.84px;
+	text-transform: uppercase;
+	margin: 0;
 
-    @media (min-width: 600px) {
-        font-size: 14px;
-        line-height: 26px;
-        letter-spacing: 0.98px;
-    }
+	@media (min-width: 600px) {
+		font-size: 14px;
+		line-height: 26px;
+		letter-spacing: 0.98px;
+	}
 
-    @media (min-width: 1024px) {
-        font-size: 16px;
-        line-height: 24px;
-    }
+	@media (min-width: 1024px) {
+		font-size: 16px;
+		line-height: 24px;
+	}
 }
 
 li {
-    text-transform: uppercase;
+	text-transform: uppercase;
 }

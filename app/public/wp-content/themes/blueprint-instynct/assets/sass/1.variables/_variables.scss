@@ -1,0 +1,46 @@
+// ==========================================================================
+//  VARIABLES
+// ==========================================================================
+
+// Colors
+// ==========================================================================
+
+$light-beige: #eeede3;
+$beige: #e9e6d8;
+$black: #000000;
+$white: #ffffff;
+$grey: #aaaaa5;
+
+//  Typography
+// ==========================================================================
+
+// - - - Font-face, for locally loaded font - - -
+@mixin font-face($family, $path, $weight: normal, $style: normal) {
+	@font-face {
+		font-family: $family;
+		src: url('#{$path}.woff2') format('woff2'), url('#{$path}.woff') format('woff');
+		font-weight: $weight;
+		font-style: $style;
+	}
+}
+
+$font-size-default: 16;
+$line-height-default: 1.25;
+$text-color-default: $black;
+
+// - - - Font families - - -
+$font-family-default: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$open-sans: 'Open Sans', $font-family-default;
+
+// Animation
+// ==========================================================================
+
+// Default transition time
+$trans-time: 0.2s;
+
+//  Settings
+// ==========================================================================
+
+// Under this threshold, the site enter the "mobile" resolutions
+// In px, no unit
+$mobile-threshold: 768;
