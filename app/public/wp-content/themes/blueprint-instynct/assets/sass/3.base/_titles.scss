@@ -1,0 +1,124 @@
+// ==========================================================================
+// BASE - Titles
+// ==========================================================================
+
+// Style mixins
+// ==========================================================================
+
+@mixin title-1 {
+	font: bold rem(34) / 1.2 $font-family-default;
+	color: $black;
+	margin: 0 0 0.2em 0;
+	display: flex;
+
+	@include mobile-only {
+		margin: 0 0 1em 0;
+		font-size: rem(22);
+	}
+}
+
+@mixin title-2 {
+	font: bold rem(28) / 1.2 $font-family-default;
+	color: $black;
+	margin: 0.5em 0 0.5em;
+	display: flex;
+
+	@include mobile-only {
+		margin: 0.5em 0 0.5em;
+		font-size: rem(22);
+	}
+
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+@mixin title-3 {
+	font: rem(24) / 1.2 $font-family-default;
+	color: $black;
+	margin: 0.5em 0 0.5em;
+
+	@include max-width(rem(1400)) {
+		font-size: rem(18);
+	}
+
+	@include mobile-only {
+		font-size: rem(16);
+	}
+
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+@mixin title-4 {
+	font: bold rem(22) / 1.2 $font-family-default;
+	margin: 1.5em 0 0.5em;
+
+	@include mobile-only {
+		font-size: rem(20);
+	}
+
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+@mixin title-5 {
+	font: bold rem(20) / 1.2 $font-family-default;
+	margin: 1.5em 0 0.5em;
+
+	@include mobile-only {
+		font-size: rem(18);
+	}
+
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+@mixin title-6 {
+	font: bold rem(18) / 1.2 $font-family-default;
+	margin: 1.5em 0 0.5em;
+
+	@include mobile-only {
+		font-size: rem(16);
+	}
+
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+// Classes & Selectors
+// ==========================================================================
+
+h1,
+.title-1 {
+	@include title-1;
+}
+
+h2,
+.title-2 {
+	@include title-2;
+}
+
+h3,
+.title-3 {
+	@include title-3;
+}
+
+h4,
+.title-4 {
+	@include title-4;
+}
+
+h5,
+.title-5 {
+	@include title-5;
+}
+
+h6,
+.title-6 {
+	@include title-6;
+}
