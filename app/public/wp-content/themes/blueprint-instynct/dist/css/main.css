@@ -12,7 +12,7 @@ html {
 /* line 15, ../sass/3.base/_basic.scss */
 body {
   width: 100%;
-  min-width: rem(320);
+  min-width: strip-unit(20)rem;
   min-height: 100%;
   overflow: hidden;
   margin: 0 auto;
@@ -29,7 +29,7 @@ img {
 /* line 30, ../sass/3.base/_basic.scss */
 hr {
   display: block;
-  margin: rem(16) 0;
+  margin: strip-unit(1)rem 0;
   padding: 0;
   border: 0;
   border-top: 1px solid #ccc;
@@ -84,7 +84,7 @@ button {
   font-size: 0;
 }
 
-@media only screen and (min-width: rem(768)) {
+@media only screen and (min-width: strip-unit(48) rem) {
   /* line 44, ../sass/3.base/_helpers.scss */
   .hide-on-desktop {
     display: none;
@@ -98,18 +98,533 @@ button {
   }
 }
 
+/* line 5, ../sass/3.base/_lists.scss */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+/* line 11, ../sass/3.base/_normalize.scss */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+/* line 23, ../sass/3.base/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+/* line 31, ../sass/3.base/_normalize.scss */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 40, ../sass/3.base/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 53, ../sass/3.base/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 64, ../sass/3.base/_normalize.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+/* line 76, ../sass/3.base/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 85, ../sass/3.base/_normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 95, ../sass/3.base/_normalize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 105, ../sass/3.base/_normalize.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 116, ../sass/3.base/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 125, ../sass/3.base/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 133, ../sass/3.base/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 137, ../sass/3.base/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+/* line 148, ../sass/3.base/_normalize.scss */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 160, ../sass/3.base/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 176, ../sass/3.base/_normalize.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 187, ../sass/3.base/_normalize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 197, ../sass/3.base/_normalize.scss */
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 208, ../sass/3.base/_normalize.scss */
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 220, ../sass/3.base/_normalize.scss */
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+/* line 231, ../sass/3.base/_normalize.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 242, ../sass/3.base/_normalize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 255, ../sass/3.base/_normalize.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+/* line 263, ../sass/3.base/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+/* line 272, ../sass/3.base/_normalize.scss */
+[type='checkbox'],
+[type='radio'] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 282, ../sass/3.base/_normalize.scss */
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 292, ../sass/3.base/_normalize.scss */
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+/* line 301, ../sass/3.base/_normalize.scss */
+[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 310, ../sass/3.base/_normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+/* line 322, ../sass/3.base/_normalize.scss */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 330, ../sass/3.base/_normalize.scss */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+/* line 341, ../sass/3.base/_normalize.scss */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+/* line 349, ../sass/3.base/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 96, ../sass/3.base/_titles.scss */
+h1,
+.title-1 {
+  font: bold strip-unit(2.125)rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000000;
+  margin: 0 0 0.2em 0;
+  display: flex;
+}
+
+@media only screen and (max-width: 47.9375rem) {
+  /* line 96, ../sass/3.base/_titles.scss */
+  h1,
+  .title-1 {
+    margin: 0 0 1em 0;
+    font-size: strip-unit(1.375)rem;
+  }
+}
+
+/* line 101, ../sass/3.base/_titles.scss */
+h2,
+.title-2 {
+  font: bold strip-unit(1.75)rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000000;
+  margin: 0.5em 0 0.5em;
+  display: flex;
+}
+
+@media only screen and (max-width: 47.9375rem) {
+  /* line 101, ../sass/3.base/_titles.scss */
+  h2,
+  .title-2 {
+    margin: 0.5em 0 0.5em;
+    font-size: strip-unit(1.375)rem;
+  }
+}
+
+/* line 31, ../sass/3.base/_titles.scss */
+h2:first-child,
+.title-2:first-child {
+  margin-top: 0;
+}
+
+/* line 106, ../sass/3.base/_titles.scss */
+h3,
+.title-3 {
+  font: strip-unit(1.5)rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000000;
+  margin: 0.5em 0 0.5em;
+}
+
+@media only screen and (max-width: strip-unit(87.5) rem) {
+  /* line 106, ../sass/3.base/_titles.scss */
+  h3,
+  .title-3 {
+    font-size: strip-unit(1.125)rem;
+  }
+}
+
+@media only screen and (max-width: 47.9375rem) {
+  /* line 106, ../sass/3.base/_titles.scss */
+  h3,
+  .title-3 {
+    font-size: strip-unit(1)rem;
+  }
+}
+
+/* line 49, ../sass/3.base/_titles.scss */
+h3:first-child,
+.title-3:first-child {
+  margin-top: 0;
+}
+
+/* line 111, ../sass/3.base/_titles.scss */
+h4,
+.title-4 {
+  font: bold strip-unit(1.375)rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 1.5em 0 0.5em;
+}
+
+@media only screen and (max-width: 47.9375rem) {
+  /* line 111, ../sass/3.base/_titles.scss */
+  h4,
+  .title-4 {
+    font-size: strip-unit(1.25)rem;
+  }
+}
+
+/* line 62, ../sass/3.base/_titles.scss */
+h4:first-child,
+.title-4:first-child {
+  margin-top: 0;
+}
+
+/* line 116, ../sass/3.base/_titles.scss */
+h5,
+.title-5 {
+  font: bold strip-unit(1.25)rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 1.5em 0 0.5em;
+}
+
+@media only screen and (max-width: 47.9375rem) {
+  /* line 116, ../sass/3.base/_titles.scss */
+  h5,
+  .title-5 {
+    font-size: strip-unit(1.125)rem;
+  }
+}
+
+/* line 75, ../sass/3.base/_titles.scss */
+h5:first-child,
+.title-5:first-child {
+  margin-top: 0;
+}
+
+/* line 121, ../sass/3.base/_titles.scss */
+h6,
+.title-6 {
+  font: bold strip-unit(1.125)rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 1.5em 0 0.5em;
+}
+
+@media only screen and (max-width: 47.9375rem) {
+  /* line 121, ../sass/3.base/_titles.scss */
+  h6,
+  .title-6 {
+    font-size: strip-unit(1)rem;
+  }
+}
+
+/* line 88, ../sass/3.base/_titles.scss */
+h6:first-child,
+.title-6:first-child {
+  margin-top: 0;
+}
+
 @font-face {
-  font-family: 'Inconsolata';
-  src: url("./../../dist/fonts/Inconsolata-Regular.otf");
-  src: url("./../../dist/fonts/Inconsolata-Regular.eot?#iefix") format("embedded-opentype"), url("./../../dist/fonts/Inconsolata-Regular.woff") format("woff"), url("./../../dist/fonts/Inconsolata-Regular.woff2") format("woff2"), url("./../../dist/fonts/Inconsolata-Regular.ttf") format("truetype");
+  font-family: Inconsolata;
+  src: url("./../../dist/fonts/inconsolata/Inconsolata-regular.woff2") format("woff2"), url("./../../dist/fonts/inconsolata/Inconsolata-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Inconsolata';
-  src: url("./../../dist/fonts/Inconsolata-Bold.otf");
-  src: url("./../../dist/fonts/Inconsolata-Bold.eot?#iefix") format("embedded-opentype"), url("./../../dist/fonts/Inconsolata-Bold.woff") format("woff"), url("./../../dist/fonts/Inconsolata-Bold.woff2") format("woff2"), url("./../../dist/fonts/Inconsolata-Bold.ttf") format("truetype");
+  font-family: Inconsolata;
+  src: url("./../../dist/fonts/inconsolata/Inconsolata-Bold.woff2") format("woff2"), url("./../../dist/fonts/inconsolata/Inconsolata-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -128,119 +643,80 @@ button {
   font-style: normal;
 }
 
-/* line 20, ../sass/components/_fonts.scss */
-h2 {
-  font-family: 'Inconsolata', sans-serif;
-  color: #000000;
-  font-size: 16px;
+/* line 5, ../sass/4.layout/_wrappers.scss */
+.page-wrapper {
+  position: relative;
+  min-height: 100%;
+}
+
+/* line 30, ../sass/4.layout/_wrappers.scss */
+.menu-wrapper {
+  max-width: strip-unit(80)rem;
+}
+
+/* line 34, ../sass/4.layout/_wrappers.scss */
+.text-wrapper {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: strip-unit(1.25)rem;
+  padding-right: strip-unit(1.25)rem;
+}
+
+@media only screen and (max-width: 47.9375rem) {
+  /* line 34, ../sass/4.layout/_wrappers.scss */
+  .text-wrapper {
+    padding-left: strip-unit(0.625)rem;
+    padding-right: strip-unit(0.625)rem;
+  }
+}
+
+@media print {
+  @page {
+    size: portrait;
+  }
+  /* line 10, ../sass/7.print/_print.scss */
+  *,
+  *::before,
+  *::after {
+    color: #000 !important;
+  }
+  /* line 16, ../sass/7.print/_print.scss */
+  body {
+    max-width: 670px;
+  }
+  /* line 20, ../sass/7.print/_print.scss */
+  html {
+    font-size: 10px !important;
+  }
+}
+
+@font-face {
+  font-family: Inconsolata;
+  src: url("./../../dist/fonts/inconsolata/Inconsolata-regular.woff2") format("woff2"), url("./../../dist/fonts/inconsolata/Inconsolata-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Inconsolata;
+  src: url("./../../dist/fonts/inconsolata/Inconsolata-Bold.woff2") format("woff2"), url("./../../dist/fonts/inconsolata/Inconsolata-Bold.woff") format("woff");
   font-weight: 700;
-  line-height: 24px;
-  text-transform: uppercase;
-  margin: 0;
+  font-style: normal;
 }
 
-@media (min-width: 600px) {
-  /* line 20, ../sass/components/_fonts.scss */
-  h2 {
-    font-size: 18px;
-    line-height: 28px;
-  }
+@font-face {
+  font-family: manrope;
+  src: url("./../../dist/fonts/manrope/manrope-Bold.woff2") format("woff2"), url("./../../dist/fonts/manrope/manrope-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (min-width: 1024px) {
-  /* line 20, ../sass/components/_fonts.scss */
-  h2 {
-    font-size: 20px;
-    line-height: 24px;
-  }
-}
-
-/* line 40, ../sass/components/_fonts.scss */
-h3 {
-  font-family: 'Inconsolata', sans-serif;
-  color: #000000;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-@media (min-width: 600px) {
-  /* line 40, ../sass/components/_fonts.scss */
-  h3 {
-    font-size: 16px;
-    line-height: 22px;
-  }
-}
-
-@media (min-width: 1024px) {
-  /* line 40, ../sass/components/_fonts.scss */
-  h3 {
-    font-size: 18px;
-    line-height: 24px;
-  }
-}
-
-/* line 60, ../sass/components/_fonts.scss */
-h4 {
-  font-family: 'Inconsolata', sans-serif;
-  color: #000000;
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0.9px;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-@media (min-width: 600px) {
-  /* line 60, ../sass/components/_fonts.scss */
-  h4 {
-    font-size: 14px;
-    line-height: 26px;
-  }
-}
-
-@media (min-width: 600px) {
-  /* line 60, ../sass/components/_fonts.scss */
-  h4 {
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
-
-/* line 80, ../sass/components/_fonts.scss */
-p {
-  font-family: 'Inconsolata', sans-serif;
-  color: #000000;
-  font-size: 12px;
-  font-weight: 400px;
-  line-height: 24px;
-  letter-spacing: 0.84px;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-@media (min-width: 600px) {
-  /* line 80, ../sass/components/_fonts.scss */
-  p {
-    font-size: 14px;
-    line-height: 26px;
-    letter-spacing: 0.98px;
-  }
-}
-
-@media (min-width: 1024px) {
-  /* line 80, ../sass/components/_fonts.scss */
-  p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
-
-/* line 102, ../sass/components/_fonts.scss */
-li {
-  text-transform: uppercase;
+@font-face {
+  font-family: chelsea;
+  src: url("./../../dist/fonts/chelsea/ChelseaMarket-Regular.woff2") format("woff2"), url("./../../dist/fonts/chelsea/ChelseaMarket-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* line 1, ../sass/components/_general.scss */
@@ -1234,1407 +1710,16 @@ main .module-container.blue {
 .module-title {
   transition: ease-in-out 0.2s all;
   cursor: pointer;
-  font-family: 'chelsea';
+  font-family: 'inconsolata';
+  font-weight: 700;
 }
 
-/* line 20, ../sass/components/_home.scss */
+/* line 21, ../sass/components/_home.scss */
 .module-title.background {
   font-size: 1.5em;
   background-color: black;
   color: white;
   padding: 2em;
-}
-
-/* line 27, ../sass/components/_home.scss */
-#hero {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin-bottom: 90px;
-}
-
-/* line 37, ../sass/components/_home.scss */
-#hero .container {
-  text-align: center;
-}
-
-/* line 40, ../sass/components/_home.scss */
-#hero .container img {
-  width: 100%;
-  margin-bottom: 5px;
-  mix-blend-mode: darken;
-}
-
-/* line 46, ../sass/components/_home.scss */
-#hero .container h3 {
-  font-weight: 700;
-}
-
-/* line 51, ../sass/components/_home.scss */
-#hero .hero-logo {
-  width: 100%;
-  max-width: 45px;
-  position: absolute;
-  right: 30px;
-  bottom: 20px;
-}
-
-/* line 59, ../sass/components/_home.scss */
-#hero .hero-illustration {
-  width: 100%;
-  max-width: 85px;
-  position: absolute;
-  bottom: 20px;
-  mix-blend-mode: multiply;
-}
-
-/* line 67, ../sass/components/_home.scss */
-#hero .hero-waffles {
-  width: 100%;
-  position: absolute;
-}
-
-/* line 71, ../sass/components/_home.scss */
-#hero .hero-waffles.left_waffle {
-  max-width: 150px;
-  right: -50px;
-  top: 30px;
-}
-
-/* line 77, ../sass/components/_home.scss */
-#hero .hero-waffles.right_waffle {
-  max-width: 175px;
-  left: -75px;
-  bottom: 20px;
-}
-
-@media (min-width: 600px) {
-  /* line 27, ../sass/components/_home.scss */
-  #hero {
-    margin-bottom: 120px;
-  }
-  /* line 88, ../sass/components/_home.scss */
-  #hero .container img {
-    width: 75%;
-    margin-bottom: 15px;
-  }
-  /* line 94, ../sass/components/_home.scss */
-  #hero .hero-logo {
-    max-width: 80px;
-    right: 50px;
-  }
-  /* line 99, ../sass/components/_home.scss */
-  #hero .hero-illustration {
-    max-width: 150px;
-    left: 180px;
-  }
-  /* line 105, ../sass/components/_home.scss */
-  #hero .hero-waffles.left_waffle {
-    max-width: 280px;
-    right: -100px;
-    top: 50px;
-  }
-  /* line 111, ../sass/components/_home.scss */
-  #hero .hero-waffles.right_waffle {
-    max-width: 320px;
-    left: -150px;
-    bottom: 80px;
-  }
-}
-
-@media (min-width: 1024px) {
-  /* line 27, ../sass/components/_home.scss */
-  #hero {
-    margin-bottom: 200px;
-  }
-  /* line 123, ../sass/components/_home.scss */
-  #hero .container img {
-    width: 66.66666%;
-    margin-bottom: 30px;
-  }
-  /* line 129, ../sass/components/_home.scss */
-  #hero .hero-logo {
-    max-width: 100px;
-  }
-  /* line 133, ../sass/components/_home.scss */
-  #hero .hero-illustration {
-    width: 20%;
-    max-width: 275px;
-    left: 16%;
-  }
-  /* line 140, ../sass/components/_home.scss */
-  #hero .hero-waffles.left_waffle {
-    width: 30%;
-    max-width: 500px;
-    right: -120px;
-    top: 80px;
-  }
-  /* line 147, ../sass/components/_home.scss */
-  #hero .hero-waffles.right_waffle {
-    width: 35%;
-    max-width: 525px;
-    left: -250px;
-    bottom: 50px;
-  }
-}
-
-/* line 157, ../sass/components/_home.scss */
-#about {
-  position: relative;
-  margin-bottom: 50px;
-}
-
-/* line 161, ../sass/components/_home.scss */
-#about .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-/* line 166, ../sass/components/_home.scss */
-#about .container .about-left-section {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: flex-end;
-  margin-bottom: 140px;
-  margin-top: 20px;
-}
-
-/* line 174, ../sass/components/_home.scss */
-#about .container .about-left-section .about-left-section-title {
-  width: 55%;
-  margin-bottom: 40px;
-  mix-blend-mode: multiply;
-}
-
-/* line 180, ../sass/components/_home.scss */
-#about .container .about-left-section .about-left-section-illustration {
-  width: calc(40% - 30px);
-}
-
-/* line 185, ../sass/components/_home.scss */
-#about .container .about-separator {
-  width: 100%;
-}
-
-/* line 189, ../sass/components/_home.scss */
-#about .container .about-separator-vertical {
-  display: none;
-}
-
-/* line 193, ../sass/components/_home.scss */
-#about .container .about-right-section {
-  margin-top: 40px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-/* line 198, ../sass/components/_home.scss */
-#about .container .about-right-section h4 {
-  margin-bottom: 20px;
-  letter-spacing: 2px;
-}
-
-/* line 203, ../sass/components/_home.scss */
-#about .container .about-right-section .about-right-section-arnaud {
-  width: 100%;
-  max-width: 100px;
-  margin-bottom: 30px;
-  mix-blend-mode: multiply;
-}
-
-/* line 211, ../sass/components/_home.scss */
-#about .container .about-right-title {
-  width: 100%;
-  max-width: 120px;
-  margin: 0 auto;
-  mix-blend-mode: multiply;
-}
-
-@media (min-width: 600px) {
-  /* line 220, ../sass/components/_home.scss */
-  #about .container {
-    align-items: flex-start;
-  }
-  /* line 223, ../sass/components/_home.scss */
-  #about .container .about-left-section {
-    justify-content: center;
-    margin-bottom: 100px;
-  }
-  /* line 227, ../sass/components/_home.scss */
-  #about .container .about-left-section .about-left-section-title {
-    margin-bottom: 60px;
-  }
-  /* line 232, ../sass/components/_home.scss */
-  #about .container .about-separator {
-    height: 15px;
-  }
-  /* line 236, ../sass/components/_home.scss */
-  #about .container .about-right-section {
-    margin: 75px 25px 100px 25px;
-    width: 40%;
-  }
-  /* line 241, ../sass/components/_home.scss */
-  #about .container .about-right-title {
-    width: 40%;
-    max-width: 200px;
-    margin: 115px 25px 0px 25px;
-  }
-}
-
-@media (min-width: 1024px) {
-  /* line 157, ../sass/components/_home.scss */
-  #about {
-    margin-bottom: 200px;
-  }
-  /* line 252, ../sass/components/_home.scss */
-  #about .container {
-    align-items: center;
-  }
-  /* line 255, ../sass/components/_home.scss */
-  #about .container .about-left-section {
-    width: 50%;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    justify-content: flex-start;
-  }
-  /* line 261, ../sass/components/_home.scss */
-  #about .container .about-left-section .about-left-section-title {
-    width: 50%;
-  }
-  /* line 265, ../sass/components/_home.scss */
-  #about .container .about-left-section .about-left-section-illustration {
-    width: calc(33.33333% - 30px);
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  /* line 271, ../sass/components/_home.scss */
-  #about .container .about-left-section p {
-    margin-left: 16.66666%;
-  }
-  /* line 276, ../sass/components/_home.scss */
-  #about .container .about-separator {
-    display: none;
-  }
-  /* line 280, ../sass/components/_home.scss */
-  #about .container .about-separator-vertical {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 8.33333%;
-    height: 600px;
-  }
-  /* line 288, ../sass/components/_home.scss */
-  #about .container .about-separator-vertical img {
-    width: 100%;
-    height: 100%;
-    max-width: 16px;
-  }
-  /* line 295, ../sass/components/_home.scss */
-  #about .container .about-right-section {
-    margin: 0px;
-    width: 25%;
-  }
-  /* line 299, ../sass/components/_home.scss */
-  #about .container .about-right-section p {
-    font-size: 14px;
-    line-height: 18px;
-  }
-  /* line 305, ../sass/components/_home.scss */
-  #about .container .about-right-title {
-    width: 10%;
-    max-width: none;
-    margin: 0;
-    position: absolute;
-    right: 50px;
-  }
-}
-
-/* line 316, ../sass/components/_home.scss */
-#product-1 {
-  background-color: #e9e6d8;
-  position: relative;
-}
-
-/* line 320, ../sass/components/_home.scss */
-#product-1 .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-
-/* line 325, ../sass/components/_home.scss */
-#product-1 .container .product-1-header {
-  width: 90%;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* line 334, ../sass/components/_home.scss */
-#product-1 .container .product-1-header .product-1-main-title {
-  width: calc(50% - 10px);
-}
-
-/* line 338, ../sass/components/_home.scss */
-#product-1 .container .product-1-header .product-1-secondary-title {
-  width: calc(50% - 10px);
-}
-
-/* line 343, ../sass/components/_home.scss */
-#product-1 .container .product-1-illustrated-informations {
-  width: 100%;
-  margin-bottom: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  position: relative;
-}
-
-/* line 351, ../sass/components/_home.scss */
-#product-1 .container .product-1-illustrated-informations .product-1-image {
-  width: 60%;
-  position: absolute;
-  left: -30%;
-  top: 0px;
-}
-
-/* line 358, ../sass/components/_home.scss */
-#product-1 .container .product-1-illustrated-informations .information-1 {
-  width: 60%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* line 365, ../sass/components/_home.scss */
-#product-1 .container .product-1-illustrated-informations .information-1 p {
-  width: 50%;
-  line-height: 14px;
-}
-
-/* line 370, ../sass/components/_home.scss */
-#product-1 .container .product-1-illustrated-informations .information-1 img {
-  mix-blend-mode: multiply;
-  margin: 20px 0px 20px 0px;
-  width: calc(50% - 20px);
-  mix-blend-mode: multiply;
-}
-
-/* line 378, ../sass/components/_home.scss */
-#product-1 .container .product-1-illustrated-informations .information-2 {
-  width: 60%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-
-/* line 386, ../sass/components/_home.scss */
-#product-1 .container .product-1-illustrated-informations .information-2 p {
-  text-align: right;
-  width: 50%;
-  align-self: flex-end;
-  line-height: 18px;
-}
-
-/* line 393, ../sass/components/_home.scss */
-#product-1 .container .product-1-illustrated-informations .information-2 img {
-  margin: 20px 0px 10px 0px;
-  width: calc(50% - 20px);
-  mix-blend-mode: multiply;
-  mix-blend-mode: multiply;
-}
-
-/* line 399, ../sass/components/_home.scss */
-#product-1 .container .product-1-illustrated-informations .information-2 img.arrow {
-  width: 100%;
-  max-width: 30px;
-  transform: scaleX(-1) rotate(190deg);
-  position: absolute;
-  top: 20px;
-  left: 45%;
-}
-
-/* line 413, ../sass/components/_home.scss */
-#product-1.nutritional-fact-open .product-1-header {
-  width: 100%;
-  margin-bottom: 30px;
-  align-items: flex-end;
-}
-
-/* line 418, ../sass/components/_home.scss */
-#product-1.nutritional-fact-open .product-1-header .product-1-main-title {
-  margin-bottom: 15px;
-}
-
-/* line 423, ../sass/components/_home.scss */
-#product-1.nutritional-fact-open .product-1-illustrated-informations {
-  display: none;
-}
-
-@media (min-width: 600px) {
-  /* line 429, ../sass/components/_home.scss */
-  #product-1 .container {
-    justify-content: center;
-  }
-  /* line 432, ../sass/components/_home.scss */
-  #product-1 .container .product-1-header {
-    margin-top: 90px;
-    margin-bottom: 30px;
-  }
-  /* line 437, ../sass/components/_home.scss */
-  #product-1 .container .product-1-illustrated-informations {
-    margin-bottom: 150px;
-  }
-  /* line 440, ../sass/components/_home.scss */
-  #product-1 .container .product-1-illustrated-informations .product-1-image {
-    width: 60%;
-    left: -25%;
-  }
-  /* line 445, ../sass/components/_home.scss */
-  #product-1 .container .product-1-illustrated-informations .information-1 {
-    width: 51%;
-  }
-  /* line 449, ../sass/components/_home.scss */
-  #product-1 .container .product-1-illustrated-informations .information-2 {
-    width: 51%;
-  }
-  /* line 452, ../sass/components/_home.scss */
-  #product-1 .container .product-1-illustrated-informations .information-2 p {
-    align-self: center;
-  }
-  /* line 456, ../sass/components/_home.scss */
-  #product-1 .container .product-1-illustrated-informations .information-2 img {
-    margin: 20px 0px 20px 0px;
-  }
-  /* line 459, ../sass/components/_home.scss */
-  #product-1 .container .product-1-illustrated-informations .information-2 img.arrow {
-    max-width: 50px;
-    top: 25px;
-  }
-  /* line 469, ../sass/components/_home.scss */
-  #product-1.nutritional-fact-open .product-1-header {
-    width: 100%;
-    margin-left: 0;
-    justify-content: flex-start;
-  }
-  /* line 474, ../sass/components/_home.scss */
-  #product-1.nutritional-fact-open .product-1-header .product-1-main-title {
-    width: calc(37.55555% - 20px);
-    margin-right: 40px;
-    margin-bottom: 15px;
-  }
-  /* line 480, ../sass/components/_home.scss */
-  #product-1.nutritional-fact-open .product-1-header .product-1-secondary-title {
-    width: calc(40% - 20px);
-    margin-left: 0;
-    margin-top: 60px;
-  }
-}
-
-@media (min-width: 1024px) {
-  /* line 490, ../sass/components/_home.scss */
-  #product-1 .container {
-    align-items: flex-start;
-    position: relative;
-  }
-  /* line 494, ../sass/components/_home.scss */
-  #product-1 .container .product-1-header {
-    width: 100%;
-    margin-top: 100px;
-    margin-bottom: 50px;
-  }
-  /* line 499, ../sass/components/_home.scss */
-  #product-1 .container .product-1-header .product-1-main-title {
-    width: 33.33333%;
-  }
-  /* line 503, ../sass/components/_home.scss */
-  #product-1 .container .product-1-header .product-1-secondary-title {
-    width: 33.33333%;
-    margin-right: 8.33333%;
-  }
-  /* line 509, ../sass/components/_home.scss */
-  #product-1 .container .product-1-illustrated-informations {
-    margin-top: 50px;
-    margin-bottom: 0px;
-    width: 50%;
-  }
-  /* line 514, ../sass/components/_home.scss */
-  #product-1 .container .product-1-illustrated-informations .product-1-image {
-    width: 90%;
-    left: -50%;
-  }
-  /* line 521, ../sass/components/_home.scss */
-  #product-1 .container .product-1-illustrated-informations .information-2 img.arrow {
-    top: 20px;
-    left: 40%;
-  }
-  /* line 532, ../sass/components/_home.scss */
-  #product-1.nutritional-fact-open .product-1-header .product-1-main-title {
-    width: 25%;
-    margin-right: 16.66666%;
-    margin-bottom: 0px;
-  }
-  /* line 538, ../sass/components/_home.scss */
-  #product-1.nutritional-fact-open .product-1-header .product-1-secondary-title {
-    width: 40%;
-    margin-top: 75px;
-    margin-bottom: -120px;
-    margin-left: 0px;
-  }
-  /* line 546, ../sass/components/_home.scss */
-  #product-1.nutritional-fact-open .product-1-illustrated-informations {
-    width: 100%;
-    display: block;
-  }
-  /* line 550, ../sass/components/_home.scss */
-  #product-1.nutritional-fact-open .product-1-illustrated-informations .product-1-image {
-    width: 50%;
-    right: -25%;
-    left: auto;
-    top: 50px;
-  }
-}
-
-/* line 561, ../sass/components/_home.scss */
-#product-2 {
-  background-color: #e9e6d8;
-  position: relative;
-  padding-bottom: 40px;
-}
-
-/* line 566, ../sass/components/_home.scss */
-#product-2 .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  transition: 0.5s ease;
-}
-
-/* line 572, ../sass/components/_home.scss */
-#product-2 .container .product-2-header-container {
-  width: 100%;
-}
-
-/* line 575, ../sass/components/_home.scss */
-#product-2 .container .product-2-header-container .product-2-header {
-  width: 90%;
-  margin-top: 40px;
-  margin-bottom: 50px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* line 582, ../sass/components/_home.scss */
-#product-2 .container .product-2-header-container .product-2-header .product-2-main-title {
-  width: 50%;
-}
-
-/* line 586, ../sass/components/_home.scss */
-#product-2 .container .product-2-header-container .product-2-header .product-2-secondary-title {
-  width: 60%;
-  margin-left: 30%;
-}
-
-/* line 592, ../sass/components/_home.scss */
-#product-2 .container .product-2-header-container .product-2-image {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 75px;
-  position: relative;
-}
-
-/* line 601, ../sass/components/_home.scss */
-#product-2 .container .product-2-header-container .product-2-image .product-2-photo-text {
-  width: 45%;
-  mix-blend-mode: multiply;
-}
-
-/* line 606, ../sass/components/_home.scss */
-#product-2 .container .product-2-header-container .product-2-image .product-2-main-image {
-  width: 75%;
-  position: absolute;
-  right: -30%;
-}
-
-/* line 614, ../sass/components/_home.scss */
-#product-2 .container .product-2-illustrated-informations {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  margin-bottom: 40px;
-}
-
-/* line 621, ../sass/components/_home.scss */
-#product-2 .container .product-2-illustrated-informations .product-2-illustration {
-  width: 20%;
-  margin-right: 5%;
-  mix-blend-mode: multiply;
-}
-
-/* line 627, ../sass/components/_home.scss */
-#product-2 .container .product-2-illustrated-informations .product-2-illustrated-information {
-  width: 50%;
-}
-
-/* line 632, ../sass/components/_home.scss */
-#product-2 .container .about-separator {
-  transform: rotate(0deg);
-}
-
-/* line 639, ../sass/components/_home.scss */
-#product-2.nutritional-fact-open .product-2-header-container .product-2-header {
-  width: 100%;
-  margin-top: 40px;
-  margin-bottom: 30px;
-  align-items: flex-end;
-  justify-content: space-between;
-}
-
-/* line 646, ../sass/components/_home.scss */
-#product-2.nutritional-fact-open .product-2-header-container .product-2-header .product-2-main-title {
-  width: calc(50% - 10px);
-  margin-bottom: 15px;
-}
-
-/* line 651, ../sass/components/_home.scss */
-#product-2.nutritional-fact-open .product-2-header-container .product-2-header .product-2-secondary-title {
-  width: calc(50% - 10px);
-  margin-left: 0;
-}
-
-/* line 657, ../sass/components/_home.scss */
-#product-2.nutritional-fact-open .product-2-header-container .product-2-image {
-  display: none;
-}
-
-/* line 660, ../sass/components/_home.scss */
-#product-2.nutritional-fact-open .product-2-header-container .product-2-image .product-2-main-image {
-  display: none;
-}
-
-@media (min-width: 600px) {
-  /* line 561, ../sass/components/_home.scss */
-  #product-2 {
-    padding-bottom: 120px;
-  }
-  /* line 672, ../sass/components/_home.scss */
-  #product-2 .container .product-2-header-container .product-2-header {
-    width: 60%;
-    margin-left: 20%;
-  }
-  /* line 676, ../sass/components/_home.scss */
-  #product-2 .container .product-2-header-container .product-2-header .product-2-main-title {
-    width: 60%;
-  }
-  /* line 680, ../sass/components/_home.scss */
-  #product-2 .container .product-2-header-container .product-2-header .product-2-secondary-title {
-    width: 75%;
-    margin-left: 25%;
-  }
-  /* line 686, ../sass/components/_home.scss */
-  #product-2 .container .product-2-header-container .product-2-image {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 75px;
-    position: relative;
-  }
-  /* line 695, ../sass/components/_home.scss */
-  #product-2 .container .product-2-header-container .product-2-image .product-2-photo-text {
-    width: 25%;
-    margin-left: 10%;
-  }
-  /* line 700, ../sass/components/_home.scss */
-  #product-2 .container .product-2-header-container .product-2-image .product-2-main-image {
-    width: 65%;
-    position: absolute;
-    right: -30%;
-  }
-  /* line 708, ../sass/components/_home.scss */
-  #product-2 .container .product-2-illustrated-informations {
-    margin-bottom: 80px;
-  }
-  /* line 711, ../sass/components/_home.scss */
-  #product-2 .container .product-2-illustrated-informations .product-2-illustration {
-    width: 12.55555%;
-    margin-right: 8.33333%;
-  }
-  /* line 716, ../sass/components/_home.scss */
-  #product-2 .container .product-2-illustrated-informations .product-2-illustrated-information {
-    width: 37.55555%;
-  }
-  /* line 724, ../sass/components/_home.scss */
-  #product-2.nutritional-fact-open .product-2-header-container .product-2-header {
-    width: 100%;
-    margin-left: 0;
-    justify-content: flex-start;
-  }
-  /* line 729, ../sass/components/_home.scss */
-  #product-2.nutritional-fact-open .product-2-header-container .product-2-header .product-2-main-title {
-    width: calc(37.55555% - 20px);
-    margin-right: 40px;
-    margin-bottom: 15px;
-  }
-  /* line 735, ../sass/components/_home.scss */
-  #product-2.nutritional-fact-open .product-2-header-container .product-2-header .product-2-secondary-title {
-    width: calc(40% - 20px);
-    margin-left: 0;
-    margin-top: 60px;
-  }
-}
-
-@media (min-width: 1024px) {
-  /* line 561, ../sass/components/_home.scss */
-  #product-2 {
-    padding-bottom: 0px;
-  }
-  /* line 748, ../sass/components/_home.scss */
-  #product-2 .container {
-    position: relative;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-  }
-  /* line 753, ../sass/components/_home.scss */
-  #product-2 .container .product-2-header-container {
-    width: 41.666666%;
-  }
-  /* line 756, ../sass/components/_home.scss */
-  #product-2 .container .product-2-header-container .product-2-header {
-    margin-bottom: 100px;
-  }
-  /* line 759, ../sass/components/_home.scss */
-  #product-2 .container .product-2-header-container .product-2-header .product-2-main-title {
-    width: 70%;
-  }
-  /* line 763, ../sass/components/_home.scss */
-  #product-2 .container .product-2-header-container .product-2-header .product-2-secondary-title {
-    width: 60%;
-    margin-left: 40%;
-  }
-  /* line 769, ../sass/components/_home.scss */
-  #product-2 .container .product-2-header-container .product-2-image {
-    margin-bottom: 0px;
-  }
-  /* line 772, ../sass/components/_home.scss */
-  #product-2 .container .product-2-header-container .product-2-image .product-2-photo-text {
-    width: 40%;
-    margin-left: 0;
-  }
-  /* line 777, ../sass/components/_home.scss */
-  #product-2 .container .product-2-header-container .product-2-image .product-2-main-image {
-    width: 100%;
-    right: -60%;
-  }
-  /* line 784, ../sass/components/_home.scss */
-  #product-2 .container .product-2-content-container {
-    width: 41.66666%;
-  }
-  /* line 787, ../sass/components/_home.scss */
-  #product-2 .container .product-2-content-container .product-2-illustrated-informations {
-    margin-bottom: 50px;
-    width: 80%;
-    position: relative;
-  }
-  /* line 792, ../sass/components/_home.scss */
-  #product-2 .container .product-2-content-container .product-2-illustrated-informations .product-2-illustration {
-    width: 20%;
-    margin-right: 20%;
-    position: absolute;
-    left: 0;
-  }
-  /* line 799, ../sass/components/_home.scss */
-  #product-2 .container .product-2-content-container .product-2-illustrated-informations .product-2-illustrated-information {
-    width: 50%;
-    margin-left: 40%;
-  }
-  /* line 805, ../sass/components/_home.scss */
-  #product-2 .container .product-2-content-container .product-content {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 0;
-  }
-  /* line 814, ../sass/components/_home.scss */
-  #product-2.nutritional-fact-open .product-2-header-container {
-    width: 100%;
-  }
-  /* line 818, ../sass/components/_home.scss */
-  #product-2.nutritional-fact-open .product-2-header-container .product-2-header .product-2-main-title {
-    width: 25%;
-    margin-right: 16.66666%;
-    margin-bottom: 0px;
-  }
-  /* line 824, ../sass/components/_home.scss */
-  #product-2.nutritional-fact-open .product-2-header-container .product-2-header .product-2-secondary-title {
-    width: 40%;
-    margin-top: 75px;
-    margin-bottom: -120px;
-    margin-left: 0px;
-  }
-  /* line 832, ../sass/components/_home.scss */
-  #product-2.nutritional-fact-open .product-2-header-container .product-2-image {
-    display: block;
-  }
-  /* line 835, ../sass/components/_home.scss */
-  #product-2.nutritional-fact-open .product-2-header-container .product-2-image .product-2-photo-text {
-    display: none;
-  }
-  /* line 839, ../sass/components/_home.scss */
-  #product-2.nutritional-fact-open .product-2-header-container .product-2-image .product-2-main-image {
-    display: block;
-    width: 50%;
-    right: -25%;
-    top: 50px;
-  }
-}
-
-/* line 851, ../sass/components/_home.scss */
-#dealers {
-  width: 100%;
-  position: relative;
-}
-
-/* line 856, ../sass/components/_home.scss */
-#dealers .container .dealers-header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: 40px;
-  margin-bottom: 90px;
-}
-
-/* line 864, ../sass/components/_home.scss */
-#dealers .container .dealers-header .dealers-main-title {
-  width: 60%;
-  margin-bottom: 25px;
-}
-
-/* line 869, ../sass/components/_home.scss */
-#dealers .container .dealers-header .dealers-illustration-1,
-#dealers .container .dealers-header .dealers-illustration-2 {
-  width: calc(25% - 20px);
-  margin-left: 10px;
-  margin-right: 10px;
-  mix-blend-mode: multiply;
-}
-
-/* line 877, ../sass/components/_home.scss */
-#dealers .container .dealers-header .dealers-illustration-2 {
-  margin-top: 20px;
-}
-
-/* line 881, ../sass/components/_home.scss */
-#dealers .container .dealers-header .dealers-secondary-title-container {
-  width: 50%;
-}
-
-/* line 884, ../sass/components/_home.scss */
-#dealers .container .dealers-header .dealers-secondary-title-container .dealers-secondary-title {
-  width: 100%;
-  mix-blend-mode: multiply;
-}
-
-/* line 889, ../sass/components/_home.scss */
-#dealers .container .dealers-header .dealers-secondary-title-container .dealers-button {
-  display: none;
-}
-
-/* line 894, ../sass/components/_home.scss */
-#dealers .container .dealers-header .dealers-button {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 50%;
-  cursor: pointer;
-  margin-top: 40px;
-}
-
-/* line 903, ../sass/components/_home.scss */
-#dealers .container .dealers-header .dealers-button p {
-  width: calc(100% - 35px);
-  text-align: left;
-  line-height: 18px;
-  font-size: 14px;
-  margin: 0;
-}
-
-/* line 911, ../sass/components/_home.scss */
-#dealers .container .dealers-header .dealers-button img {
-  margin-left: 10px;
-  max-width: 25px;
-  width: 100%;
-  transform: rotate(230deg) scaleX(-1);
-}
-
-/* line 920, ../sass/components/_home.scss */
-#dealers .container .dealers-list {
-  display: none;
-  margin-bottom: 60px;
-  flex-wrap: wrap;
-}
-
-/* line 925, ../sass/components/_home.scss */
-#dealers .container .dealers-list ul {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-/* line 931, ../sass/components/_home.scss */
-#dealers .container .dealers-list ul h3 {
-  margin-bottom: 10px;
-}
-
-/* line 935, ../sass/components/_home.scss */
-#dealers .container .dealers-list ul img {
-  margin-bottom: 20px;
-  width: 100%;
-  height: 10px;
-}
-
-/* line 940, ../sass/components/_home.scss */
-#dealers .container .dealers-list ul img.separator-full-width {
-  width: 100%;
-}
-
-/* line 944, ../sass/components/_home.scss */
-#dealers .container .dealers-list ul img.separator-double-width {
-  width: 200%;
-}
-
-/* line 948, ../sass/components/_home.scss */
-#dealers .container .dealers-list ul img.separator-triple-width {
-  opacity: 1 !important;
-  width: 300%;
-}
-
-/* line 954, ../sass/components/_home.scss */
-#dealers .container .dealers-list ul li {
-  list-style: none;
-  margin-bottom: 40px;
-}
-
-/* line 958, ../sass/components/_home.scss */
-#dealers .container .dealers-list ul li h3 {
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-/* line 963, ../sass/components/_home.scss */
-#dealers .container .dealers-list ul li a {
-  color: #000000;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0.98px;
-  line-height: 14px;
-  text-decoration: none;
-  display: block;
-}
-
-/* line 975, ../sass/components/_home.scss */
-#dealers .container .dealers-list .dealers-list-illustration {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 50px;
-  width: 100%;
-}
-
-/* line 984, ../sass/components/_home.scss */
-#dealers .container .dealers-list .dealers-list-illustration img {
-  width: 50%;
-  mix-blend-mode: multiply;
-}
-
-/* line 990, ../sass/components/_home.scss */
-#dealers .container .dealers-list .dealers-list-illustration:nth-of-type(1n) .dealers-list-illustration-1 {
-  display: block;
-}
-
-/* line 994, ../sass/components/_home.scss */
-#dealers .container .dealers-list .dealers-list-illustration:nth-of-type(1n) .dealers-list-illustration-2 {
-  display: none;
-}
-
-/* line 998, ../sass/components/_home.scss */
-#dealers .container .dealers-list .dealers-list-illustration:nth-of-type(1n) .dealers-list-illustration-3 {
-  display: none;
-}
-
-/* line 1004, ../sass/components/_home.scss */
-#dealers .container .dealers-list .dealers-list-illustration:nth-of-type(2n) .dealers-list-illustration-1 {
-  display: none;
-}
-
-/* line 1008, ../sass/components/_home.scss */
-#dealers .container .dealers-list .dealers-list-illustration:nth-of-type(2n) .dealers-list-illustration-2 {
-  display: block;
-}
-
-/* line 1012, ../sass/components/_home.scss */
-#dealers .container .dealers-list .dealers-list-illustration:nth-of-type(2n) .dealers-list-illustration-3 {
-  display: none;
-}
-
-/* line 1018, ../sass/components/_home.scss */
-#dealers .container .dealers-list .dealers-list-illustration:nth-of-type(3n) .dealers-list-illustration-1 {
-  display: none;
-}
-
-/* line 1022, ../sass/components/_home.scss */
-#dealers .container .dealers-list .dealers-list-illustration:nth-of-type(3n) .dealers-list-illustration-2 {
-  display: none;
-}
-
-/* line 1026, ../sass/components/_home.scss */
-#dealers .container .dealers-list .dealers-list-illustration:nth-of-type(3n) .dealers-list-illustration-3 {
-  display: block;
-}
-
-/* line 1032, ../sass/components/_home.scss */
-#dealers .container .dealers-list .dealers-button {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 50%;
-  cursor: pointer;
-  margin-top: 40px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* line 1043, ../sass/components/_home.scss */
-#dealers .container .dealers-list .dealers-button p {
-  width: calc(100% - 35px);
-  text-align: left;
-  line-height: 18px;
-  font-size: 14px;
-  margin: 0;
-}
-
-/* line 1051, ../sass/components/_home.scss */
-#dealers .container .dealers-list .dealers-button img {
-  margin-left: 10px;
-  max-width: 25px;
-  width: 100%;
-  transform: rotate(230deg) scaleX(-1);
-}
-
-@media (min-width: 600px) {
-  /* line 1063, ../sass/components/_home.scss */
-  #dealers .container .dealers-header {
-    margin-top: 90px;
-    flex-direction: row;
-  }
-  /* line 1067, ../sass/components/_home.scss */
-  #dealers .container .dealers-header .dealers-main-title {
-    width: 33.33333%;
-    margin-bottom: 0;
-  }
-  /* line 1072, ../sass/components/_home.scss */
-  #dealers .container .dealers-header .dealers-illustration-1,
-  #dealers .container .dealers-header .dealers-illustration-2 {
-    width: calc(15% - 20px);
-  }
-  /* line 1077, ../sass/components/_home.scss */
-  #dealers .container .dealers-header .dealers-illustration-2 {
-    margin-top: 0px;
-    margin-left: -5%;
-    align-self: flex-end;
-  }
-  /* line 1083, ../sass/components/_home.scss */
-  #dealers .container .dealers-header .dealers-secondary-title-container {
-    width: 25%;
-    margin-left: 3%;
-    align-self: center;
-  }
-  /* line 1089, ../sass/components/_home.scss */
-  #dealers .container .dealers-header .dealers-button {
-    width: 37.55555%;
-    max-width: 200px;
-  }
-  /* line 1093, ../sass/components/_home.scss */
-  #dealers .container .dealers-header .dealers-button p {
-    font-size: 18px;
-    line-height: 22px;
-  }
-  /* line 1101, ../sass/components/_home.scss */
-  #dealers .container .dealers-list ul {
-    width: 50%;
-    margin-bottom: 90px;
-  }
-  /* line 1105, ../sass/components/_home.scss */
-  #dealers .container .dealers-list ul h3 {
-    padding-right: 50px;
-  }
-  /* line 1109, ../sass/components/_home.scss */
-  #dealers .container .dealers-list ul li {
-    padding-right: 50px;
-  }
-  /* line 1113, ../sass/components/_home.scss */
-  #dealers .container .dealers-list ul.dealer-zone-2-columns {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  /* line 1118, ../sass/components/_home.scss */
-  #dealers .container .dealers-list ul.dealer-zone-2-columns li {
-    width: calc(50% - 50px);
-  }
-  /* line 1123, ../sass/components/_home.scss */
-  #dealers .container .dealers-list ul.dealer-zone-3-columns {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  /* line 1128, ../sass/components/_home.scss */
-  #dealers .container .dealers-list ul.dealer-zone-3-columns li {
-    width: calc(50% - 50px);
-  }
-  /* line 1133, ../sass/components/_home.scss */
-  #dealers .container .dealers-list ul .partners-separator {
-    height: 10px;
-  }
-  /* line 1138, ../sass/components/_home.scss */
-  #dealers .container .dealers-list ul.dealer-zone-2-columns .separator-triple-width {
-    width: 150%;
-    margin-right: -50%;
-  }
-  /* line 1145, ../sass/components/_home.scss */
-  #dealers .container .dealers-list .dealers-list-illustration {
-    width: 50%;
-  }
-  /* line 1149, ../sass/components/_home.scss */
-  #dealers .container .dealers-list .dealers-button {
-    width: 25%;
-    margin-left: 37.5%;
-    margin-right: 37.5%;
-  }
-}
-
-@media (min-width: 1024px) {
-  /* line 1159, ../sass/components/_home.scss */
-  #dealers .container {
-    position: relative;
-  }
-  /* line 1162, ../sass/components/_home.scss */
-  #dealers .container .dealers-header {
-    margin-top: 120px;
-    margin-bottom: 120px;
-  }
-  /* line 1166, ../sass/components/_home.scss */
-  #dealers .container .dealers-header .dealers-main-title {
-    width: 33.33333%;
-  }
-  /* line 1170, ../sass/components/_home.scss */
-  #dealers .container .dealers-header .dealers-illustration-1,
-  #dealers .container .dealers-header .dealers-illustration-2 {
-    width: calc(16.66666% - 20px);
-  }
-  /* line 1175, ../sass/components/_home.scss */
-  #dealers .container .dealers-header .dealers-illustration-2 {
-    margin-top: 0px;
-    margin-left: 0;
-    align-self: flex-end;
-  }
-  /* line 1181, ../sass/components/_home.scss */
-  #dealers .container .dealers-header .dealers-secondary-title-container {
-    width: 16.66666%;
-  }
-  /* line 1184, ../sass/components/_home.scss */
-  #dealers .container .dealers-header .dealers-secondary-title-container .dealers-button {
-    display: flex;
-    width: 75%;
-    margin: 20px auto 0 auto;
-  }
-  /* line 1191, ../sass/components/_home.scss */
-  #dealers .container .dealers-header .dealers-button {
-    display: none;
-  }
-  /* line 1196, ../sass/components/_home.scss */
-  #dealers .container .dealers-list {
-    padding-left: 8.33333%;
-  }
-  /* line 1199, ../sass/components/_home.scss */
-  #dealers .container .dealers-list ul {
-    width: 20%;
-    margin-bottom: 100px;
-  }
-  /* line 1203, ../sass/components/_home.scss */
-  #dealers .container .dealers-list ul.dealer-zone-2-columns {
-    width: 40%;
-  }
-  /* line 1207, ../sass/components/_home.scss */
-  #dealers .container .dealers-list ul.dealer-zone-3-columns {
-    width: 60%;
-  }
-  /* line 1210, ../sass/components/_home.scss */
-  #dealers .container .dealers-list ul.dealer-zone-3-columns li {
-    width: 33.33333%;
-  }
-  /* line 1216, ../sass/components/_home.scss */
-  #dealers .container .dealers-list .dealers-list-illustration {
-    width: 16.666666%;
-    margin-left: 8.33333%;
-    margin-right: 8.33333%;
-  }
-  /* line 1221, ../sass/components/_home.scss */
-  #dealers .container .dealers-list .dealers-list-illustration img {
-    width: 100%;
-  }
-}
-
-/* line 1230, ../sass/components/_home.scss */
-#partners {
-  width: 100%;
-}
-
-/* line 1233, ../sass/components/_home.scss */
-#partners .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-/* line 1238, ../sass/components/_home.scss */
-#partners .container .partners-separator {
-  width: 100%;
-  transform: rotate(180deg);
-}
-
-/* line 1243, ../sass/components/_home.scss */
-#partners .container ul {
-  margin: 0;
-  margin-top: 50px;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-/* line 1251, ../sass/components/_home.scss */
-#partners .container ul li {
-  list-style: none;
-  display: inline-block;
-  width: 50%;
-  text-align: center;
-  margin-bottom: 40px;
-  position: relative;
-}
-
-/* line 1259, ../sass/components/_home.scss */
-#partners .container ul li img {
-  width: 60%;
-  mix-blend-mode: multiply;
-}
-
-/* line 1263, ../sass/components/_home.scss */
-#partners .container ul li img.arrow {
-  width: 25%;
-  max-width: 30px;
-  position: absolute;
-  right: -10px;
-  bottom: 30%;
-  transform: scaleX(-1) rotate(220deg);
-}
-
-/* line 1274, ../sass/components/_home.scss */
-#partners .container ul li:last-of-type img {
-  width: 40%;
-}
-
-/* line 1279, ../sass/components/_home.scss */
-#partners .container ul li.partners-illustration-center {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (min-width: 600px) {
-  /* line 1289, ../sass/components/_home.scss */
-  #partners .container .partners-separator {
-    height: 15px;
-  }
-  /* line 1293, ../sass/components/_home.scss */
-  #partners .container ul {
-    width: 90%;
-    margin-top: 90px;
-  }
-  /* line 1297, ../sass/components/_home.scss */
-  #partners .container ul li {
-    width: 33.33333%;
-    margin-bottom: 80px;
-  }
-  /* line 1302, ../sass/components/_home.scss */
-  #partners .container ul li img.arrow {
-    width: 50%;
-    max-width: 40px;
-    bottom: 40%;
-  }
-}
-
-@media (min-width: 1024px) {
-  /* line 1230, ../sass/components/_home.scss */
-  #partners {
-    margin-bottom: 120px;
-  }
-  /* line 1316, ../sass/components/_home.scss */
-  #partners .container {
-    position: relative;
-  }
-  /* line 1319, ../sass/components/_home.scss */
-  #partners .container .partners-separator {
-    height: 15px;
-    margin-left: 8.33333%;
-  }
-  /* line 1324, ../sass/components/_home.scss */
-  #partners .container ul {
-    margin-left: 8.33333%;
-    width: 75%;
-    margin-right: 16.66666%;
-  }
-  /* line 1329, ../sass/components/_home.scss */
-  #partners .container ul li {
-    width: 20%;
-    margin-bottom: 0px;
-  }
-  /* line 1333, ../sass/components/_home.scss */
-  #partners .container ul li:last-of-type {
-    position: absolute;
-    right: 0;
-    width: 16.66666%;
-    padding-right: 120px;
-  }
-}
-
-@media (min-width: 1640px) {
-  /* line 1348, ../sass/components/_home.scss */
-  #partners .container ul li:last-of-type {
-    padding-right: 0px;
-  }
 }
 
 /* line 1, ../sass/components/_product-content.scss */

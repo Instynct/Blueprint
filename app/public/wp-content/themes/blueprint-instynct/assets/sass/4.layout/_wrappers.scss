@@ -1,0 +1,36 @@
+// ==========================================================================
+// LAYOUT - Wrappers
+// ==========================================================================
+
+.page-wrapper {
+	position: relative;
+	min-height: 100%;
+}
+
+@mixin wrapper {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: rem(20);
+	padding-right: rem(20);
+	@include mobile-only {
+		padding-left: rem(10);
+		padding-right: rem(10);
+	}
+}
+
+@mixin menu-wrapper {
+	max-width: rem(1280);
+}
+
+@mixin text-wrapper {
+	@include wrapper;
+}
+
+.menu-wrapper {
+	@include menu-wrapper;
+}
+
+.text-wrapper {
+	@include text-wrapper;
+}
