@@ -1,3 +1,3 @@
-<div class="module-container">
-    <h3 class="module-title">this is a php block</h3>
+<div class="module-container" data-container>
+    <h3 class="module-title" data-title>this is a php block</h3>
 </div>
