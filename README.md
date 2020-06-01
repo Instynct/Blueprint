@@ -1,7 +1,14 @@
 # Blueprint Instynct V1.0
 
-Basic walkthrough:
+## This is a custom theme made to be used as Instynct internal boilerplate.
 
-This is a custom theme made to be used as Instynct internal boilerplate.
+====================================================================
 
-To use the theme, paste (or clone) the content of this repository inside your wp-content>themes directory.
+### Basic walkthrough:
+
+1. To use the theme, paste (or clone) the content of this repository inside your wp-content>themes directory.
+
+### To install Npm module:
+
+1. Run YARN (or NPM install) from the terminal in assets/\_gulp.
+2. Run "gulp" and "gulp watch" in that same folder
