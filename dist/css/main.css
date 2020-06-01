@@ -11,7 +11,7 @@ html {
 
 /* line 15, ../sass/3.base/_basic.scss */
 body {
-  width: 100vw;
+  width: 100%;
   margin: 0;
   padding: 0;
   background-color: #ffffff;
@@ -35,7 +35,7 @@ img {
 /* line 35, ../sass/3.base/_basic.scss */
 hr {
   display: block;
-  margin: strip-unit(1)rem 0;
+  margin: 0.5rem 0;
   padding: 0;
   border: 0;
   border-top: 1px solid #ccc;
@@ -50,7 +50,7 @@ hr {
   width: calc(100% - 60px);
 }
 
-@media screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   /* line 44, ../sass/3.base/_basic.scss */
   .container {
     padding: 0 75px;
@@ -58,7 +58,7 @@ hr {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   /* line 44, ../sass/3.base/_basic.scss */
   .container {
     margin-left: auto;
@@ -69,37 +69,18 @@ hr {
   }
 }
 
-@media screen and (min-width: 1640px) {
-  /* line 44, ../sass/3.base/_basic.scss */
-  .container {
-    padding: 0;
-    width: 100%;
-  }
-}
-
 /* line 5, ../sass/3.base/_buttons.scss */
 button {
   cursor: pointer;
   outline: none;
 }
 
-/* line 7, ../sass/2.mixins/_layout.scss */
-.clearfix::before, .clearfix::after {
-  content: ' ';
-  display: table;
-}
-
-/* line 13, ../sass/2.mixins/_layout.scss */
-.clearfix::after {
-  clear: both;
-}
-
-/* line 9, ../sass/3.base/_helpers.scss */
+/* line 5, ../sass/3.base/_helpers.scss */
 .hidden {
   display: none;
 }
 
-/* line 13, ../sass/3.base/_helpers.scss */
+/* line 9, ../sass/3.base/_helpers.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -111,30 +92,35 @@ button {
   width: 1px;
 }
 
-/* line 24, ../sass/3.base/_helpers.scss */
+/* line 20, ../sass/3.base/_helpers.scss */
 .invisible {
   visibility: hidden;
 }
 
-/* line 28, ../sass/3.base/_helpers.scss */
+/* line 24, ../sass/3.base/_helpers.scss */
 .-table {
   display: table;
 }
 
-/* line 34, ../sass/3.base/_helpers.scss */
+/* line 28, ../sass/3.base/_helpers.scss */
+.-flex {
+  display: flex;
+}
+
+/* line 33, ../sass/3.base/_helpers.scss */
 .text-hidden span {
   font-size: 0;
 }
 
-@media only screen and (min-width: strip-unit(48) rem) {
-  /* line 44, ../sass/3.base/_helpers.scss */
+@media only screen and (min-width: 18.75pxrem) {
+  /* line 43, ../sass/3.base/_helpers.scss */
   .hide-on-desktop {
     display: none;
   }
 }
 
-@media only screen and (max-width: 47.9375rem) {
-  /* line 51, ../sass/3.base/_helpers.scss */
+@media only screen and (max-width: 18.71875pxrem) {
+  /* line 50, ../sass/3.base/_helpers.scss */
   .hide-on-mobile {
     display: none;
   }
@@ -525,36 +511,36 @@ template {
 /* line 96, ../sass/3.base/_titles.scss */
 h1,
 .title-1 {
-  font: bold strip-unit(2.125)rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: bold 1.0625rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #000000;
   margin: 0 0 0.2em 0;
   display: flex;
 }
 
-@media only screen and (max-width: 47.9375rem) {
+@media only screen and (max-width: 18.71875pxrem) {
   /* line 96, ../sass/3.base/_titles.scss */
   h1,
   .title-1 {
     margin: 0 0 1em 0;
-    font-size: strip-unit(1.375)rem;
+    font-size: 0.6875rem;
   }
 }
 
 /* line 101, ../sass/3.base/_titles.scss */
 h2,
 .title-2 {
-  font: bold strip-unit(1.75)rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: bold 0.875rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #000000;
   margin: 0.5em 0 0.5em;
   display: flex;
 }
 
-@media only screen and (max-width: 47.9375rem) {
+@media only screen and (max-width: 18.71875pxrem) {
   /* line 101, ../sass/3.base/_titles.scss */
   h2,
   .title-2 {
     margin: 0.5em 0 0.5em;
-    font-size: strip-unit(1.375)rem;
+    font-size: 0.6875rem;
   }
 }
 
@@ -567,24 +553,24 @@ h2:first-child,
 /* line 106, ../sass/3.base/_titles.scss */
 h3,
 .title-3 {
-  font: strip-unit(1.5)rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 0.75rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #000000;
   margin: 0.5em 0 0.5em;
 }
 
-@media only screen and (max-width: strip-unit(87.5) rem) {
+@media only screen and (max-width: 43.75rem) {
   /* line 106, ../sass/3.base/_titles.scss */
   h3,
   .title-3 {
-    font-size: strip-unit(1.125)rem;
+    font-size: 0.5625rem;
   }
 }
 
-@media only screen and (max-width: 47.9375rem) {
+@media only screen and (max-width: 18.71875pxrem) {
   /* line 106, ../sass/3.base/_titles.scss */
   h3,
   .title-3 {
-    font-size: strip-unit(1)rem;
+    font-size: 0.5rem;
   }
 }
 
@@ -597,15 +583,15 @@ h3:first-child,
 /* line 111, ../sass/3.base/_titles.scss */
 h4,
 .title-4 {
-  font: bold strip-unit(1.375)rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: bold 0.6875rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 1.5em 0 0.5em;
 }
 
-@media only screen and (max-width: 47.9375rem) {
+@media only screen and (max-width: 18.71875pxrem) {
   /* line 111, ../sass/3.base/_titles.scss */
   h4,
   .title-4 {
-    font-size: strip-unit(1.25)rem;
+    font-size: 0.625rem;
   }
 }
 
@@ -618,15 +604,15 @@ h4:first-child,
 /* line 116, ../sass/3.base/_titles.scss */
 h5,
 .title-5 {
-  font: bold strip-unit(1.25)rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: bold 0.625rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 1.5em 0 0.5em;
 }
 
-@media only screen and (max-width: 47.9375rem) {
+@media only screen and (max-width: 18.71875pxrem) {
   /* line 116, ../sass/3.base/_titles.scss */
   h5,
   .title-5 {
-    font-size: strip-unit(1.125)rem;
+    font-size: 0.5625rem;
   }
 }
 
@@ -639,15 +625,15 @@ h5:first-child,
 /* line 121, ../sass/3.base/_titles.scss */
 h6,
 .title-6 {
-  font: bold strip-unit(1.125)rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: bold 0.5625rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 1.5em 0 0.5em;
 }
 
-@media only screen and (max-width: 47.9375rem) {
+@media only screen and (max-width: 18.71875pxrem) {
   /* line 121, ../sass/3.base/_titles.scss */
   h6,
   .title-6 {
-    font-size: strip-unit(1)rem;
+    font-size: 0.5rem;
   }
 }
 
@@ -685,32 +671,105 @@ h6:first-child,
   font-style: normal;
 }
 
-/* line 5, ../sass/4.layout/_wrappers.scss */
+/* line 5, ../sass/3.base/_wrappers.scss */
 .page-wrapper {
   position: relative;
   min-height: 100%;
 }
 
-/* line 30, ../sass/4.layout/_wrappers.scss */
+/* line 30, ../sass/3.base/_wrappers.scss */
 .menu-wrapper {
-  max-width: strip-unit(80)rem;
+  max-width: 40rem;
 }
 
-/* line 34, ../sass/4.layout/_wrappers.scss */
+/* line 34, ../sass/3.base/_wrappers.scss */
 .text-wrapper {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  padding-left: strip-unit(1.25)rem;
-  padding-right: strip-unit(1.25)rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
 }
 
-@media only screen and (max-width: 47.9375rem) {
-  /* line 34, ../sass/4.layout/_wrappers.scss */
+@media only screen and (max-width: 18.71875pxrem) {
+  /* line 34, ../sass/3.base/_wrappers.scss */
   .text-wrapper {
-    padding-left: strip-unit(0.625)rem;
-    padding-right: strip-unit(0.625)rem;
+    padding-left: 0.3125rem;
+    padding-right: 0.3125rem;
   }
+}
+
+/* line 5, ../sass/3.base/_animations.scss */
+.animation-text-reveal {
+  position: relative;
+  -webkit-animation-name: text-reveal;
+          animation-name: text-reveal;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes text-reveal {
+  0% {
+    opacity: 0;
+    top: 100px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes text-reveal {
+  0% {
+    opacity: 0;
+    top: 100px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+/* line 6, ../sass/5.modules/_template-module.scss */
+main {
+  background-color: slateblue;
+}
+
+/* line 8, ../sass/5.modules/_template-module.scss */
+main .template-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  transition: ease-in-out 0.2s all;
+}
+
+/* line 16, ../sass/5.modules/_template-module.scss */
+main .template-section.blue {
+  background-color: palevioletred;
+}
+
+/* line 21, ../sass/5.modules/_template-module.scss */
+.text {
+  transition: ease-in-out 0.2s all;
+  cursor: pointer;
+  font-family: 'inconsolata';
+  font-weight: 700;
+  font-size: 32px;
+}
+
+/* line 27, ../sass/5.modules/_template-module.scss */
+.text.background {
+  font-size: 1.5em;
+  background-color: black;
+  color: white;
+  padding: 2em;
 }
 
 @media print {

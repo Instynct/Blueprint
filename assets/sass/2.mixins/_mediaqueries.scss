@@ -45,7 +45,7 @@
 }
 
 @mixin mobile-only {
-	@media only screen and (max-width: #{ ($mobile-threshold - 1) / $font-size-default }rem) {
+	@media only screen and (max-width: #{ ($mobile-threshold - 1) / $function-size-default }rem) {
 		@content;
 	}
 }

@@ -1,16 +1,16 @@
 /*! snoros v0.0.1 | (c) 2020 Instynct | MIT License | http://link-to-your-git-repo.com */
-moduleTitle = document.querySelector('[data-title]');
-moduleContainer = document.querySelector('[data-container]');
+moduleTitle = document.querySelector('[data-interactive-text]');
+moduleContainer = document.querySelector('[data-section]');
 
 moduleTitle.addEventListener('mouseover', (function (e) {
 	moduleContainer.classList.toggle('blue');
 }));
 
-$('[data-title]').hover(
+$('[data-interactive-text]').hover(
 	(function () {
-		$('[data-title]').addClass('background');
+		$('[data-interactive-text]').addClass('background');
 	}),
 	(function () {
-		$('[data-title]').removeClass('background');
+		$('[data-interactive-text]').removeClass('background');
 	})
 );

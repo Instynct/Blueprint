@@ -1,8 +1,8 @@
-$('[data-title]').hover(
+$('[data-interactive-text]').hover(
 	function () {
-		$('[data-title]').addClass('background');
+		$('[data-interactive-text]').addClass('background');
 	},
 	function () {
-		$('[data-title]').removeClass('background');
+		$('[data-interactive-text]').removeClass('background');
 	}
 );

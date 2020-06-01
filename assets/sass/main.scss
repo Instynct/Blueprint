@@ -14,6 +14,8 @@
 @import '3.base/normalize';
 @import '3.base/titles';
 @import '3.base/typography';
+@import '3.base/wrappers';
+@import '3.base/animations';
 
 @import '4.layout/footer';
 @import '4.layout/header';
@@ -21,12 +23,11 @@
 @import '4.layout/menu-main';
 @import '4.layout/menu-mobile';
 @import '4.layout/sidebar';
-@import '4.layout/wrappers';
 
-@import '5.modules/buttons';
+@import '5.modules/cta';
 @import '5.modules/flexible-content';
 @import '5.modules/slider';
-
+@import '5.modules/template-module';
 @import '6.templates/home';
 
 @import '7.print/print';

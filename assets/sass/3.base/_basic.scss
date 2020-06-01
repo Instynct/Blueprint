@@ -13,7 +13,7 @@ html {
 }
 
 body {
-	width: 100vw;
+	width: 100%;
 	margin: 0;
 	padding: 0;
 	background-color: $white;
@@ -48,21 +48,16 @@ hr {
 	margin-right: auto;
 	width: calc(100% - 60px);
 
-	@media screen and (min-width: 600px) {
+	@include min-width($mobile-threshold) {
 		padding: 0 75px;
 		width: calc(100% - 150px);
 	}
 
-	@media screen and (min-width: 1024px) {
+	@include min-width($tablet-threshold) {
 		margin-left: auto;
 		margin-right: auto;
 		padding: 0 120px;
 		width: calc(100% - 240px);
 		max-width: 1400px;
-	}
-
-	@media screen and (min-width: 1640px) {
-		padding: 0;
-		width: 100%;
 	}
 }

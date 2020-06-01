@@ -2,10 +2,6 @@
 // BASE - Helper classes
 // ==========================================================================
 
-.clearfix {
-	@include clearfix;
-}
-
 .hidden {
 	display: none;
 }
@@ -29,6 +25,9 @@
 	display: table;
 }
 
+.-flex {
+	display: flex;
+}
 // - - - Hides the text in the span for accessibility purpose - - -
 @mixin text-hidden {
 	span {

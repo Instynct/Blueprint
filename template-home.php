@@ -1,10 +1,17 @@
 <?php
 /*
- * Template Name: Home
- */
+Template Name: Home
+*/
+
+// Load header.php
 get_header(); ?>
 
-<?php get_template_part('blocks/block-template'); ?>
+
+<?php
+// Load external Html templates
+get_template_part('modules/module-template'); ?>
 
 
-<?php get_footer(); ?>
+<?php
+// Load footer.php
+get_footer(); ?>

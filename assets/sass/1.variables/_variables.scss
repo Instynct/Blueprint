@@ -24,7 +24,12 @@ $grey: #aaaaa5;
 	}
 }
 
-$font-size-default: 16;
+// Used in functions.sass only
+$function-size-default: 32;
+
+// Can be used for style
+$font-size-default: 32px;
+
 $line-height-default: 1.25;
 $text-color-default: $black;
 
@@ -43,4 +48,5 @@ $trans-time: 0.2s;
 
 // Under this threshold, the site enter the "mobile" resolutions
 // In px, no unit
-$mobile-threshold: 768;
+$mobile-threshold: 600px;
+$tablet-threshold: 1024px;
