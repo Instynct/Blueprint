@@ -9,12 +9,18 @@
 
 	<script data-main="<?php bloginfo('template_url') ?>/assets/js/require.js" src="<?php bloginfo('template_url') ?>/assets/js/require.js" async></script>
 
+	<!-- Check is the page is the IE template -->
+	<?php if (!is_page('internet-explorer')) { ?>
+		<script src="<?php bloginfo('template_url') ?>/dist/js/internet-explorer.min.js"></script>
+	<?php } ?>
+
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 	<div class="page-wrapper">
 		<header>
+
 			<!-- <div class="logo">
 					<a href="<?= home_url(); ?>">
 						<img src="/img/logo.png" alt="Logo">
