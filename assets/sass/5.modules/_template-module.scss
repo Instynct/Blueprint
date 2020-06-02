@@ -13,9 +13,6 @@ main {
 		height: 100vh;
 		background-color: transparent;
 		transition: ease-in-out 0.2s all;
-		&.blue {
-			background-color: palevioletred;
-		}
 	}
 }
 .text {

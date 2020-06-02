@@ -734,6 +734,23 @@ h6:first-child,
   }
 }
 
+/* line 4, ../sass/5.modules/_slider.scss */
+.single-slide {
+  width: 100%;
+  /* full width */
+  height: 160px;
+  /* height of carousel */
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 12, ../sass/5.modules/_slider.scss */
+.flickity-page-dots {
+  left: 0;
+}
+
 /* line 6, ../sass/5.modules/_template-module.scss */
 main {
   background-color: slateblue;
@@ -750,12 +767,7 @@ main .template-section {
   transition: ease-in-out 0.2s all;
 }
 
-/* line 16, ../sass/5.modules/_template-module.scss */
-main .template-section.blue {
-  background-color: palevioletred;
-}
-
-/* line 21, ../sass/5.modules/_template-module.scss */
+/* line 18, ../sass/5.modules/_template-module.scss */
 .text {
   transition: ease-in-out 0.2s all;
   cursor: pointer;
@@ -764,7 +776,7 @@ main .template-section.blue {
   font-size: 32px;
 }
 
-/* line 27, ../sass/5.modules/_template-module.scss */
+/* line 24, ../sass/5.modules/_template-module.scss */
 .text.background {
   font-size: 1.5em;
   background-color: black;
@@ -790,4 +802,172 @@ main .template-section.blue {
   html {
     font-size: 10px !important;
   }
+}
+
+/*! Flickity v2.2.0
+https://flickity.metafizzy.co
+---------------------------------------------- */
+/* line 5, ../sass/8.plugins/_flickity.scss */
+.flickity-enabled {
+  position: relative;
+}
+
+/* line 9, ../sass/8.plugins/_flickity.scss */
+.flickity-enabled:focus {
+  outline: none;
+}
+
+/* line 11, ../sass/8.plugins/_flickity.scss */
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+/* line 17, ../sass/8.plugins/_flickity.scss */
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* draggable */
+/* line 25, ../sass/8.plugins/_flickity.scss */
+.flickity-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 34, ../sass/8.plugins/_flickity.scss */
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+/* line 40, ../sass/8.plugins/_flickity.scss */
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+/* ---- flickity-button ---- */
+/* line 47, ../sass/8.plugins/_flickity.scss */
+.flickity-button {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.75);
+  border: none;
+  color: #333;
+}
+
+/* line 54, ../sass/8.plugins/_flickity.scss */
+.flickity-button:hover {
+  background: white;
+  cursor: pointer;
+}
+
+/* line 59, ../sass/8.plugins/_flickity.scss */
+.flickity-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #19F;
+}
+
+/* line 64, ../sass/8.plugins/_flickity.scss */
+.flickity-button:active {
+  opacity: 0.6;
+}
+
+/* line 68, ../sass/8.plugins/_flickity.scss */
+.flickity-button:disabled {
+  opacity: 0.3;
+  cursor: auto;
+  /* prevent disabled button from capturing pointer up event. #716 */
+  pointer-events: none;
+}
+
+/* line 75, ../sass/8.plugins/_flickity.scss */
+.flickity-button-icon {
+  fill: currentColor;
+}
+
+/* ---- previous/next buttons ---- */
+/* line 81, ../sass/8.plugins/_flickity.scss */
+.flickity-prev-next-button {
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  /* vertically center */
+  transform: translateY(-50%);
+}
+
+/* line 90, ../sass/8.plugins/_flickity.scss */
+.flickity-prev-next-button.previous {
+  left: 10px;
+}
+
+/* line 91, ../sass/8.plugins/_flickity.scss */
+.flickity-prev-next-button.next {
+  right: 10px;
+}
+
+/* right to left */
+/* line 93, ../sass/8.plugins/_flickity.scss */
+.flickity-rtl .flickity-prev-next-button.previous {
+  left: auto;
+  right: 10px;
+}
+
+/* line 97, ../sass/8.plugins/_flickity.scss */
+.flickity-rtl .flickity-prev-next-button.next {
+  right: auto;
+  left: 10px;
+}
+
+/* line 102, ../sass/8.plugins/_flickity.scss */
+.flickity-prev-next-button .flickity-button-icon {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%;
+}
+
+/* ---- page dots ---- */
+/* line 112, ../sass/8.plugins/_flickity.scss */
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+}
+
+/* line 123, ../sass/8.plugins/_flickity.scss */
+.flickity-rtl .flickity-page-dots {
+  direction: rtl;
+}
+
+/* line 125, ../sass/8.plugins/_flickity.scss */
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: #333;
+  border-radius: 50%;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+/* line 136, ../sass/8.plugins/_flickity.scss */
+.flickity-page-dots .dot.is-selected {
+  opacity: 1;
 }

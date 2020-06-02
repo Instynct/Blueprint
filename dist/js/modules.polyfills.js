@@ -1,13 +1,15 @@
 /*! snoros v0.0.1 | (c) 2020 Instynct | MIT License | http://link-to-your-git-repo.com */
-moduleTitle = document.querySelector('[data-interactive-text]');
-moduleContainer = document.querySelector('[data-section]');
+define(['jquery'], (function ($) {
+	moduleTitle = document.querySelector('[data-interactive-text]');
+	moduleContainer = document.querySelector('[data-section]');
 
-moduleTitle.addEventListener('mouseover', (function (e) {
-	moduleContainer.classList.toggle('blue');
+	moduleTitle.addEventListener('mouseover', (function (e) {
+		moduleContainer.classList.toggle('blue');
+	}));
 }));
 
-$((function () {
-	if ($('body').is('.PageType')) {
+define(['jquery'], (function ($) {
+	$(document).ready((function () {
 		$('[data-interactive-text]').hover(
 			(function () {
 				$('[data-interactive-text]').addClass('background');
@@ -16,8 +18,16 @@ $((function () {
 				$('[data-interactive-text]').removeClass('background');
 			})
 		);
-		//add dynamic script tag  using createElement()
-		OR;
-		//call specific functions
-	}
+	}));
+}));
+
+define(['jquery', 'flickity', 'bridget'], (function ($, Flickity) {
+	$(document).ready((function () {
+		$.bridget('flickity', Flickity, $);
+		$('.formation-carousel').flickity({
+			// options
+			cellAlign: 'left',
+			contain: true,
+		});
+	}));
 }));
