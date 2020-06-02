@@ -1,3 +1,4 @@
 {
-	"almond": "plugins/almond/almond"
+	"almond": "plugins/almond/almond",
+	"flickity": "plugins/flickity/index"
 }

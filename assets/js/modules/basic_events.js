@@ -1,6 +1,12 @@
-moduleTitle = document.querySelector('[data-interactive-text]');
-moduleContainer = document.querySelector('[data-section]');
-
-moduleTitle.addEventListener('mouseover', function (e) {
-	moduleContainer.classList.toggle('blue');
+//
+//
+// DEFINE MODULE
+define(['jquery', 'flickity'], function ($) {
+	$('.formation-carousel').flickity({
+		cellAlign: 'left',
+		contain: true,
+		prevNextButtons: false,
+		pageDots: false,
+		wrapAround: true,
+	});
 });

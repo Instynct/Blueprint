@@ -7,8 +7,6 @@
 
 	<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_url') ?>/dist/css/main.min.css" async />
 
-	<script data-main="<?php bloginfo('template_url') ?>/assets/js/require.js" src="<?php bloginfo('template_url') ?>/assets/js/require.js" async></script>
-
 	<!-- Check is the page is the IE template -->
 	<?php if (!is_page('internet-explorer')) { ?>
 		<script src="<?php bloginfo('template_url') ?>/dist/js/internet-explorer.min.js"></script>
