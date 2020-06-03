@@ -24,6 +24,12 @@ function register_my_menus()
 	register_nav_menus();
 }
 
+function remove_editor()
+{
+	remove_post_type_support('page', 'editor');
+}
+add_action('admin_init', 'remove_editor');
+add_filter('use_block_editor_for_post_type', '__return_false');
 add_action('admin_menu', 'custom_menu_page_removing');
 add_action('init', 'register_my_menus');
 add_action('login_enqueue_scripts', 'custom_login_demarrage');
