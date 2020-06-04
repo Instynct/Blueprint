@@ -5,11 +5,12 @@
 // Colors
 // ==========================================================================
 
-$light-beige: #eeede3;
-$beige: #e9e6d8;
 $black: #000000;
 $white: #ffffff;
-$grey: #aaaaa5;
+$grey: #f4f6f7;
+$marino: #022173;
+$dpurple: #1f1641;
+$clearblue: #6fa6ff;
 
 //  Typography
 // ==========================================================================
@@ -23,6 +24,10 @@ $grey: #aaaaa5;
 		font-style: $style;
 	}
 }
+// Style mixins
+// ==========================================================================
+
+@include font-face(Inconsolata, './../../dist/fonts/inconsolata/Inconsolata-regular', regular, normal);
 
 // Used in functions.sass only
 $function-size-default: 16;
@@ -34,8 +39,7 @@ $line-height-default: 1.25;
 $text-color-default: $black;
 
 // - - - Font families - - -
-$font-family-default: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$open-sans: 'Open Sans', $font-family-default;
+$font-family-default: 'proxima-nova', Helvetica, Arial, sans-serif;
 
 // Animation
 // ==========================================================================
@@ -50,3 +54,14 @@ $trans-time: 0.2s;
 // In px, no unit
 $mobile-threshold: 600px;
 $tablet-threshold: 1024px;
+
+// The selector of the main content, used for styles that apply only to the body text, like lists
+// Replace 'main' by the appropriate selector for your framework, or you can define one yourself
+// Wordpress & Drupal: '.content' should work, or '.content article'
+// Magento: '.std'
+$content: 'main';
+
+// The selector for CMS WYSIWYG fields
+// Wordpress: #tinyMce
+// Drupal: .cke_editable
+$editor: '#tinyMce';

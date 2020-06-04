@@ -1,4 +1,11 @@
 /*! snoros v0.0.1 | (c) 2020 Instynct | MIT License | http://link-to-your-git-repo.com */
+@font-face {
+  font-family: Inconsolata;
+  src: url("./../../dist/fonts/inconsolata/Inconsolata-regular.woff2") format("woff2"), url("./../../dist/fonts/inconsolata/Inconsolata-regular.woff") format("woff");
+  font-weight: regular;
+  font-style: normal;
+}
+
 /* line 6, ../sass/3.base/_basic.scss */
 html {
   width: 100%;
@@ -35,7 +42,7 @@ img {
 /* line 35, ../sass/3.base/_basic.scss */
 hr {
   display: block;
-  margin: 0.5rem 0;
+  margin: 1rem 0;
   padding: 0;
   border: 0;
   border-top: 1px solid #ccc;
@@ -112,14 +119,14 @@ button {
   font-size: 0;
 }
 
-@media only screen and (min-width: 18.75pxrem) {
+@media only screen and (min-width: 37.5pxrem) {
   /* line 43, ../sass/3.base/_helpers.scss */
   .hide-on-desktop {
     display: none;
   }
 }
 
-@media only screen and (max-width: 18.71875pxrem) {
+@media only screen and (max-width: 37.4375pxrem) {
   /* line 50, ../sass/3.base/_helpers.scss */
   .hide-on-mobile {
     display: none;
@@ -511,36 +518,36 @@ template {
 /* line 96, ../sass/3.base/_titles.scss */
 h1,
 .title-1 {
-  font: bold 1.0625rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: bold 2.125rem/1.2 "proxima-nova", Helvetica, Arial, sans-serif;
   color: #000000;
   margin: 0 0 0.2em 0;
   display: flex;
 }
 
-@media only screen and (max-width: 18.71875pxrem) {
+@media only screen and (max-width: 37.4375pxrem) {
   /* line 96, ../sass/3.base/_titles.scss */
   h1,
   .title-1 {
     margin: 0 0 1em 0;
-    font-size: 0.6875rem;
+    font-size: 1.375rem;
   }
 }
 
 /* line 101, ../sass/3.base/_titles.scss */
 h2,
 .title-2 {
-  font: bold 0.875rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: bold 1.75rem/1.2 "proxima-nova", Helvetica, Arial, sans-serif;
   color: #000000;
   margin: 0.5em 0 0.5em;
   display: flex;
 }
 
-@media only screen and (max-width: 18.71875pxrem) {
+@media only screen and (max-width: 37.4375pxrem) {
   /* line 101, ../sass/3.base/_titles.scss */
   h2,
   .title-2 {
     margin: 0.5em 0 0.5em;
-    font-size: 0.6875rem;
+    font-size: 1.375rem;
   }
 }
 
@@ -553,24 +560,24 @@ h2:first-child,
 /* line 106, ../sass/3.base/_titles.scss */
 h3,
 .title-3 {
-  font: 0.75rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 1.5rem/1.2 "proxima-nova", Helvetica, Arial, sans-serif;
   color: #000000;
   margin: 0.5em 0 0.5em;
 }
 
-@media only screen and (max-width: 43.75rem) {
+@media only screen and (max-width: 87.5rem) {
   /* line 106, ../sass/3.base/_titles.scss */
   h3,
   .title-3 {
-    font-size: 0.5625rem;
+    font-size: 1.125rem;
   }
 }
 
-@media only screen and (max-width: 18.71875pxrem) {
+@media only screen and (max-width: 37.4375pxrem) {
   /* line 106, ../sass/3.base/_titles.scss */
   h3,
   .title-3 {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -583,15 +590,15 @@ h3:first-child,
 /* line 111, ../sass/3.base/_titles.scss */
 h4,
 .title-4 {
-  font: bold 0.6875rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: bold 1.375rem/1.2 "proxima-nova", Helvetica, Arial, sans-serif;
   margin: 1.5em 0 0.5em;
 }
 
-@media only screen and (max-width: 18.71875pxrem) {
+@media only screen and (max-width: 37.4375pxrem) {
   /* line 111, ../sass/3.base/_titles.scss */
   h4,
   .title-4 {
-    font-size: 0.625rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -604,15 +611,15 @@ h4:first-child,
 /* line 116, ../sass/3.base/_titles.scss */
 h5,
 .title-5 {
-  font: bold 0.625rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: bold 1.25rem/1.2 "proxima-nova", Helvetica, Arial, sans-serif;
   margin: 1.5em 0 0.5em;
 }
 
-@media only screen and (max-width: 18.71875pxrem) {
+@media only screen and (max-width: 37.4375pxrem) {
   /* line 116, ../sass/3.base/_titles.scss */
   h5,
   .title-5 {
-    font-size: 0.5625rem;
+    font-size: 1.125rem;
   }
 }
 
@@ -625,15 +632,15 @@ h5:first-child,
 /* line 121, ../sass/3.base/_titles.scss */
 h6,
 .title-6 {
-  font: bold 0.5625rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: bold 1.125rem/1.2 "proxima-nova", Helvetica, Arial, sans-serif;
   margin: 1.5em 0 0.5em;
 }
 
-@media only screen and (max-width: 18.71875pxrem) {
+@media only screen and (max-width: 37.4375pxrem) {
   /* line 121, ../sass/3.base/_titles.scss */
   h6,
   .title-6 {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -643,32 +650,98 @@ h6:first-child,
   margin-top: 0;
 }
 
-@font-face {
-  font-family: Inconsolata;
-  src: url("./../../dist/fonts/inconsolata/Inconsolata-regular.woff2") format("woff2"), url("./../../dist/fonts/inconsolata/Inconsolata-regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
+/* line 5, ../sass/3.base/_typography.scss */
+body {
+  font: 400 1pxrem / 1.25 "proxima-nova", Helvetica, Arial, sans-serif;
+  color: #000000;
 }
 
-@font-face {
-  font-family: Inconsolata;
-  src: url("./../../dist/fonts/inconsolata/Inconsolata-Bold.woff2") format("woff2"), url("./../../dist/fonts/inconsolata/Inconsolata-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
+/* line 10, ../sass/3.base/_typography.scss */
+a {
+  color: #022173;
+  text-decoration: none;
+  transition: color 0.2s linear;
 }
 
-@font-face {
-  font-family: manrope;
-  src: url("./../../dist/fonts/manrope/manrope-Bold.woff2") format("woff2"), url("./../../dist/fonts/manrope/manrope-Bold.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+/* line 15, ../sass/3.base/_typography.scss */
+a:hover, a:focus {
+  color: #022173;
 }
 
-@font-face {
-  font-family: chelsea;
-  src: url("./../../dist/fonts/chelsea/ChelseaMarket-Regular.woff2") format("woff2"), url("./../../dist/fonts/chelsea/ChelseaMarket-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+/* line 23, ../sass/3.base/_typography.scss */
+main a,
+#tinyMce a {
+  text-decoration: none;
+}
+
+/* line 28, ../sass/3.base/_typography.scss */
+p {
+  margin: 0 0 1em 0;
+  color: #022173;
+}
+
+/* line 31, ../sass/3.base/_typography.scss */
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* line 37, ../sass/3.base/_typography.scss */
+.-italic {
+  font-style: italic;
+}
+
+/* line 41, ../sass/3.base/_typography.scss */
+.-bold {
+  font-weight: bold;
+}
+
+/* line 45, ../sass/3.base/_typography.scss */
+.-center {
+  text-align: center;
+  align-self: center;
+}
+
+/* line 50, ../sass/3.base/_typography.scss */
+.-grey {
+  color: #f4f6f7;
+}
+
+/* line 54, ../sass/3.base/_typography.scss */
+.-black,
+.-black {
+  color: #000000;
+}
+
+/* line 59, ../sass/3.base/_typography.scss */
+.-no-margin {
+  margin: 0;
+}
+
+/* line 63, ../sass/3.base/_typography.scss */
+.-white {
+  color: white;
+}
+
+/* line 67, ../sass/3.base/_typography.scss */
+.-text-margin {
+  margin-top: 0.625rem;
+  margin-bottom: 1.875rem;
+}
+
+/* line 73, ../sass/3.base/_typography.scss */
+::-moz-selection {
+  border: 0;
+  background: rgba(0, 0, 0, 0.1);
+  color: #000000;
+  text-shadow: none;
+  outline: none;
+}
+::selection {
+  border: 0;
+  background: rgba(0, 0, 0, 0.1);
+  color: #000000;
+  text-shadow: none;
+  outline: none;
 }
 
 /* line 5, ../sass/3.base/_wrappers.scss */
@@ -679,7 +752,7 @@ h6:first-child,
 
 /* line 30, ../sass/3.base/_wrappers.scss */
 .menu-wrapper {
-  max-width: 40rem;
+  max-width: 80rem;
 }
 
 /* line 34, ../sass/3.base/_wrappers.scss */
@@ -687,15 +760,15 @@ h6:first-child,
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 0.625rem;
-  padding-right: 0.625rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
-@media only screen and (max-width: 18.71875pxrem) {
+@media only screen and (max-width: 37.4375pxrem) {
   /* line 34, ../sass/3.base/_wrappers.scss */
   .text-wrapper {
-    padding-left: 0.3125rem;
-    padding-right: 0.3125rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
   }
 }
 
@@ -773,7 +846,7 @@ main .template-section {
   cursor: pointer;
   font-family: 'inconsolata';
   font-weight: 700;
-  font-size: 32px;
+  font-size: 16px;
 }
 
 /* line 24, ../sass/5.modules/_template-module.scss */
