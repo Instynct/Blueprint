@@ -1,5 +1,5 @@
 requirejs.config({
-	baseUrl: 'wp-content/themes/blueprint-instynct/assets/js/',
+	baseUrl: '/wp-content/themes/blueprint-instynct/assets/js/',
 
 	paths: {
 		jquery: 'components/jquery-3.5.1',
