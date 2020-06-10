@@ -39,7 +39,13 @@
 }
 
 @mixin desktop-only {
-	@media only screen and (min-width: rem($mobile-threshold)) {
+	@media only screen and (min-width: rem($tablet-threshold-stripped)) {
+		@content;
+	}
+}
+
+@mixin tablet-only {
+	@media only screen and (min-width: rem($mobile-threshold-stripped)) {
 		@content;
 	}
 }

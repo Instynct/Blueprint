@@ -119,7 +119,7 @@ button {
   font-size: 0;
 }
 
-@media only screen and (min-width: 37.5pxrem) {
+@media only screen and (min-width: 64rem) {
   /* line 43, ../sass/3.base/_helpers.scss */
   .hide-on-desktop {
     display: none;

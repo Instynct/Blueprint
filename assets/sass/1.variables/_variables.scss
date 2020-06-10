@@ -38,8 +38,9 @@ $font-size-default: 16px;
 $line-height-default: 1.25;
 $text-color-default: $black;
 
-// header height for mobile
-$header-height: 85px;
+// header height for mobile and tablet
+$mobile-header-height: 85px;
+$tablet-header-height: 140px;
 
 // - - - Font families - - -
 $font-family-default: 'proxima-nova', Helvetica, Arial, sans-serif;
@@ -57,6 +58,9 @@ $trans-time: 0.2s;
 // In px, no unit
 $mobile-threshold: 600px;
 $tablet-threshold: 1024px;
+
+$mobile-threshold-stripped: 600;
+$tablet-threshold-stripped: 1024;
 
 // The selector of the main content, used for styles that apply only to the body text, like lists
 // Replace 'main' by the appropriate selector for your framework, or you can define one yourself
