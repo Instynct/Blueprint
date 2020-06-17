@@ -1,7 +1,8 @@
 /*! snoros v0.0.1 | (c) 2020 Instynct | MIT License | http://link-to-your-git-repo.com */
 @font-face {
   font-family: Inconsolata;
-  src: url("./../../dist/fonts/inconsolata/Inconsolata-regular.woff2") format("woff2"), url("./../../dist/fonts/inconsolata/Inconsolata-regular.woff") format("woff");
+  src: url("./../../dist/fonts/inconsolata/inconsolata-regular.otf");
+  src: url("./../../dist/fonts/inconsolata/inconsolata-regular.eot?#iefix") format("embedded-opentype"), url("./../../dist/fonts/inconsolata/inconsolata-regular.woff2") format("woff2"), url("./../../dist/fonts/inconsolata/inconsolata-regular.woff") format("woff"), url("./../../dist/fonts/inconsolata/inconsolata-regular.ttf") format("truetype");
   font-weight: regular;
   font-style: normal;
 }
