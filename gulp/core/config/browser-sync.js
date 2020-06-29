@@ -11,4 +11,5 @@ module.exports = deepMerge({
 	proxy: 'blueprint.local',
 	host: 'blueprint.local',
 	open: 'external',
+	https: true,
 });
