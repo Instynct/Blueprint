@@ -10,7 +10,8 @@ var config = require('../config/browser-sync');
  * browser
  *
  */
+
 module.exports = function (done) {
-  browserSync(config);
+	browserSync(config);
 	done();
 };

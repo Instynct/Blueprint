@@ -7,15 +7,15 @@ class Scroll {
 	constructor() {
 		this.controller = new ScrollMagic.Controller();
 		this.scene = new ScrollMagic.Scene({ triggerElement: '#home-experience-routes', triggerHook: '0', duration: '100%' }).setPin('#home-experience-routes').setTween('.home-experience-slider', { transform: 'translateX(-50%)' }).addTo(this.controller);
-		this.init();
+		this.init(this.scene);
 	}
 
-	init() {
+	init(scene) {
 		$(window).bind('load resize', function loadResize() {
 			if ($(window).width() >= 1024) {
-				this.scene.enabled(true);
+				scene.enabled(true);
 			} else {
-				this.scene.enabled(false);
+				scene.enabled(false);
 			}
 		});
 	}
