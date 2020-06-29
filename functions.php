@@ -2,37 +2,37 @@
 
 // Utilities
 
-include('configure/utilities.php');
+include('inc/utilities.php');
 
 // CONFIG
 
-include('configure/configure.php');
+include('inc/configure.php');
 
 // JAVASCRIPT & CSS
 
-include('configure/js-css.php');
+include('inc/js-css.php');
 
 // SHORTCODES
 
-include('configure/shortcodes.php');
+include('inc/shortcodes.php');
 
 // ACF
 
-include('configure/acf.php');
+include('inc/acf.php');
 
 // HOOKS ADMIN
 
 // Custom login styles
-require_once('configure/login-css.php');
+require_once('inc/login-css.php');
 
 // ACF options in admin
-require_once('configure/acf/acf-option-page.php');
+require_once('inc/acf/acf-option-page.php');
 
 // CUSTOM POST TYPES
-require_once('configure/custom-post-types.php');
+require_once('inc/custom-post-types.php');
 
 // Tiny MCE Styles
-require_once('configure/tiny-mce.php');
+require_once('inc/tiny-mce.php');
 
 // Disable WordPress Admin Bar for all users but admins. //
 show_admin_bar(false);
@@ -52,5 +52,5 @@ function remove_editor() {
 }
 
 if (is_admin()) {
-	include('configure/admin.php');
+	include('inc/admin.php');
 }
