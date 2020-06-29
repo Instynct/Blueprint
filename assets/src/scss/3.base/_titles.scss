@@ -4,89 +4,97 @@
 
 // Style mixins
 // ==========================================================================
-
+// proxima-nova light:300, regular:400, semibold:600, bold:700
 @mixin title-1 {
-	font: bold rem(34) / 1.2 $font-family-default;
+	font: 700 rem(28) / 1.2 $font-family-default;
 	color: $black;
 	margin: 0 0 0.2em 0;
 	display: flex;
 
-	@include mobile-only {
+	@include min-width($mobile-threshold) {
 		margin: 0 0 1em 0;
-		font-size: rem(22);
+		font-size: rem(60);
+	}
+	@include min-width($tablet-threshold) {
+		margin: 0 0 1em 0;
+		font-size: rem(80);
 	}
 }
 
 @mixin title-2 {
-	font: bold rem(28) / 1.2 $font-family-default;
+	font: 700 rem(20) $font-family-default;
 	color: $black;
 	margin: 0.5em 0 0.5em;
 	display: flex;
 
-	@include mobile-only {
-		margin: 0.5em 0 0.5em;
-		font-size: rem(22);
+	@include min-width($mobile-threshold) {
+		margin: 0 0 1em 0;
+		font-size: rem(40);
 	}
-
-	&:first-child {
-		margin-top: 0;
+	@include min-width($tablet-threshold) {
+		margin: 0 0 1em 0;
+		font-size: rem(50);
 	}
 }
 
 @mixin title-3 {
-	font: rem(24) / 1.2 $font-family-default;
+	font: 600 rem(20) $font-family-default;
 	color: $black;
 	margin: 0.5em 0 0.5em;
 
-	@include max-width(rem(1400)) {
-		font-size: rem(18);
+	@include min-width($mobile-threshold) {
+		margin: 0 0 1em 0;
+		font-size: rem(35);
 	}
-
-	@include mobile-only {
-		font-size: rem(16);
-	}
-
-	&:first-child {
-		margin-top: 0;
+	@include min-width($tablet-threshold) {
+		margin: 0 0 1em 0;
+		font-size: rem(40);
 	}
 }
 
 @mixin title-4 {
-	font: bold rem(22) / 1.2 $font-family-default;
+	font: 600 rem(18) $font-family-default;
 	margin: 1.5em 0 0.5em;
 
-	@include mobile-only {
-		font-size: rem(20);
+	@include min-width($mobile-threshold) {
+		font-weight: 700;
+		margin: 0 0 1em 0;
+		font-size: rem(30);
 	}
-
-	&:first-child {
-		margin-top: 0;
+	@include min-width($tablet-threshold) {
+		margin: 0 0 1em 0;
+		font-weight: 700;
+		font-size: rem(30);
 	}
 }
 
 @mixin title-5 {
-	font: bold rem(20) / 1.2 $font-family-default;
+	font: 700 rem(17) $font-family-default;
 	margin: 1.5em 0 0.5em;
 
-	@include mobile-only {
-		font-size: rem(18);
+	@include min-width($mobile-threshold) {
+		font-weight: 600;
+		margin: 0 0 1em 0;
+		font-size: rem(25);
 	}
-
-	&:first-child {
-		margin-top: 0;
+	@include min-width($tablet-threshold) {
+		margin: 0 0 1em 0;
+		font-weight: 700;
+		font-size: rem(25);
 	}
 }
 
 @mixin title-6 {
-	font: bold rem(18) / 1.2 $font-family-default;
+	font: 600 rem(16) $font-family-default;
 	margin: 1.5em 0 0.5em;
 
-	@include mobile-only {
-		font-size: rem(16);
+	@include min-width($mobile-threshold) {
+		margin: 0 0 1em 0;
+		font-size: rem(23);
 	}
-
-	&:first-child {
-		margin-top: 0;
+	@include min-width($tablet-threshold) {
+		margin: 0 0 1em 0;
+		font-size: rem(25);
 	}
 }
 
