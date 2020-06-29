@@ -8,7 +8,7 @@ class Slider {
 	}
 
 	init() {
-		var flkty = new Flickity('.formation-carousel');
+		const flkty = new Flickity('.formation-carousel');
 		console.log(flkty, {
 			// options
 			cellAlign: 'left',
