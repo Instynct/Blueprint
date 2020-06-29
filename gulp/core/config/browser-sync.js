@@ -8,7 +8,7 @@ var deepMerge = require('../utils/deepMerge');
  *
  */
 module.exports = deepMerge({
-	proxy: 'livincamping.local',
-	host: 'livincamping.local',
+	proxy: 'blueprint.local',
+	host: 'blueprint.local',
 	open: 'external',
 });
