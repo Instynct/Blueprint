@@ -5,14 +5,10 @@
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_url') ?>/dist/css/main.min.css" async />
-
-
-
-	<!-- Check is the page is the IE template -->
+	<!-- Check is the page is the IE template
 	<?php if (!is_page('internet-explorer')) { ?>
 		<script src="<?php bloginfo('template_url') ?>/dist/js/internet-explorer.min.js"></script>
-	<?php } ?>
+	<?php } ?>-->
 
 	<?php wp_head(); ?>
 </head>

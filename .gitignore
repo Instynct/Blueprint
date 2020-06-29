@@ -1,28 +1,19 @@
-# Application
-app/public/wp-content/plugins/*
-!app/public/wp-content/plugins/.gitkeep
-app/public/wp-content/mu-plugins/*/
-app/public/wp-content/upgrade
-app/public/wp-content/uploads/*
-!app/public/wp-content/uploads/.gitkeep
 
-# Node Modules
-node_modules
+# VAGRANT
+.vagrant/
 
-# WordPress
-web/wp
-web/.htaccess
-
-# Logs
-*.log
-
-# Dotenv
-.env
-.env.*
-!.env.example
+# IDE
+/nbproject/
+.idea/*
 
 # Composer
-/vendor
+composer.phar
+vendor/
 
-# WP-CLI
-wp-cli.local.yml
+# Project
+.sass-cache
+assets/dist/
+bower_components/
+node_modules/
+
+_RESSOURCES/
