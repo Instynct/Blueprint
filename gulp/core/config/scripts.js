@@ -18,42 +18,34 @@ var assets = require('./common').paths.assets;
 module.exports = deepMerge({
 	paths: {
 		watch: assets.src + '/js/**/*.js',
-		src: [
-			assets.src + '/js/*.js',
-			'!' + assets.src + '/js/**/_*'
-		],
+		src: [assets.src + '/js/*.js', '!' + assets.src + '/js/**/_*'],
 		dest: assets.dest + '/js',
-		clean: assets.dest + '/js/**/*.{js,map}'
+		clean: assets.dest + '/js/**/*.{js,map}',
 	},
 
 	options: {
 		webpack: {
-
 			// merged with defaults
 			// for :watch task
 			watch: {
 				mode: 'development',
 				cache: true,
 				watch: true,
-				devtool: 'eval'
+				devtool: 'eval',
 			},
-
 
 			// merged with defaults
 			// for :dev task
 			dev: {
 				mode: 'development',
-				devtool: 'eval'
+				devtool: 'eval',
 			},
-
 
 			// merged with defaults
 			// for :prod task
 			prod: {
 				mode: 'production',
-				plugins: [
-					new webpack.optimize.OccurrenceOrderPlugin(true),
-				],
+				plugins: [new webpack.optimize.OccurrenceOrderPlugin(true)],
 				optimization: {
 					minimize: true,
 					minimizer: [
@@ -65,19 +57,19 @@ module.exports = deepMerge({
 							},
 							extractComments: false,
 						}),
-					]
-				}
+					],
+				},
 			},
 
 			defaults: {
 				resolve: {
-					extensions: ['.js', '.jsx']
+					extensions: ['.js', '.jsx'],
 				},
 				output: {
-					chunkFilename: 'chunk-[name].js'
+					chunkFilename: 'chunk-[name].js',
 				},
 				stats: {
-					colors: true
+					colors: true,
 				},
 				module: {
 					rules: [
@@ -87,8 +79,8 @@ module.exports = deepMerge({
 							exclude: /node_modules/,
 							loader: 'eslint-loader',
 							options: {
-								emitWarning: true
-							}
+								emitWarning: true,
+							},
 						},
 						{
 							test: /\.js$/,
@@ -96,19 +88,19 @@ module.exports = deepMerge({
 							loader: 'babel-loader',
 							options: {
 								presets: ['env'],
-								plugins: ['transform-runtime']
-							}
-						}
-					]
+								plugins: ['transform-runtime'],
+							},
+						},
+					],
 				},
 				plugins: [
 					new webpack.ProvidePlugin({
 						$: 'jquery',
 						jQuery: 'jquery',
-						'window.jQuery': 'jquery'
-					})
-				]
-			}
-		}
-	}
+						'window.jQuery': 'jquery',
+					}),
+				],
+			},
+		},
+	},
 });

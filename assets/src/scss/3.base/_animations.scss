@@ -1,0 +1,21 @@
+// ==========================================================================
+// BASE - Animation
+// ==========================================================================
+
+.animation-text-reveal {
+	position: relative;
+	animation-name: text-reveal;
+	animation-duration: 1.2s;
+	animation-timing-function: ease;
+	animation-fill-mode: both;
+}
+@keyframes text-reveal {
+	0% {
+		opacity: 0;
+		top: 100px;
+	}
+	100% {
+		opacity: 1;
+		top: 0;
+	}
+}

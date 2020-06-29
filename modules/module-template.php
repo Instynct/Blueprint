@@ -5,6 +5,6 @@
 <!-- Template contente module -->
 <section class="template-section" data-section>
     <div class="container ">
-        <p class="text" data-interactive-text>This is a Slider 1</p>
+        <p class="text" data-interactive-text>This is a module</p>
     </div>
 </section>

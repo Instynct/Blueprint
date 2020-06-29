@@ -1,20 +1,18 @@
 import Flickity from 'flickity';
 
-console.log(Flickity);
 class Slider {
 	constructor() {
-		this.testVariable = 'slider loading';
+		this.elem = document.querySelector('.formation-carousel');
+		this.flkty = '';
 		this.init();
 	}
 
 	init() {
-		const flkty = new Flickity('.formation-carousel');
-		console.log(flkty, {
+		this.flkty = new Flickity(this.elem, {
 			// options
 			cellAlign: 'left',
 			contain: true,
 		});
-		console.log(this.testVariable);
 	}
 }
 

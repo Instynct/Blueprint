@@ -1,23 +1,36 @@
-// dependencies
-@import 'node_modules/breakpoint-sass/stylesheets/breakpoint', 'node_modules/breakpoint-slicer/stylesheets/breakpoint-slicer';
+// GLOBAL
+//----------------------------------*/
+@import '1.variables/variables';
 
-// abstracts
-@import 'abstracts/variables';
+@import '2.mixins/mediaqueries';
+@import '2.mixins/transitions';
+@import '2.mixins/layout';
+@import '2.mixins/functions';
 
-// vendors
-@import 'node_modules/bootstrap/scss/bootstrap';
+@import '3.base/basic';
+@import '3.base/buttons';
+@import '3.base/helpers';
+@import '3.base/lists';
+@import '3.base/normalize';
+@import '3.base/titles';
+@import '3.base/typography';
+@import '3.base/wrappers';
+@import '3.base/animations';
 
-// vendors overrides
-@import 'vendors/flickity';
+@import '4.layout/footer';
+@import '4.layout/header';
+@import '4.layout/main-content';
+@import '4.layout/menu-main';
+@import '4.layout/menu-mobile';
+@import '4.layout/sidebar';
 
-// base
-@import 'base/fonts', 'base/base';
+@import '5.modules/cta';
+@import '5.modules/flexible-content';
+@import '5.modules/slider';
+@import '5.modules/template-module';
 
-// layout
-@import 'layout/header', 'layout/footer', 'layout/forms', 'layout/grid';
+@import '6.templates/home';
 
-// components
-@import 'components/buttons', 'components/modal', 'components/slider';
+@import '7.print/print';
 
-// pages
-@import 'pages/front-page', 'pages/page';
+@import '8.plugins/flickity';
