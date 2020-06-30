@@ -6,8 +6,6 @@ class General {
 
 	init() {
 		// for tests purposes only
-		console.log(this.testVariable);
-		console.log($('.single-slide'));
 	}
 }
 

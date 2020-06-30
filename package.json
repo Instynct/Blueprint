@@ -68,7 +68,6 @@
 	"dependencies": {
 		"babel-polyfill": "6.26.0",
 		"breakpoint-sass": "2.7.1",
-		"breakpoint-slicer": "2.0.0",
 		"flickity": "^2.2.1",
 		"gsap": "^3.3.4",
 		"jquery": "3.5.1",

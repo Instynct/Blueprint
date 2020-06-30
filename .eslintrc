@@ -5,7 +5,7 @@
 		"sourceType": "module"
 	},
 	"plugins": ["babel"],
-	"extends": ["airbnb/base", "prettier"],
+	"extends": ["airbnb", "prettier"],
 	"env": {
 		"browser": true,
 		"jquery": true,
