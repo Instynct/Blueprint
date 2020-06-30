@@ -1,5 +1,5 @@
 // utils
-var deepMerge = require('../utils/deepMerge');
+const deepMerge = require('../utils/deepMerge');
 
 /**
  * BrowserSync
