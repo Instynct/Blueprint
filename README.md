@@ -4,7 +4,8 @@
 
 - [ES6](https://github.com/lukehoban/es6features#readme) for JavaScript (transpiling with [Babel](https://babeljs.io/) and linting with [ESLint](https://eslint.org/))
 - [SASS](http://sass-lang.com/) preprocessor for CSS with [SASS Guidelines](https://sass-guidelin.es/#the-7-1-pattern)
-- [Gulp 4](https://gulpjs.com/) & [Webpack 4](https://webpack.js.org/) to manage, compile and optimize the theme's asset
+- [Gulp 4](https://gulpjs.com/)
+- [Webpack 4](https://webpack.js.org/) to manage, compile and optimize the theme's asset
 
 ## Requirements
 
