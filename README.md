@@ -2,7 +2,7 @@
 
 **_Theme Wordpress_**
 
-## Technologies web utilisée
+## Technologies web utilisées
 
 - [ES6](https://github.com/lukehoban/es6features#readme) for JavaScript (transpiling with [Babel](https://babeljs.io/) and linting with [ESLint](https://eslint.org/))
 
@@ -12,7 +12,7 @@
 
 - [Webpack 4](https://webpack.js.org/) to manage, compile and optimize the theme's asset
 
-## Librairies Inclue
+## Librairies incluses
 
 - [jQuery](https://jquery.com/)
 - [ScrollMagic](https://scrollmagic.io/) - [Animation.gsap](https://scrollmagic.io/docs/animation.GSAP.html) - [GSAP](https://greensock.com/gsap/)
@@ -47,7 +47,7 @@ Pour activer BrowserSync lors de la compilation des assets, il faut allez dans
 
     le_theme>gulp>core>config>browser-sync.js
 
-Ensuite modifier le dernier block de code comme suit:
+Ensuit modifier le dernier block de code comme suit:
 
         module.exports = deepMerge({
     	    proxy:  'url_du_site.local',
