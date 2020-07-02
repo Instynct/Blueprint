@@ -1,0 +1,79 @@
+// ==========================================================================
+// BASE - Typography
+// ==========================================================================
+
+body {
+	font: 400 rem($font-size-default) / #{$line-height-default} $font-family-default;
+	color: $text-color-default;
+}
+
+a {
+	color: $marino;
+	text-decoration: none;
+	transition: color $trans-time linear;
+
+	&:hover,
+	&:focus {
+		color: $marino;
+	}
+}
+
+#{$content},
+#{$editor} {
+	a {
+		text-decoration: none;
+	}
+}
+
+p {
+	margin: 0 0 1em 0;
+	color: $marino;
+	&:last-child {
+		// Prevent double margin
+		margin-bottom: 0;
+	}
+}
+
+.-italic {
+	font-style: italic;
+}
+
+.-bold {
+	font-weight: bold;
+}
+
+.-center {
+	text-align: center;
+	align-self: center;
+}
+
+.-grey {
+	color: $grey;
+}
+
+.-black,
+.-black {
+	color: $black;
+}
+
+.-no-margin {
+	margin: 0;
+}
+
+.-white {
+	color: white;
+}
+
+.-text-margin {
+	margin-top: 0.625rem;
+	margin-bottom: 1.875rem;
+}
+
+// Highlight color
+::selection {
+	border: 0;
+	background: rgba(0, 0, 0, 0.1);
+	color: $black;
+	text-shadow: none;
+	outline: none;
+}

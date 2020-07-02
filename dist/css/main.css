@@ -1,0 +1,1047 @@
+/*! snoros v0.0.1 | (c) 2020 Instynct | MIT License | http://link-to-your-git-repo.com */
+@font-face {
+  font-family: Inconsolata;
+  src: url("./../../dist/fonts/inconsolata/inconsolata-regular.otf");
+  src: url("./../../dist/fonts/inconsolata/inconsolata-regular.eot?#iefix") format("embedded-opentype"), url("./../../dist/fonts/inconsolata/inconsolata-regular.woff2") format("woff2"), url("./../../dist/fonts/inconsolata/inconsolata-regular.woff") format("woff"), url("./../../dist/fonts/inconsolata/inconsolata-regular.ttf") format("truetype");
+  font-weight: regular;
+  font-style: normal;
+}
+
+/* line 6, ../sass/3.base/_basic.scss */
+html {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* line 15, ../sass/3.base/_basic.scss */
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 25, ../sass/3.base/_basic.scss */
+section {
+  width: 100%;
+}
+
+/* line 29, ../sass/3.base/_basic.scss */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 35, ../sass/3.base/_basic.scss */
+hr {
+  display: block;
+  margin: 1rem 0;
+  padding: 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+/* line 44, ../sass/3.base/_basic.scss */
+.container {
+  max-width: 1400px;
+  padding: 0 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(100% - 60px);
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 44, ../sass/3.base/_basic.scss */
+  .container {
+    padding: 0 75px;
+    width: calc(100% - 150px);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 44, ../sass/3.base/_basic.scss */
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 120px;
+    width: calc(100% - 240px);
+    max-width: 1400px;
+  }
+}
+
+/* line 5, ../sass/3.base/_buttons.scss */
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+/* line 5, ../sass/3.base/_helpers.scss */
+.hidden {
+  display: none;
+}
+
+/* line 9, ../sass/3.base/_helpers.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 20, ../sass/3.base/_helpers.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 24, ../sass/3.base/_helpers.scss */
+.-table {
+  display: table;
+}
+
+/* line 28, ../sass/3.base/_helpers.scss */
+.-flex {
+  display: flex;
+}
+
+/* line 33, ../sass/3.base/_helpers.scss */
+.text-hidden span {
+  font-size: 0;
+}
+
+@media only screen and (min-width: 64rem) {
+  /* line 43, ../sass/3.base/_helpers.scss */
+  .hide-on-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 37.4375pxrem) {
+  /* line 50, ../sass/3.base/_helpers.scss */
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+/* line 5, ../sass/3.base/_lists.scss */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+/* line 11, ../sass/3.base/_normalize.scss */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+/* line 23, ../sass/3.base/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+/* line 31, ../sass/3.base/_normalize.scss */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 40, ../sass/3.base/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 53, ../sass/3.base/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 64, ../sass/3.base/_normalize.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+/* line 76, ../sass/3.base/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 85, ../sass/3.base/_normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 95, ../sass/3.base/_normalize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 105, ../sass/3.base/_normalize.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 116, ../sass/3.base/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 125, ../sass/3.base/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 133, ../sass/3.base/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 137, ../sass/3.base/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+/* line 148, ../sass/3.base/_normalize.scss */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 160, ../sass/3.base/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 176, ../sass/3.base/_normalize.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 187, ../sass/3.base/_normalize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 197, ../sass/3.base/_normalize.scss */
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 208, ../sass/3.base/_normalize.scss */
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 220, ../sass/3.base/_normalize.scss */
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+/* line 231, ../sass/3.base/_normalize.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 242, ../sass/3.base/_normalize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 255, ../sass/3.base/_normalize.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+/* line 263, ../sass/3.base/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+/* line 272, ../sass/3.base/_normalize.scss */
+[type='checkbox'],
+[type='radio'] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 282, ../sass/3.base/_normalize.scss */
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 292, ../sass/3.base/_normalize.scss */
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+/* line 301, ../sass/3.base/_normalize.scss */
+[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 310, ../sass/3.base/_normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+/* line 322, ../sass/3.base/_normalize.scss */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 330, ../sass/3.base/_normalize.scss */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+/* line 341, ../sass/3.base/_normalize.scss */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+/* line 349, ../sass/3.base/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 96, ../sass/3.base/_titles.scss */
+h1,
+.title-1 {
+  font: bold 2.125rem/1.2 "proxima-nova", Helvetica, Arial, sans-serif;
+  color: #000000;
+  margin: 0 0 0.2em 0;
+  display: flex;
+}
+
+@media only screen and (max-width: 37.4375pxrem) {
+  /* line 96, ../sass/3.base/_titles.scss */
+  h1,
+  .title-1 {
+    margin: 0 0 1em 0;
+    font-size: 1.375rem;
+  }
+}
+
+/* line 101, ../sass/3.base/_titles.scss */
+h2,
+.title-2 {
+  font: bold 1.75rem/1.2 "proxima-nova", Helvetica, Arial, sans-serif;
+  color: #000000;
+  margin: 0.5em 0 0.5em;
+  display: flex;
+}
+
+@media only screen and (max-width: 37.4375pxrem) {
+  /* line 101, ../sass/3.base/_titles.scss */
+  h2,
+  .title-2 {
+    margin: 0.5em 0 0.5em;
+    font-size: 1.375rem;
+  }
+}
+
+/* line 31, ../sass/3.base/_titles.scss */
+h2:first-child,
+.title-2:first-child {
+  margin-top: 0;
+}
+
+/* line 106, ../sass/3.base/_titles.scss */
+h3,
+.title-3 {
+  font: 1.5rem/1.2 "proxima-nova", Helvetica, Arial, sans-serif;
+  color: #000000;
+  margin: 0.5em 0 0.5em;
+}
+
+@media only screen and (max-width: 87.5rem) {
+  /* line 106, ../sass/3.base/_titles.scss */
+  h3,
+  .title-3 {
+    font-size: 1.125rem;
+  }
+}
+
+@media only screen and (max-width: 37.4375pxrem) {
+  /* line 106, ../sass/3.base/_titles.scss */
+  h3,
+  .title-3 {
+    font-size: 1rem;
+  }
+}
+
+/* line 49, ../sass/3.base/_titles.scss */
+h3:first-child,
+.title-3:first-child {
+  margin-top: 0;
+}
+
+/* line 111, ../sass/3.base/_titles.scss */
+h4,
+.title-4 {
+  font: bold 1.375rem/1.2 "proxima-nova", Helvetica, Arial, sans-serif;
+  margin: 1.5em 0 0.5em;
+}
+
+@media only screen and (max-width: 37.4375pxrem) {
+  /* line 111, ../sass/3.base/_titles.scss */
+  h4,
+  .title-4 {
+    font-size: 1.25rem;
+  }
+}
+
+/* line 62, ../sass/3.base/_titles.scss */
+h4:first-child,
+.title-4:first-child {
+  margin-top: 0;
+}
+
+/* line 116, ../sass/3.base/_titles.scss */
+h5,
+.title-5 {
+  font: bold 1.25rem/1.2 "proxima-nova", Helvetica, Arial, sans-serif;
+  margin: 1.5em 0 0.5em;
+}
+
+@media only screen and (max-width: 37.4375pxrem) {
+  /* line 116, ../sass/3.base/_titles.scss */
+  h5,
+  .title-5 {
+    font-size: 1.125rem;
+  }
+}
+
+/* line 75, ../sass/3.base/_titles.scss */
+h5:first-child,
+.title-5:first-child {
+  margin-top: 0;
+}
+
+/* line 121, ../sass/3.base/_titles.scss */
+h6,
+.title-6 {
+  font: bold 1.125rem/1.2 "proxima-nova", Helvetica, Arial, sans-serif;
+  margin: 1.5em 0 0.5em;
+}
+
+@media only screen and (max-width: 37.4375pxrem) {
+  /* line 121, ../sass/3.base/_titles.scss */
+  h6,
+  .title-6 {
+    font-size: 1rem;
+  }
+}
+
+/* line 88, ../sass/3.base/_titles.scss */
+h6:first-child,
+.title-6:first-child {
+  margin-top: 0;
+}
+
+/* line 5, ../sass/3.base/_typography.scss */
+body {
+  font: 400 1pxrem / 1.25 "proxima-nova", Helvetica, Arial, sans-serif;
+  color: #000000;
+}
+
+/* line 10, ../sass/3.base/_typography.scss */
+a {
+  color: #022173;
+  text-decoration: none;
+  transition: color 0.2s linear;
+}
+
+/* line 15, ../sass/3.base/_typography.scss */
+a:hover, a:focus {
+  color: #022173;
+}
+
+/* line 23, ../sass/3.base/_typography.scss */
+main a,
+#tinyMce a {
+  text-decoration: none;
+}
+
+/* line 28, ../sass/3.base/_typography.scss */
+p {
+  margin: 0 0 1em 0;
+  color: #022173;
+}
+
+/* line 31, ../sass/3.base/_typography.scss */
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* line 37, ../sass/3.base/_typography.scss */
+.-italic {
+  font-style: italic;
+}
+
+/* line 41, ../sass/3.base/_typography.scss */
+.-bold {
+  font-weight: bold;
+}
+
+/* line 45, ../sass/3.base/_typography.scss */
+.-center {
+  text-align: center;
+  align-self: center;
+}
+
+/* line 50, ../sass/3.base/_typography.scss */
+.-grey {
+  color: #f4f6f7;
+}
+
+/* line 54, ../sass/3.base/_typography.scss */
+.-black,
+.-black {
+  color: #000000;
+}
+
+/* line 59, ../sass/3.base/_typography.scss */
+.-no-margin {
+  margin: 0;
+}
+
+/* line 63, ../sass/3.base/_typography.scss */
+.-white {
+  color: white;
+}
+
+/* line 67, ../sass/3.base/_typography.scss */
+.-text-margin {
+  margin-top: 0.625rem;
+  margin-bottom: 1.875rem;
+}
+
+/* line 73, ../sass/3.base/_typography.scss */
+::-moz-selection {
+  border: 0;
+  background: rgba(0, 0, 0, 0.1);
+  color: #000000;
+  text-shadow: none;
+  outline: none;
+}
+::selection {
+  border: 0;
+  background: rgba(0, 0, 0, 0.1);
+  color: #000000;
+  text-shadow: none;
+  outline: none;
+}
+
+/* line 5, ../sass/3.base/_wrappers.scss */
+.page-wrapper {
+  position: relative;
+  min-height: 100%;
+}
+
+/* line 30, ../sass/3.base/_wrappers.scss */
+.menu-wrapper {
+  max-width: 80rem;
+}
+
+/* line 34, ../sass/3.base/_wrappers.scss */
+.text-wrapper {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media only screen and (max-width: 37.4375pxrem) {
+  /* line 34, ../sass/3.base/_wrappers.scss */
+  .text-wrapper {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+  }
+}
+
+/* line 5, ../sass/3.base/_animations.scss */
+.animation-text-reveal {
+  position: relative;
+  -webkit-animation-name: text-reveal;
+          animation-name: text-reveal;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes text-reveal {
+  0% {
+    opacity: 0;
+    top: 100px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes text-reveal {
+  0% {
+    opacity: 0;
+    top: 100px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+/* line 4, ../sass/5.modules/_slider.scss */
+.single-slide {
+  width: 100%;
+  /* full width */
+  height: 160px;
+  /* height of carousel */
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 12, ../sass/5.modules/_slider.scss */
+.flickity-page-dots {
+  left: 0;
+}
+
+/* line 6, ../sass/5.modules/_template-module.scss */
+main {
+  background-color: slateblue;
+}
+
+/* line 8, ../sass/5.modules/_template-module.scss */
+main .template-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  transition: ease-in-out 0.2s all;
+}
+
+/* line 18, ../sass/5.modules/_template-module.scss */
+.text {
+  transition: ease-in-out 0.2s all;
+  cursor: pointer;
+  font-family: 'inconsolata';
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* line 24, ../sass/5.modules/_template-module.scss */
+.text.background {
+  font-size: 1.5em;
+  background-color: black;
+  color: white;
+  padding: 2em;
+}
+
+@media print {
+  @page {
+    size: portrait;
+  }
+  /* line 10, ../sass/7.print/_print.scss */
+  *,
+  *::before,
+  *::after {
+    color: #000 !important;
+  }
+  /* line 16, ../sass/7.print/_print.scss */
+  body {
+    max-width: 670px;
+  }
+  /* line 20, ../sass/7.print/_print.scss */
+  html {
+    font-size: 10px !important;
+  }
+}
+
+/*! Flickity v2.2.0
+https://flickity.metafizzy.co
+---------------------------------------------- */
+/* line 5, ../sass/8.plugins/_flickity.scss */
+.flickity-enabled {
+  position: relative;
+}
+
+/* line 9, ../sass/8.plugins/_flickity.scss */
+.flickity-enabled:focus {
+  outline: none;
+}
+
+/* line 11, ../sass/8.plugins/_flickity.scss */
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+/* line 17, ../sass/8.plugins/_flickity.scss */
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* draggable */
+/* line 25, ../sass/8.plugins/_flickity.scss */
+.flickity-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 34, ../sass/8.plugins/_flickity.scss */
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+/* line 40, ../sass/8.plugins/_flickity.scss */
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+/* ---- flickity-button ---- */
+/* line 47, ../sass/8.plugins/_flickity.scss */
+.flickity-button {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.75);
+  border: none;
+  color: #333;
+}
+
+/* line 54, ../sass/8.plugins/_flickity.scss */
+.flickity-button:hover {
+  background: white;
+  cursor: pointer;
+}
+
+/* line 59, ../sass/8.plugins/_flickity.scss */
+.flickity-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #19F;
+}
+
+/* line 64, ../sass/8.plugins/_flickity.scss */
+.flickity-button:active {
+  opacity: 0.6;
+}
+
+/* line 68, ../sass/8.plugins/_flickity.scss */
+.flickity-button:disabled {
+  opacity: 0.3;
+  cursor: auto;
+  /* prevent disabled button from capturing pointer up event. #716 */
+  pointer-events: none;
+}
+
+/* line 75, ../sass/8.plugins/_flickity.scss */
+.flickity-button-icon {
+  fill: currentColor;
+}
+
+/* ---- previous/next buttons ---- */
+/* line 81, ../sass/8.plugins/_flickity.scss */
+.flickity-prev-next-button {
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  /* vertically center */
+  transform: translateY(-50%);
+}
+
+/* line 90, ../sass/8.plugins/_flickity.scss */
+.flickity-prev-next-button.previous {
+  left: 10px;
+}
+
+/* line 91, ../sass/8.plugins/_flickity.scss */
+.flickity-prev-next-button.next {
+  right: 10px;
+}
+
+/* right to left */
+/* line 93, ../sass/8.plugins/_flickity.scss */
+.flickity-rtl .flickity-prev-next-button.previous {
+  left: auto;
+  right: 10px;
+}
+
+/* line 97, ../sass/8.plugins/_flickity.scss */
+.flickity-rtl .flickity-prev-next-button.next {
+  right: auto;
+  left: 10px;
+}
+
+/* line 102, ../sass/8.plugins/_flickity.scss */
+.flickity-prev-next-button .flickity-button-icon {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%;
+}
+
+/* ---- page dots ---- */
+/* line 112, ../sass/8.plugins/_flickity.scss */
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+}
+
+/* line 123, ../sass/8.plugins/_flickity.scss */
+.flickity-rtl .flickity-page-dots {
+  direction: rtl;
+}
+
+/* line 125, ../sass/8.plugins/_flickity.scss */
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: #333;
+  border-radius: 50%;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+/* line 136, ../sass/8.plugins/_flickity.scss */
+.flickity-page-dots .dot.is-selected {
+  opacity: 1;
+}

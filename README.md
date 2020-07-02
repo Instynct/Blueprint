@@ -1,29 +1,14 @@
-# WordPress Gulp and Webpack starter theme
+# Blueprint Instynct V1.0
 
-## Under the hood
+## This is a custom theme made to be used as Instynct internal boilerplate.
 
-- [ES6](https://github.com/lukehoban/es6features#readme) for JavaScript (transpiling with [Babel](https://babeljs.io/) and linting with [ESLint](https://eslint.org/))
-- [SASS](http://sass-lang.com/) preprocessor for CSS with [SASS Guidelines](https://sass-guidelin.es/#the-7-1-pattern)
-- [Gulp 4](https://gulpjs.com/)
-- [Webpack 4](https://webpack.js.org/) to manage, compile and optimize the theme's asset
+====================================================================
 
-## Requirements
+### Basic walkthrough:
 
-- Node
-- Gulp
+1. To use the theme, paste (or clone) the content of this repository inside your wp-content>themes directory.
 
-## Usage
+### To install Npm module:
 
-First, clone this repository in your WordPress themes directory.
-
-Then, run the following commands in the theme's directory :
-
-    npm install
-
-Launch your watch for assets with :
-
-    npm run start
-
-For production sites, create your build with :
-
-    npm run build
+1. Run YARN (or NPM install) from the terminal in assets/\_gulp.
+2. Run "gulp" and "gulp watch" in that same folder

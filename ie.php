@@ -9,29 +9,22 @@ Template Name: Internet Explorer
 
 <!-- Start Internet Explorer Page -->
 <?php
-$sub_title = get_field("sub_title");
-$title = get_field("title");
-$button = get_field("button");
-$svgURL =  get_bloginfo('template_url') . '/dist/svg/arrow2.svg';
+    $sub_title = get_field("sub_title");
+    $title = get_field("title");
+    $button = get_field("button");
 ?>
-<section class="error iexplorer">
-    <div class="grid-container container">
-        <div class="content">
-            <p class="subtitle">
-                <?php echo $sub_title ?>
-            </p>
-            <h2 class="title">
-                <?php echo $title ?>
-            </h2>
-        </div>
-
-        <div class="home">
-            <p> <?= $button['title'] ?></p>
-            <a href="<?= $button['url']; ?>" class="arrow-btn"><?= file_get_contents($svgURL) ?></a>
-        </div>
+<section class="error">
+    <div class="grid-container">
+        <p>
+            <?php echo $sub_title ?>
+        </p>
+        <h2>
+            <?php echo $title ?>
+        </h2>
+        <a href="<?php echo $button['url'] ?>" target="<?php echo $button['target'] ?>"><?php echo $button['title'] ?></a>
     </div>
 </section>
 <!-- End Internet Explorer Page -->
 
 <!-- Getting the footer -->
-<?php get_footer(); ?>
+<?php get_footer();?>
