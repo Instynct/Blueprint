@@ -1,29 +1,56 @@
-# WordPress Gulp and Webpack starter theme
+# Instynct Blueprint 2.0 [Webpack]
 
-## Under the hood
+**_Theme Wordpress_**
+
+## Technologies web utilisée
 
 - [ES6](https://github.com/lukehoban/es6features#readme) for JavaScript (transpiling with [Babel](https://babeljs.io/) and linting with [ESLint](https://eslint.org/))
+
 - [SASS](http://sass-lang.com/) preprocessor for CSS with [SASS Guidelines](https://sass-guidelin.es/#the-7-1-pattern)
+
 - [Gulp 4](https://gulpjs.com/)
+
 - [Webpack 4](https://webpack.js.org/) to manage, compile and optimize the theme's asset
 
-## Requirements
+## Librairies Inclue
 
-- Node
-- Gulp
+- [jQuery](https://jquery.com/)
+- [ScrollMagic](https://scrollmagic.io/) - [Animation.gsap](https://scrollmagic.io/docs/animation.GSAP.html) - [GSAP](https://greensock.com/gsap/)
+- [Flickity](https://flickity.metafizzy.co/)
 
-## Usage
+## Pré-requis
 
-First, clone this repository in your WordPress themes directory.
+- Node 12
+- NPM 6
+- Gulp 4
 
-Then, run the following commands in the theme's directory :
+## Setup
+
+- Au début d'un nouveau projet, choisir le blueprint a la création d'un nouveau site dans flywheel.
+- Ensuite ouvrir le dossier du theme (blueprint)
+
+Pour installer les dépendances, il faut lancer le script ci dessous dans le terminal :
 
     npm install
 
-Launch your watch for assets with :
+Pour lancer le watcher et browsersync :
 
     npm run start
 
-For production sites, create your build with :
+Avant d'envoyer en production, il faut lancer ce script pour minimiser les assets :
 
     npm run build
+
+## BrowserSync
+
+Pour activer BrowserSync lors de la compilation des assets, il faut allez dans
+
+    le_theme>gulp>core>config>browser-sync.js
+
+Ensuite modifier le dernier block de code comme suit:
+
+        module.exports = deepMerge({
+    	    proxy:  'url_du_site.local',
+    	    host:  'url_du_site.local',
+    	    open:  'external',
+        });
