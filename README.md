@@ -41,6 +41,16 @@ Avant d'envoyer en production, il faut lancer ce script pour minimiser les asset
 
     npm run build
 
+## Arborescence
+
+Les fichiers front end a modifier se retrouvent dans le dossier suivant
+
+    le_theme/assets/src
+
+Ils sont compiler dans le dossier :
+
+    le_theme/assets/dist
+
 ## BrowserSync
 
 Pour activer BrowserSync lors de la compilation des assets, il faut allez dans
