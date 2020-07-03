@@ -2,10 +2,6 @@
 // Disable WordPress Admin Bar for all users but admins. //
 show_admin_bar(false);
 
-if (is_admin()) {
-	include('inc/admin.php');
-}
-
 // Removing unecessary admin menu tabs
 function custom_menu_page_removing() {
 	remove_menu_page('edit-comments.php');
