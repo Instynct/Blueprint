@@ -1,13 +1,13 @@
 {
-	"name": "blank-theme",
-	"description": "A starter-kit for WordPress themes",
+	"name": "instynct-blueprint",
+	"description": "A starter-kit for internal",
 	"version": "1.0.0",
-	"author": "Olivier Guilleux",
-	"authorURI": "https://www.olivier-guilleux.com",
+	"author": "Instynct",
+	"authorURI": "http://instynctweb.com/",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/oguilleux/webpack-gulp-wordpress-starter-theme.git"
+		"url": "git:https://github.com/instynct-solutions-web/Blueprint.git"
 	},
 	"keywords": [
 		"wordpress",
