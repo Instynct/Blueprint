@@ -2,23 +2,20 @@
 // MODULES - Slider
 // ==========================================================================
 // ! this is only a style template for modules/module-template.php
-
+.page-wrapper {
+	width: 100%;
+}
 main {
-	background-color: slateblue;
+	background-color: lightgray;
 	.template-section {
 		display: flex;
 		justify-content: center;
+		background-color: whitesmoke;
 		align-items: center;
+		margin-top: 2em;
 		width: 100vw;
-		height: 100vh;
-		background-color: transparent;
+		height: 20vh;
 		transition: ease-in-out 0.2s all;
-	}
-	@include tablet-only {
-		background-color: lightsalmon;
-	}
-	@include desktop-only {
-		background-color: cornflowerblue;
 	}
 }
 .text {
@@ -33,4 +30,15 @@ main {
 		color: white;
 		padding: 2em;
 	}
+}
+.template-slick {
+	background-color: lightgray;
+	padding: 2em 0;
+	.text {
+		text-align: center;
+	}
+}
+#home-experience {
+	padding: 2em 0;
+	background-color: whitesmoke;
 }
