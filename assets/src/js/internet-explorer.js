@@ -1,4 +1,5 @@
 // Start Internet Explorer
+/* eslint-disable */
 navigator.sayswho = (function () {
 	var ua = navigator.userAgent,
 		tem,
