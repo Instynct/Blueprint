@@ -29,3 +29,6 @@ require_once('inc/custom-post-types.php');
 
 // Tiny MCE Styles
 require_once('inc/tiny-mce.php');
+
+// Support theme Title
+add_theme_support('title-tag');

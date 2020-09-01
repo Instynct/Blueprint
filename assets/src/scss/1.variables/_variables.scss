@@ -29,10 +29,9 @@ $clearblue: #6fa6ff;
 // ==========================================================================
 
 @include font-face(Inconsolata, '../fonts/inconsolata/inconsolata-regular', regular, normal);
-@include font-face(Bouba, '../fonts/bouba/boubasans', regular, normal);
 
 // - - - Font families - - -
-$font-family-default: 'Bouba', Helvetica, Arial, sans-serif;
+$font-family-default: 'Inconsolata', Helvetica, Arial, sans-serif;
 
 // Used in functions.sass only
 $function-size-default: 16;

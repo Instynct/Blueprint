@@ -42,3 +42,14 @@ main {
 	padding: 2em 0;
 	background-color: whitesmoke;
 }
+.svgloader .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 2em 0;
+}
+.svg-load {
+	padding: 3em;
+	width: 40%;
+}
