@@ -1,8 +1,6 @@
 import 'babel-polyfill';
 
-import General from './_generalScripts';
-import Slider from './_slider';
-import Scroll from './_scroll';
+import Scripts from './_generalScripts';
 
 const App = {
 	/**
@@ -10,18 +8,9 @@ const App = {
 	 */
 	init() {
 		// General scripts
-		function initGeneral() {
-			return new General();
-		}
-		function initSlider() {
-			return new Slider();
-		}
-		function initScroll() {
-			return new Scroll();
-		}
-		initGeneral();
-		initSlider();
-		initScroll();
+		const scripts = new Scripts('Hello World');
+
+		scripts.init();
 	},
 };
 

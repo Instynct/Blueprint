@@ -27,11 +27,16 @@ $clearblue: #6fa6ff;
 }
 // Style mixins
 // ==========================================================================
-
-@include font-face(Inconsolata, '../fonts/inconsolata/inconsolata-regular', regular, normal);
+@include font-face(Chivo, '../fonts/chivo/chivo-light', 400, normal);
+@include font-face(Chivo, '../fonts/chivo/chivo-regular', 500, normal);
+@include font-face(Chivo, '../fonts/chivo/chivo-bold', 600, normal);
+@include font-face(Chivo, '../fonts/chivo/chivo-black', 700, normal);
 
 // - - - Font families - - -
-$font-family-default: 'Inconsolata', Helvetica, Arial, sans-serif;
+
+$font-family-default: 'Chivo', Helvetica, Arial, sans-serif;
+
+$activ: 'aktiv-grotesk', Helvetica, Arial, sans-serif;
 
 // Used in functions.sass only
 $function-size-default: 16;

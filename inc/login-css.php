@@ -1,5 +1,4 @@
-<?php function custom_login_demarrage()
-{ ?>
+<?php function custom_login_demarrage() { ?>
   <style type="text/css">
     body {
       background: #ffffff !important;
@@ -7,9 +6,9 @@
 
     #login h1 a,
     .login h1 a {
-      background-image: url(/wp-content/uploads/2020/04/les_snoros_logo.png) !important;
-      background-size: 150px !important;
-      width: 150px !important;
+      background-image: url(/wp-content/themes/byfar/assets/src/svg/logo-black.svg) !important;
+      background-size: contain !important;
+      width: 250px !important;
     }
 
     .login form {

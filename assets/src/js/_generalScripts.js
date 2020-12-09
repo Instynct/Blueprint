@@ -1,12 +1,10 @@
-class General {
-	constructor() {
-		this.testVariable = 'script working';
-		this.init();
+export default class Scripts {
+	constructor(text) {
+		this.testVariable = text;
 	}
 
 	init() {
+		console.log(this.testVariable);
 		// for tests purposes only
 	}
 }
-
-export default General;
