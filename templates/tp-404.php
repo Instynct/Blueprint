@@ -16,10 +16,10 @@ $title = $page_404['title'];
 $button = $page_404['button'];
 
 ?>
-<!-- Start Internet Explorer Page -->
-<section class="error">
-    <div class="error__container container">
-        <div class="error__content">
+<!-- Start error 404 Page -->
+<section id="section-error">
+    <div class="container error">
+        <div class="error__info">
             <p class="error__subtitle">
                 <?php echo $sub_title ?>
             </p>
@@ -28,8 +28,8 @@ $button = $page_404['button'];
             </h2>
         </div>
 
-        <div class="error__cta">
-            <p> <?= $button['title'] ?></p>
+        <div class="error__action">
+            <p class="error__label"> <?= $button['title'] ?></p>
             <a href="<?= $button['url']; ?>" class="error__button"></a>
         </div>
 

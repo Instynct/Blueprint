@@ -12,11 +12,11 @@
 	display: flex;
 
 	@include min-width($mobile-threshold) {
-		margin: 0 0 1em 0;
+		margin: 0 0 0.5em 0;
 		font-size: rem(60);
 	}
 	@include min-width($tablet-threshold) {
-		margin: 0 0 1em 0;
+		margin: 0 0 0.5em 0;
 		font-size: rem(80);
 	}
 }

@@ -13,9 +13,9 @@ $sub_title = get_field("sub_title");
 $title = get_field("title");
 $button = get_field("button");
 ?>
-<section class="error iexplorer">
-    <div class="error__containerr container">
-        <div class="error__content">
+<section id="section-error">
+    <div class="container error">
+        <div class="error__info">
             <p class="error__subtitle">
                 <?php echo $sub_title ?>
             </p>
@@ -23,11 +23,11 @@ $button = get_field("button");
                 <?php echo $title ?>
             </h2>
         </div>
-
-        <div class="error__cta">
-            <p> <?= $button['title'] ?></p>
+        <div class="error__action">
+            <p class="error__label"> <?= $button['title'] ?></p>
             <a href="<?= $button['url']; ?>" class="error__button"></a>
         </div>
+
     </div>
 </section>
 <!-- End Internet Explorer Page -->
