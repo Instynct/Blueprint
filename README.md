@@ -10,7 +10,7 @@
 
 - [Gulp 4](https://gulpjs.com/)
 
-* [Webpack 4](https://webpack.js.org/) to manage, compile and optimize the theme's asset
+* [Webpack 5](https://webpack.js.org/) to manage, compile and optimize the theme's asset
 
 ## Librairies incluses
 

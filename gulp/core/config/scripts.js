@@ -45,7 +45,6 @@ module.exports = deepMerge({
 			// for :prod task
 			prod: {
 				mode: 'production',
-				plugins: [new webpack.optimize.OccurrenceOrderPlugin(true)],
 				optimization: {
 					minimize: true,
 					minimizer: [
@@ -87,8 +86,8 @@ module.exports = deepMerge({
 							exclude: /node_modules/,
 							loader: 'babel-loader',
 							options: {
-								presets: ['env'],
-								plugins: ['transform-runtime'],
+								presets: ['@babel/preset-env'],
+								plugins: ['@babel/plugin-transform-runtime', '@babel/plugin-transform-modules-commonjs'],
 							},
 						},
 					],
