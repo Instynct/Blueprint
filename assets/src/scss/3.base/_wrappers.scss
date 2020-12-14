@@ -11,50 +11,23 @@
 }
 
 // container is used inside section tag
-.container {
+@mixin container {
 	padding: 1em 15px;
 	margin-left: auto;
 	margin-right: auto;
-	width: calc(100% - 30px);
 
 	@include min-width($mobile-threshold) {
 		padding: 1em 30px;
-		width: calc(100% - 60px);
 	}
 
 	@include min-width($tablet-threshold) {
 		margin-left: auto;
 		margin-right: auto;
 		padding: 1em 50px;
-		width: calc(100% - 100px);
 		max-width: none;
 	}
 }
 
-@mixin wrapper {
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: rem(20);
-	padding-right: rem(20);
-	@include mobile-only {
-		padding-left: rem(10);
-		padding-right: rem(10);
-	}
-}
-
-@mixin menu-wrapper {
-	max-width: rem(1280);
-}
-
-@mixin text-wrapper {
-	@include wrapper;
-}
-
-.menu-wrapper {
-	@include menu-wrapper;
-}
-
-.text-wrapper {
-	@include text-wrapper;
+.container {
+	@include container;
 }
