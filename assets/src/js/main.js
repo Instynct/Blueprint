@@ -1,16 +1,22 @@
 import '@babel/polyfill';
 
-import Scripts from './_generalScripts';
+import Utils from './_utils';
 
 const App = {
 	/**
 	 * App.init
 	 */
 	init() {
-		// General scripts
-		const scripts = new Scripts('Hello World');
+		// Utils Scripts
+		const utils = new Utils();
 
-		scripts.init();
+		// Calculate True 100vh for Mobile on selected element
+		const rootElements = document.querySelectorAll('[data-calc-mobile]');
+		if (rootElements !== '') {
+			for (let i = 0; i < rootElements.length; i += 1) {
+				utils.calculateHeight(rootElements[i]);
+			}
+		}
 	},
 };
 
