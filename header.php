@@ -4,7 +4,6 @@
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://use.typekit.net/gci6icf.css">
 
 	<!-- Check is the page is the IE template-->
 	<?php if (!is_page('internet-explorer')) { ?>
