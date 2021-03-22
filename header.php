@@ -14,20 +14,21 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<div class="page-wrapper">
-		<header class="header">
+	<div data-wolfpack class="dom-wrapper">
+		<div class="page-wrapper">
+			<header class="header">
 
-			<!-- <div class="logo">
+				<!-- <div class="logo">
 					<a href="<?= home_url(); ?>">
 						<img src="/img/logo.png" alt="Logo">
 					</a>
 				</div> -->
 
-			<!-- <nav role="navigation" class="nav main-nav">
+				<!-- <nav role="navigation" class="nav main-nav">
 					<?php wp_nav_menu(array(
 						'theme_location'  => 'main'
 					)); ?>
 				</nav> -->
-		</header>
+			</header>
 
-		<main role="main">
+			<main role="main">

@@ -31,6 +31,7 @@ dd {
 
 /* Set core body defaults */
 body {
+	overflow-x: hidden;
 	min-height: 100vh;
 	scroll-behavior: smooth;
 	text-rendering: optimizeSpeed;
@@ -92,7 +93,11 @@ select {
 
 a {
 	text-decoration: none;
-	color: black;
+	opacity: 1;
+	transition: opacity 0.3s ease-in-out;
+	&:hover {
+		opacity: 0.5;
+	}
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */
