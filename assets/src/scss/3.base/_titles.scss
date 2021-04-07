@@ -4,103 +4,94 @@
 
 // Style mixins
 // ==========================================================================
-// proxima-nova light:300, regular:400, semibold:600, bold:700
-@mixin title-1 {
-	font: 700 rem(28) / 1.2 $font-family-default;
+
+@mixin title-mega {
+	font: 500 rem(50) $font-family-title;
 	color: $black;
-	margin: 0 0 0.2em 0;
-	display: flex;
 
 	@include min-width($mobile-threshold) {
-		margin: 0 0 0.5em 0;
-		font-size: rem(60);
+		font-size: rem(80);
 	}
 	@include min-width($tablet-threshold) {
-		margin: 0 0 0.5em 0;
+		font-size: rem(120);
+	}
+}
+@mixin title-1 {
+	font: 500 rem(40) $font-family-title;
+	color: $black;
+
+	@include min-width($mobile-threshold) {
+		font-size: rem(50);
+	}
+	@include min-width($tablet-threshold) {
 		font-size: rem(80);
 	}
 }
 
 @mixin title-2 {
-	font: 700 rem(20) $font-family-default;
+	font: 500 rem(35) $font-family-title;
 	color: $black;
-	margin: 0.5em 0 0.5em;
-	display: flex;
 
 	@include min-width($mobile-threshold) {
-		margin: 0 0 1em 0;
-		font-size: rem(40);
+		font-size: rem(45);
 	}
 	@include min-width($tablet-threshold) {
-		margin: 0 0 1em 0;
-		font-size: rem(50);
+		font-size: rem(70);
 	}
 }
 
 @mixin title-3 {
-	font: 600 rem(20) $font-family-default;
+	font: 500 rem(30) $font-family-title;
 	color: $black;
-	margin: 0.5em 0 0.5em;
 
 	@include min-width($mobile-threshold) {
-		margin: 0 0 1em 0;
-		font-size: rem(35);
+		font-size: rem(40);
 	}
 	@include min-width($tablet-threshold) {
-		margin: 0 0 1em 0;
-		font-size: rem(40);
+		font-size: rem(50);
 	}
 }
 
 @mixin title-4 {
-	font: 600 rem(18) $font-family-default;
-	margin: 1.5em 0 0.5em;
+	font: 500 rem(25) $font-family-title;
 
 	@include min-width($mobile-threshold) {
-		font-weight: 700;
-		margin: 0 0 1em 0;
-		font-size: rem(30);
+		font-size: rem(35);
 	}
 	@include min-width($tablet-threshold) {
-		margin: 0 0 1em 0;
-		font-weight: 700;
-		font-size: rem(30);
+		font-size: rem(55);
 	}
 }
 
+// Steps title
 @mixin title-5 {
-	font: 700 rem(17) $font-family-default;
-	margin: 1.5em 0 0.5em;
+	font: 500 rem(35) $font-family-title;
 
 	@include min-width($mobile-threshold) {
-		font-weight: 600;
-		margin: 0 0 1em 0;
-		font-size: rem(25);
+		font-size: rem(50);
 	}
 	@include min-width($tablet-threshold) {
-		margin: 0 0 1em 0;
-		font-weight: 700;
-		font-size: rem(25);
+		font-size: rem(50);
 	}
 }
 
+// Categorie title on grid
 @mixin title-6 {
-	font: 600 rem(16) $font-family-default;
-	margin: 1.5em 0 0.5em;
+	font: 500 rem(18) $font-family-title;
 
 	@include min-width($mobile-threshold) {
-		margin: 0 0 1em 0;
-		font-size: rem(23);
+		font-size: rem(18);
 	}
 	@include min-width($tablet-threshold) {
-		margin: 0 0 1em 0;
-		font-size: rem(25);
+		font-size: rem(20);
 	}
 }
 
 // Classes & Selectors
 // ==========================================================================
-
+.title-mega {
+	@include title-mega;
+}
 h1,
 .title-1 {
 	@include title-1;

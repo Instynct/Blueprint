@@ -23,7 +23,6 @@ const App = {
 		}
 
 		// Resize functions
-
 		const scrollContainer = document.querySelector('[data-wolfpack]');
 		const domBody = document.querySelector('body');
 
