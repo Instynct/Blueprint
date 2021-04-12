@@ -23,9 +23,6 @@ const App = {
 		}
 
 		// Resize functions
-		const scrollContainer = document.querySelector('[data-wolfpack]');
-		const domBody = document.querySelector('body');
-
 		window.addEventListener('resize', () => {
 			domBody.style.height = `${window.innerHeight}px`;
 			scrollContainer.style.height = `${window.innerHeight}px`;
@@ -38,8 +35,11 @@ const App = {
 
 document.addEventListener('DOMContentLoaded', () => {
 	const scrollContainer = document.querySelector('[data-wolfpack]');
+	const domBody = document.querySelector('body');
 	let wolfpack = false;
 	if (scrollContainer) {
+		domBody.style.height = `${window.innerHeight}px`;
+		scrollContainer.style.height = `${window.innerHeight}px`;
 		wolfpack = new SmoothScrollbar(scrollContainer);
 		wolfpack.init();
 	}
