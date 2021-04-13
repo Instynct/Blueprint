@@ -14,7 +14,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<div data-wolfpack class="dom-wrapper">
+	<div data-wolfpack class="dom-wrapper ">
 		<div class="page-wrapper">
 			<header class="header">
 

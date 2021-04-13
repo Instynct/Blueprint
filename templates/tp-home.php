@@ -40,7 +40,7 @@ get_header(); ?>
             </li>
         </ul>
         <h2>Liste à bordure</h2>
-        <ul class="border-list">
+        <ul data-scroll data-scroll-speed="1" class="border-list">
             <li>
                 <p>[ES6] for JavaScript (transpiling with [Babel] and linting with [ESLint])</p>
             </li>

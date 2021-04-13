@@ -8,7 +8,18 @@ const App = {
 	init() {
 		// Utils Scripts
 		const utils = new Utils();
-
+		const scroll = new LocomotiveScroll({
+			el: document.querySelector('[data-wolfpack]'),
+			smooth: true,
+			tablet: {
+				smooth: true,
+				direction: 'vertical',
+				gestureDirection: 'vertical',
+				breakpoint: 1024,
+			},
+		});
+		console.log(scroll.tablet.smooth);
+		console.log(scroll);
 		// Calculate True 100vh for Mobile on selected element
 		const rootElements = document.querySelectorAll('[data-calc-mobile]');
 		if (rootElements !== '') {
@@ -16,20 +27,6 @@ const App = {
 				utils.calculateHeight(rootElements[i]);
 			}
 		}
-
-		const scroll = new LocomotiveScroll({
-			el: document.querySelector('[data-wolfpack]'),
-			smooth: true,
-		});
-
-		// Resize functions
-		window.addEventListener('resize', () => {
-			domBody.style.height = `${window.innerHeight}px`;
-			scrollContainer.style.height = `${window.innerHeight}px`;
-			for (let i = 0; i < rootElements.length; i += 1) {
-				utils.calculateHeight(rootElements[i]);
-			}
-		});
 	},
 };
 
