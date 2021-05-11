@@ -1,6 +1,8 @@
 import Utils from './_utils';
 import SmoothScrollbar from './_wolfpack';
 
+const scrollContainer = document.querySelector('[data-wolfpack]');
+const domBody = document.querySelector('body');
 const App = {
 	/**
 	 * App.init
@@ -34,8 +36,6 @@ const App = {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-	const scrollContainer = document.querySelector('[data-wolfpack]');
-	const domBody = document.querySelector('body');
 	let wolfpack = false;
 	if (scrollContainer) {
 		domBody.style.height = `${window.innerHeight}px`;
