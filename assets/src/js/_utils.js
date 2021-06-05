@@ -5,12 +5,8 @@ export default class Utils {
 
 	calculateHeight(element) {
 		// Calculate height for mobile
-		this.element = element;
-		this.element.classList.add('height-calc');
-
-		const viewPortH = this.element.getBoundingClientRect().height;
 		const windowH = window.innerHeight;
-		const browserUiBarsH = viewPortH - windowH;
-		this.element.style.height = `calc(100vh - ${browserUiBarsH}px)`;
+		this.element = element;
+		this.element.style.height = `${windowH}px`;
 	}
 }

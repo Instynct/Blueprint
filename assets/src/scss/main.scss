@@ -6,6 +6,7 @@
 
 @import '2.mixins/mediaqueries';
 @import '2.mixins/transitions';
+@import '2.mixins/grid';
 @import '2.mixins/functions';
 
 @import '3.base/form';
@@ -14,6 +15,7 @@
 @import '3.base/typography';
 @import '3.base/wrappers';
 
+@import '4.modules/md-header';
 @import '4.modules/md-footer';
 
 @import '5.templates/tp-home';

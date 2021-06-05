@@ -14,6 +14,7 @@ $copyright = get_field('copyright', 'options');
     </div>
 </footer>
 </div>
+</div>
 
 <?php wp_footer(); ?>
 

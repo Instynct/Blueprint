@@ -14,65 +14,77 @@ function custom_tiny_styles($init_array) {
     // Define the style_formats array
     $style_formats = array(
         array( // XLARGE TITLE
-            'title' => 'Titre xlarge',
+            'title' => 'Titre Mega',
             'selector' => 'blockquote,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table',
-            'classes' => 'title -xlarge'
+            'classes' => 'title-mega'
         ),
         array( // LARGE TITLE
-            'title' => 'Titre large',
+            'title' => 'Titre H1',
             'selector' => 'blockquote,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table',
-            'classes' => 'title -large'
+            'classes' => 'title-1'
         ),
         array( // REGULAR TITLE
-            'title' => 'Titre regular',
+            'title' => 'Titre H2',
             'selector' => 'blockquote,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table',
-            'classes' => 'title -regular'
+            'classes' => 'title-2'
         ),
         array( // SECTION TITLE
-            'title' => 'Titre de Section',
+            'title' => 'Titre H3',
             'selector' => 'blockquote,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table',
-            'classes' => 'title -section'
-        ),
-        array( // SECTION SUBTITLE
-            'title' => 'Sous-titre de Section',
-            'selector' => 'blockquote,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table',
-            'classes' => 'title -section-subtitle'
+            'classes' => 'title-3'
         ),
         array( // MEDIUM TITLE
-            'title' => 'Titre medium',
+            'title' => 'Titre H4',
             'selector' => 'blockquote,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table',
-            'classes' => 'title -medium'
+            'classes' => 'title-4'
         ),
-        array( // MEDIUM TITLE UNDERLINE
-            'title' => 'Titre medium souligné',
+        array( // MEDIUM TITLE
+            'title' => 'Titre H5',
             'selector' => 'blockquote,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table',
-            'classes' => 'title -medium -underline'
+            'classes' => 'title-5'
         ),
-        array( // NAME TITLE
-            'title' => 'Titre Nom',
+        array( // MEDIUM TITLE
+            'title' => 'Titre h6',
             'selector' => 'blockquote,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table',
-            'classes' => 'title -name'
+            'classes' => 'title-6'
         ),
-        array( // NAME SUBTITLE
-            'title' => 'Sous-titre Nom',
+        array( // MEDIUM TITLE
+            'title' => 'Texte Primaire',
             'selector' => 'blockquote,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table',
-            'classes' => 'title -name-subtitle'
+            'classes' => 'text-primary'
         ),
-        array( // btn
-            'title' => 'Bouton',
-            'selector' => 'a, button',
-            'classes' => 'button'
+        array( // MEDIUM TITLE
+            'title' => 'Texte Secondaire',
+            'selector' => 'blockquote,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table',
+            'classes' => 'text-secondary'
         ),
-        array( // btn blanc
-            'title' => 'Bouton blanc',
-            'selector' => 'a, button',
-            'classes' => 'button -white'
+
+        array( // MEDIUM TITLE
+            'title' => 'Texte Citations',
+            'selector' => 'blockquote,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table',
+            'classes' => 'quote-text'
         ),
-        array( // btn accent
-            'title' => 'Bouton accent',
-            'selector' => 'a, button',
-            'classes' => 'button -accent'
-        )
+        array( // MEDIUM TITLE
+            'title' => 'Texte Nom',
+            'selector' => 'blockquote,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table',
+            'classes' => 'quote-name'
+        ),
+        array( // MEDIUM TITLE
+            'title' => 'Exergue',
+            'selector' => 'blockquote,p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table',
+            'classes' => 'exergue'
+        ),
+
+        array( // MEDIUM TITLE
+            'title' => 'Liste Bordure',
+            'selector' => 'ul,ol',
+            'classes' => 'border-list'
+        ),
+        array( // MEDIUM TITLE
+            'title' => 'Liste à Point',
+            'selector' => 'ul,ol',
+            'classes' => 'point-list'
+        ),
     );
     // Insert the array, JSON ENCODED, into 'style_formats'
     $init_array['style_formats'] = json_encode($style_formats);

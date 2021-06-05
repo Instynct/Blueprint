@@ -17,6 +17,8 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p,
 ul[class],
 ol[class],
@@ -31,6 +33,7 @@ dd {
 
 /* Set core body defaults */
 body {
+	overflow-x: hidden;
 	min-height: 100vh;
 	scroll-behavior: smooth;
 	text-rendering: optimizeSpeed;
@@ -52,10 +55,6 @@ hr {
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
-ul[class],
-ol[class] {
-	list-style: none;
-}
 ul,
 ol,
 li {
@@ -92,7 +91,11 @@ select {
 
 a {
 	text-decoration: none;
-	color: black;
+	opacity: 1;
+	transition: opacity 0.3s ease-in-out;
+	&:hover {
+		opacity: 0.5;
+	}
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */
